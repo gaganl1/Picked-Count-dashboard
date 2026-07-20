@@ -476,9 +476,8 @@
 // ─────────────────────────────────────────────────────────────────────────────
 // CONFIG — update these two values before deploying
 // ─────────────────────────────────────────────────────────────────────────────
-var GITHUB_RAW      = "https://raw.githubusercontent.com/gaganl1/Picked-Count-dashboard/main/data/";
-var APPS_SCRIPT_URL = "https://script.google.com/a/macros/flipkart.com/s/AKfycbxpgkXrzp0F5hoblWhH6cMRWfRLx2VxzYy9GxG933c7qaJr9XPyel7u_ZsUYXFkI6si8w/exec";
-  // ─────────────────────────────────────────────────────────────────────────────
+var GITHUB_RAW = "https://raw.githubusercontent.com/gaganl1/Picked-Count-dashboard/main/data/";
+// ─────────────────────────────────────────────────────────────────────────────
 
 if (typeof Chart !== 'undefined' && typeof ChartDataLabels !== 'undefined') {
   Chart.register(ChartDataLabels);
@@ -507,7 +506,14 @@ function esc(s) {
 function toDateStr(v) {
   if (!v) return '';
   if (v instanceof Date) return v.toISOString().slice(0,10);
-  return String(v).slice(0,10);
+  var s = String(v).trim();
+  // handle DD-MM-YYYY → YYYY-MM-DD
+  var dmY = s.match(/^(\d{2})-(\d{2})-(\d{4})$/);
+  if (dmY) return dmY[3] + '-' + dmY[2] + '-' + dmY[1];
+  // handle DD/MM/YYYY → YYYY-MM-DD
+  var dmYs = s.match(/^(\d{2})\/(\d{2})\/(\d{4})$/);
+  if (dmYs) return dmYs[3] + '-' + dmYs[2] + '-' + dmYs[1];
+  return s.slice(0,10);
 }
 
 function showOverlay(v, msg) {
@@ -535,16 +541,9 @@ function markClean() {
 // ── data loading ───────────────────────────────────────────────────────────
 
 /**
- * Main loader — fetches manifest, all historical CSVs, and live Apps Script data,
- * then merges into state.allRows.
- *
- * CSV columns (from export_month.py output):
- *   date, gm, zone, name, stack, flag, picked_count
- *
- * Apps Script doGet() returns the same getDashboardData() rows object you already
- * have, but we need the raw summary rows. So we call a separate endpoint that
- * returns { rows: [[date,gm,zone,name,stack,flag,count], ...] }
- * OR we adapt to receive the breakdown array directly.
+ * Main loader — fetches manifest and all CSVs from the data/ folder.
+ * CSV columns: date, gm, zone, name, stack, flag, picked_count
+ * Dates accepted: YYYY-MM-DD or DD-MM-YYYY
  */
 async function loadAllData() {
   showOverlay(true, 'Loading historical data…');
@@ -590,19 +589,7 @@ async function loadAllData() {
     });
   }
 
-  // 3. Live current month from Apps Script
-  showOverlay(true, 'Fetching live data…');
-  try {
-    var liveRes = await fetch(APPS_SCRIPT_URL + '?action=rows');
-    var liveJson = await liveRes.json();
-    // Expects { rows: [[date,gm,zone,name,stack,flag,count], ...] }
-    if (liveJson && Array.isArray(liveJson.rows)) {
-      allRows = allRows.concat(liveJson.rows);
-      state.sources.push('Live GSheet (' + liveJson.rows.length + ' rows)');
-    }
-  } catch(e) {
-    toast('Live data unavailable — showing historical only', 'error');
-  }
+  // 3. Done — no live fetch, all data comes from CSVs in data/ folder
 
   state.allRows = allRows;
 
