@@ -19,17 +19,17 @@
       --border:    #dde3ec;
       --text:      #1a2332;
       --muted:     #6b7a99;
-      --accent:    #0d9488;   /* teal */
-      --accent2:   #0f766e;   /* teal dark */
-      --header-a:  #1a3a5c;   /* deep navy */
-      --header-b:  #0d9488;   /* teal */
-      --past:      #e5503a;   /* coral-red */
+      --accent:    #0d9488;
+      --accent2:   #0f766e;
+      --header-a:  #1a3a5c;
+      --header-b:  #0d9488;
+      --past:      #e5503a;
       --past-bg:   #fef2f0;
-      --present:   #0d9488;   /* teal */
+      --present:   #0d9488;
       --present-bg:#f0fdfb;
-      --future:    #7c3aed;   /* violet */
+      --future:    #7c3aed;
       --future-bg: #f5f3ff;
-      --yellow:    #f59e0b;   /* amber */
+      --yellow:    #f59e0b;
       --yellow-bg: #fffbeb;
       --radius:    12px;
       --radius-sm: 8px;
@@ -68,8 +68,8 @@
       display: flex; align-items: center; justify-content: center;
       font-size: 20px; flex-shrink: 0;
     }
-    .header h1 { font-size: 17px; font-weight: 800; letter-spacing: -.3px; }
-    .header-meta { font-size: 11px; color: var(--muted); margin-top: 2px; font-family: var(--mono); }
+    .header h1 { font-size: 17px; font-weight: 800; letter-spacing: -.3px; color: #fff; }
+    .header-meta { font-size: 11px; color: rgba(255,255,255,.6); margin-top: 2px; font-family: var(--mono); }
     .header-actions { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
 
     .btn {
@@ -125,6 +125,22 @@
       border-top: 1px solid var(--border);
     }
     .filters-footer .hint { margin-right: auto; color: #b45309; font-size: 11.5px; font-weight: 600; }
+
+    /* ── APPLY BTN ── */
+    .btn-apply {
+      padding: 8px 18px; border-radius: var(--radius-sm);
+      font-size: 12px; font-weight: 700; cursor: pointer;
+      border: none; background: var(--accent); color: #fff;
+      font-family: inherit; transition: background .15s;
+    }
+    .btn-apply:hover { background: var(--accent2); }
+    .btn-outline {
+      padding: 8px 14px; border-radius: var(--radius-sm);
+      font-size: 12px; font-weight: 600; cursor: pointer;
+      border: 1.5px solid var(--border); background: transparent; color: var(--muted);
+      font-family: inherit; transition: all .15s;
+    }
+    .btn-outline:hover { border-color: var(--accent); color: var(--accent); }
 
     /* multi-select */
     .ms { position: relative; }
@@ -196,17 +212,10 @@
       top: 0; left: 0; right: 0; height: 4px;
       background: var(--c);
     }
-    .kpi::after {
-      content: var(--icon);
-      position: absolute; right: 16px; top: 50%;
-      transform: translateY(-50%);
-      font-size: 32px; opacity: .12;
-    }
-    .kpi.past   { --c: var(--past);    background: linear-gradient(180deg, var(--past-bg), #fff 60%); }
-    .kpi.present{ --c: var(--present); background: linear-gradient(180deg, var(--present-bg), #fff 60%); }
-    .kpi.future { --c: var(--future);  background: linear-gradient(180deg, var(--future-bg), #fff 60%); }
-    .kpi.total  { --c: var(--yellow);  background: linear-gradient(180deg, var(--yellow-bg), #fff 60%); }
-    .kpi::after { display: none; }
+    .kpi.past    { --c: var(--past);    background: linear-gradient(180deg, var(--past-bg), #fff 60%); }
+    .kpi.present { --c: var(--present); background: linear-gradient(180deg, var(--present-bg), #fff 60%); }
+    .kpi.future  { --c: var(--future);  background: linear-gradient(180deg, var(--future-bg), #fff 60%); }
+    .kpi.total   { --c: var(--yellow);  background: linear-gradient(180deg, var(--yellow-bg), #fff 60%); }
     .kpi-label  { font-size: 10.5px; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); }
     .kpi-value  { font-size: 30px; font-weight: 800; margin-top: 6px; font-family: var(--mono); letter-spacing: -1px; }
     .kpi.past    .kpi-value { color: var(--past); }
@@ -231,14 +240,15 @@
       width: 8px; height: 8px; border-radius: 50%;
       background: var(--accent); flex-shrink: 0;
     }
-    .card-title .badge-source {
-      margin-left: auto; font-size: 10px; font-weight: 600;
-      padding: 2px 8px; border-radius: 20px;
-      background: var(--surface2); color: var(--muted); border: 1px solid var(--border);
-    }
 
     .charts-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 16px; }
     @media (max-width: 860px) { .charts-row { grid-template-columns: 1fr; } }
+
+    /* ── SUMMARY TABLES ROW ── */
+    .summary-tables-row {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 16px;
+    }
+    @media (max-width: 860px) { .summary-tables-row { grid-template-columns: 1fr; } }
 
     .chart-wrap { height: 300px; }
     .chart-wrap.tall { height: 360px; }
@@ -259,6 +269,7 @@
     .search-input::placeholder { color: var(--muted); }
 
     .table-wrap { max-height: 460px; overflow: auto; border-radius: var(--radius-sm); border: 1px solid var(--border); }
+    .table-wrap.short { max-height: 320px; }
     table { width: 100%; border-collapse: collapse; font-size: 12.5px; }
     th {
       position: sticky; top: 0;
@@ -279,13 +290,21 @@
     tr:hover td { background: var(--surface2); }
     td.num, th.num { text-align: right; font-family: var(--mono); }
     .pct { color: var(--muted); font-size: 10px; margin-left: 3px; }
-    .tag {
-      display: inline-block; padding: 1px 7px; border-radius: 20px;
-      font-size: 10.5px; font-weight: 700;
+
+    /* Grand total row */
+    tr.grand-total td {
+      background: var(--surface2);
+      border-top: 2px solid var(--border);
+      font-weight: 700;
+      position: sticky;
+      bottom: 0;
     }
-    .tag.past    { background: var(--past-bg); color: var(--past); }
-    .tag.present { background: var(--present-bg); color: var(--present); }
-    .tag.future  { background: var(--future-bg); color: var(--future); }
+    tr.grand-total td .total-label {
+      font-size: 10.5px; font-weight: 800;
+      text-transform: uppercase; letter-spacing: .06em;
+      color: var(--muted);
+    }
+    tr.grand-total td.num { font-family: var(--mono); color: var(--text); }
 
     /* ── STATUS BAR ── */
     .status-bar {
@@ -445,6 +464,55 @@
     </div>
   </div>
 
+  <!-- ── ZONE & GM SUMMARY TABLES ── -->
+  <div class="summary-tables-row">
+
+    <!-- Zone table -->
+    <div class="card">
+      <div class="table-toolbar">
+        <div class="card-title" style="margin-bottom:0"><span class="dot"></span>Summary by Zone</div>
+        <input type="text" class="search-input" id="zoneSearch" placeholder="Search zones…">
+      </div>
+      <div class="table-wrap short">
+        <table id="zoneTable">
+          <thead>
+            <tr>
+              <th data-table="zone" data-key="zone">Zone</th>
+              <th data-table="zone" data-key="Past"    class="num">Past</th>
+              <th data-table="zone" data-key="Present" class="num">Present</th>
+              <th data-table="zone" data-key="Future"  class="num">Future</th>
+              <th data-table="zone" data-key="total"   class="num sorted">Total</th>
+            </tr>
+          </thead>
+          <tbody id="zoneBody"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- GM table -->
+    <div class="card">
+      <div class="table-toolbar">
+        <div class="card-title" style="margin-bottom:0"><span class="dot"></span>Summary by GM</div>
+        <input type="text" class="search-input" id="gmSearch" placeholder="Search GMs…">
+      </div>
+      <div class="table-wrap short">
+        <table id="gmTable">
+          <thead>
+            <tr>
+              <th data-table="gm" data-key="gm">GM</th>
+              <th data-table="gm" data-key="Past"    class="num">Past</th>
+              <th data-table="gm" data-key="Present" class="num">Present</th>
+              <th data-table="gm" data-key="Future"  class="num">Future</th>
+              <th data-table="gm" data-key="total"   class="num sorted">Total</th>
+            </tr>
+          </thead>
+          <tbody id="gmBody"></tbody>
+        </table>
+      </div>
+    </div>
+
+  </div>
+
   <!-- breakdown table -->
   <div class="card">
     <div class="table-toolbar">
@@ -455,14 +523,14 @@
       <table id="dataTable">
         <thead>
           <tr>
-            <th data-key="gm">GM</th>
-            <th data-key="zone">Zone</th>
-            <th data-key="name">Name</th>
-            <th data-key="stack">Stack</th>
-            <th data-key="Past"  class="num">Past</th>
-            <th data-key="Present" class="num">Present</th>
-            <th data-key="Future" class="num">Future</th>
-            <th data-key="total" class="num sorted">Total</th>
+            <th data-table="breakdown" data-key="gm">GM</th>
+            <th data-table="breakdown" data-key="zone">Zone</th>
+            <th data-table="breakdown" data-key="name">Name</th>
+            <th data-table="breakdown" data-key="stack">Stack</th>
+            <th data-table="breakdown" data-key="Past"    class="num">Past</th>
+            <th data-table="breakdown" data-key="Present" class="num">Present</th>
+            <th data-table="breakdown" data-key="Future"  class="num">Future</th>
+            <th data-table="breakdown" data-key="total"   class="num sorted">Total</th>
           </tr>
         </thead>
         <tbody id="tableBody"></tbody>
@@ -474,22 +542,27 @@
 
 <script>
 // ─────────────────────────────────────────────────────────────────────────────
-// CONFIG — update these two values before deploying
+// CONFIG
 // ─────────────────────────────────────────────────────────────────────────────
 var GITHUB_RAW = "https://raw.githubusercontent.com/gaganl1/Picked-Count-dashboard/main/data/";
-// ─────────────────────────────────────────────────────────────────────────────
 
 if (typeof Chart !== 'undefined' && typeof ChartDataLabels !== 'undefined') {
   Chart.register(ChartDataLabels);
 }
 
 var state = {
-  allRows: [],          // merged historical + live rows
-  filteredRows: [],     // after applying filters
+  allRows: [],
+  filteredBreakdown: [],
+  filteredZone: [],
+  filteredGM: [],
   filterOptions: { gms:[], zones:[], names:[], stacks:[], minDate:'', maxDate:'' },
   selections: { gms:[], zones:[], names:[], stacks:[] },
-  sortKey: 'total', sortDir: -1,
-  tableSearch: '',
+  sort: {
+    breakdown: { key:'total', dir:-1 },
+    zone:      { key:'total', dir:-1 },
+    gm:        { key:'total', dir:-1 }
+  },
+  search: { breakdown:'', zone:'', gm:'' },
   dirty: false,
   sources: []
 };
@@ -507,10 +580,8 @@ function toDateStr(v) {
   if (!v) return '';
   if (v instanceof Date) return v.toISOString().slice(0,10);
   var s = String(v).trim();
-  // handle DD-MM-YYYY → YYYY-MM-DD
   var dmY = s.match(/^(\d{2})-(\d{2})-(\d{4})$/);
   if (dmY) return dmY[3] + '-' + dmY[2] + '-' + dmY[1];
-  // handle DD/MM/YYYY → YYYY-MM-DD
   var dmYs = s.match(/^(\d{2})\/(\d{2})\/(\d{4})$/);
   if (dmYs) return dmYs[3] + '-' + dmYs[2] + '-' + dmYs[1];
   return s.slice(0,10);
@@ -522,16 +593,13 @@ function showOverlay(v, msg) {
 }
 function toast(msg, type) {
   var t = document.getElementById('toast');
-  t.textContent = msg;
-  t.className = type || '';
-  t.style.display = 'block';
-  clearTimeout(t._h);
+  t.textContent = msg; t.className = type || '';
+  t.style.display = 'block'; clearTimeout(t._h);
   t._h = setTimeout(function(){ t.style.display='none'; }, 4000);
 }
 function markDirty() {
   state.dirty = true;
   document.getElementById('dirtyHint').textContent = 'Filters changed — click Apply';
-  document.getElementById('applyBtn').classList.add("active");
 }
 function markClean() {
   state.dirty = false;
@@ -539,35 +607,24 @@ function markClean() {
 }
 
 // ── data loading ───────────────────────────────────────────────────────────
-
-/**
- * Main loader — fetches manifest and all CSVs from the data/ folder.
- * CSV columns: date, gm, zone, name, stack, flag, picked_count
- * Dates accepted: YYYY-MM-DD or DD-MM-YYYY
- */
 async function loadAllData() {
   showOverlay(true, 'Loading historical data…');
   state.sources = [];
   var allRows = [];
 
-  // 1. Manifest
   var manifest;
   try {
     var res = await fetch(GITHUB_RAW + 'manifest.json');
     manifest = await res.json();
-  } catch(e) {
-    manifest = { historical: [] };
-  }
+  } catch(e) { manifest = { historical: [] }; }
 
-  // 2. Historical CSVs (parallel)
   if (manifest.historical && manifest.historical.length) {
     showOverlay(true, 'Loading ' + manifest.historical.length + ' historical file(s)…');
     var csvFetches = manifest.historical.map(function(month) {
       return fetch(GITHUB_RAW + month + '.csv')
         .then(function(r){ return r.text(); })
         .then(function(csv) {
-          var parsed = Papa.parse(csv, { header: true, dynamicTyping: true, skipEmptyLines: true });
-          // normalise column names (export_month.py uses lowercase)
+          var parsed = Papa.parse(csv, { header:true, dynamicTyping:true, skipEmptyLines:true });
           return parsed.data.map(function(r) {
             return [
               toDateStr(r.date),
@@ -589,15 +646,10 @@ async function loadAllData() {
     });
   }
 
-  // 3. Done — no live fetch, all data comes from CSVs in data/ folder
-
   state.allRows = allRows;
-
-  // Build filter options from merged data
   buildFilterOptions();
   applyFiltersAndRender();
 
-  // Update status bar
   document.getElementById('statusRows').textContent = fmt(allRows.length) + ' total rows';
   document.getElementById('statusSources').textContent = state.sources.length + ' source(s) loaded';
   document.getElementById('statusLastUpdate').textContent = 'Updated ' + new Date().toLocaleTimeString();
@@ -639,7 +691,7 @@ function buildFilterOptions() {
   buildMultiSelect('f-stack','Stack', state.filterOptions.stacks, 'stacks');
 }
 
-// ── multi-select component ─────────────────────────────────────────────────
+// ── multi-select ───────────────────────────────────────────────────────────
 function buildMultiSelect(containerId, labelText, options, key) {
   var container = document.getElementById(containerId);
   container.innerHTML =
@@ -655,7 +707,6 @@ function buildMultiSelect(containerId, labelText, options, key) {
 
   var root   = document.getElementById(containerId + '-ms');
   var btn    = root.querySelector('.ms-btn');
-  var panel  = root.querySelector('.ms-panel');
   var list   = root.querySelector('.ms-list');
   var search = root.querySelector('.ms-search');
   var lbl    = root.querySelector('.ms-lbl');
@@ -705,13 +756,12 @@ function buildMultiSelect(containerId, labelText, options, key) {
 function applyFiltersAndRender() {
   var dateFrom = document.getElementById('dateFrom').value || null;
   var dateTo   = document.getElementById('dateTo').value   || null;
-  var gmSet    = state.selections.gms.length   ? new Set(state.selections.gms)    : null;
-  var zoneSet  = state.selections.zones.length ? new Set(state.selections.zones)  : null;
-  var nameSet  = state.selections.names.length ? new Set(state.selections.names)  : null;
-  var stackSet = state.selections.stacks.length? new Set(state.selections.stacks) : null;
+  var gmSet    = state.selections.gms.length    ? new Set(state.selections.gms)    : null;
+  var zoneSet  = state.selections.zones.length  ? new Set(state.selections.zones)  : null;
+  var nameSet  = state.selections.names.length  ? new Set(state.selections.names)  : null;
+  var stackSet = state.selections.stacks.length ? new Set(state.selections.stacks) : null;
 
-  // aggregation maps
-  var trendMap = {}, breakdownMap = {}, stackTotals = {};
+  var trendMap = {}, breakdownMap = {}, stackTotals = {}, zoneMap = {}, gmMap = {};
   var totals = { Past:0, Present:0, Future:0 };
   var matched = 0;
 
@@ -725,34 +775,61 @@ function applyFiltersAndRender() {
     if (stackSet && !stackSet.has(stack)) return;
     matched++;
 
+    // trend
     if (!trendMap[date]) trendMap[date] = {Past:0,Present:0,Future:0};
     trendMap[date][flag] = (trendMap[date][flag]||0) + count;
 
+    // breakdown
     var bk = gm+'||'+zone+'||'+name+'||'+stack;
     if (!breakdownMap[bk]) breakdownMap[bk] = {gm,zone,name,stack,Past:0,Present:0,Future:0};
     breakdownMap[bk][flag] = (breakdownMap[bk][flag]||0) + count;
+
+    // zone summary
+    if (!zoneMap[zone]) zoneMap[zone] = {zone,Past:0,Present:0,Future:0};
+    zoneMap[zone][flag] = (zoneMap[zone][flag]||0) + count;
+
+    // gm summary
+    if (!gmMap[gm]) gmMap[gm] = {gm,Past:0,Present:0,Future:0};
+    gmMap[gm][flag] = (gmMap[gm][flag]||0) + count;
 
     stackTotals[stack] = (stackTotals[stack]||0) + count;
     if (totals[flag] !== undefined) totals[flag] += count;
   });
 
   var total = totals.Past + totals.Present + totals.Future;
+
   var trend = Object.keys(trendMap).sort().map(function(d){
     return { date:d, Past:trendMap[d].Past, Present:trendMap[d].Present, Future:trendMap[d].Future };
   });
   var breakdown = Object.values(breakdownMap).map(function(b){
     b.total = b.Past + b.Present + b.Future; return b;
   }).sort(function(a,b){ return b.total - a.total; });
+
+  var zoneBreakdown = Object.values(zoneMap).map(function(b){
+    b.total = b.Past + b.Present + b.Future; return b;
+  }).sort(function(a,b){ return b.total - a.total; });
+
+  var gmBreakdown = Object.values(gmMap).map(function(b){
+    b.total = b.Past + b.Present + b.Future; return b;
+  }).sort(function(a,b){ return b.total - a.total; });
+
   var stackBreakdown = Object.keys(stackTotals).sort().map(function(s){
     return { stack:s, count:stackTotals[s] };
   });
 
-  // render
   renderKpis(totals, total, matched);
   renderTrend(trend);
   renderFlagDonut(totals);
   renderStackDonut(stackBreakdown);
+
   state.filteredBreakdown = breakdown;
+  state.filteredZone      = zoneBreakdown;
+  state.filteredGM        = gmBreakdown;
+  state.totals            = totals;
+  state.grandTotal        = total;
+
+  renderZoneTable();
+  renderGMTable();
   renderTable();
   markClean();
 }
@@ -770,7 +847,7 @@ function renderKpis(totals, total, matched) {
 }
 
 // ── charts ─────────────────────────────────────────────────────────────────
-var COLORS = { Past: '#e5503a', Present: '#0d9488', Future: '#7c3aed' };
+var COLORS = { Past:'#e5503a', Present:'#0d9488', Future:'#7c3aed' };
 var STACK_COLORS = ['#0d9488','#f59e0b','#7c3aed','#e5503a','#0891b2','#65a30d','#db2777'];
 
 function renderTrend(trend) {
@@ -778,12 +855,10 @@ function renderTrend(trend) {
   var labels = trend.map(function(r){ return r.date; });
   function ds(key, color) {
     return {
-      label: key,
-      data: trend.map(function(r){ return r[key]; }),
+      label: key, data: trend.map(function(r){ return r[key]; }),
       borderColor: color, backgroundColor: color,
       tension: .3, borderWidth: 2,
-      pointRadius: trend.length > 60 ? 0 : 3,
-      pointHoverRadius: 5,
+      pointRadius: trend.length > 60 ? 0 : 3, pointHoverRadius: 5,
       pointBackgroundColor: '#fff', pointBorderColor: color, pointBorderWidth: 2
     };
   }
@@ -791,7 +866,7 @@ function renderTrend(trend) {
     type: 'line',
     data: { labels, datasets: [ds('Past',COLORS.Past), ds('Present',COLORS.Present), ds('Future',COLORS.Future)] },
     options: {
-      responsive: true, maintainAspectRatio: false,
+      responsive:true, maintainAspectRatio:false,
       interaction: { mode:'index', intersect:false },
       scales: {
         x: { grid:{color:'rgba(0,0,0,.04)'}, ticks:{color:'#6b7a99',maxTicksLimit:12} },
@@ -817,18 +892,12 @@ function renderFlagDonut(totals) {
   var data = [totals.Past, totals.Present, totals.Future];
   var cfg = {
     type: 'doughnut',
-    data: {
-      labels: ['Past','Present','Future'],
-      datasets: [{ data, backgroundColor: [COLORS.Past, COLORS.Present, COLORS.Future], borderWidth:2, borderColor:'#ffffff' }]
-    },
+    data: { labels:['Past','Present','Future'], datasets:[{ data, backgroundColor:[COLORS.Past,COLORS.Present,COLORS.Future], borderWidth:2, borderColor:'#ffffff' }] },
     options: {
       responsive:true, maintainAspectRatio:false, cutout:'65%',
       plugins: {
         legend:{ position:'bottom', labels:{ usePointStyle:true, boxWidth:8, color:'#1a2332', font:{weight:'600'} } },
-        datalabels:{
-          color:'#fff', font:{weight:'700', size:11},
-          formatter:function(v){ var t=data.reduce(function(a,b){return a+b;},0); return t&&v/t>0.04?(v/t*100).toFixed(1)+'%':''; }
-        }
+        datalabels:{ color:'#fff', font:{weight:'700',size:11}, formatter:function(v){ var t=data.reduce(function(a,b){return a+b;},0); return t&&v/t>0.04?(v/t*100).toFixed(1)+'%':''; } }
       }
     }
   };
@@ -840,7 +909,7 @@ function renderStackDonut(stackBreakdown) {
   var ctx = document.getElementById('stackChart').getContext('2d');
   var labels = stackBreakdown.map(function(r){ return r.stack; });
   var data   = stackBreakdown.map(function(r){ return r.count; });
-  var colors = labels.map(function(_,i){ return STACK_COLORS[i % STACK_COLORS.length]; });
+  var colors = labels.map(function(_,i){ return STACK_COLORS[i%STACK_COLORS.length]; });
   var cfg = {
     type: 'doughnut',
     data: { labels, datasets:[{ data, backgroundColor:colors, borderWidth:2, borderColor:'#ffffff' }] },
@@ -848,10 +917,7 @@ function renderStackDonut(stackBreakdown) {
       responsive:true, maintainAspectRatio:false, cutout:'65%',
       plugins: {
         legend:{ position:'bottom', labels:{ usePointStyle:true, boxWidth:8, color:'#1a2332', font:{weight:'600'} } },
-        datalabels:{
-          color:'#fff', font:{weight:'700', size:11},
-          formatter:function(v){ var t=data.reduce(function(a,b){return a+b;},0); return t&&v/t>0.04?(v/t*100).toFixed(1)+'%':''; }
-        }
+        datalabels:{ color:'#fff', font:{weight:'700',size:11}, formatter:function(v){ var t=data.reduce(function(a,b){return a+b;},0); return t&&v/t>0.04?(v/t*100).toFixed(1)+'%':''; } }
       }
     }
   };
@@ -859,39 +925,137 @@ function renderStackDonut(stackBreakdown) {
   charts.stack = new Chart(ctx, cfg);
 }
 
-// ── table ──────────────────────────────────────────────────────────────────
+// ── grand total row builder ────────────────────────────────────────────────
+function grandTotalRow(rows, labelCell) {
+  var gt = { Past:0, Present:0, Future:0, total:0 };
+  rows.forEach(function(r){ gt.Past+=r.Past; gt.Present+=r.Present; gt.Future+=r.Future; gt.total+=r.total; });
+  return '<tr class="grand-total">' +
+    '<td>' + labelCell + '</td>' +
+    '<td class="num">' + fmt(gt.Past)    + '<span class="pct">(' + pct(gt.Past,    gt.total) + ')</span></td>' +
+    '<td class="num">' + fmt(gt.Present) + '<span class="pct">(' + pct(gt.Present, gt.total) + ')</span></td>' +
+    '<td class="num">' + fmt(gt.Future)  + '<span class="pct">(' + pct(gt.Future,  gt.total) + ')</span></td>' +
+    '<td class="num"><strong>' + fmt(gt.total) + '</strong></td>' +
+    '</tr>';
+}
+
+// ── zone table ─────────────────────────────────────────────────────────────
+function renderZoneTable() {
+  var tbody = document.getElementById('zoneBody');
+  if (!state.filteredZone) { tbody.innerHTML = ''; return; }
+
+  var rows = state.filteredZone.slice();
+  var q = state.search.zone.toLowerCase();
+  if (q) rows = rows.filter(function(r){ return r.zone.toLowerCase().includes(q); });
+
+  var sk = state.sort.zone.key, sd = state.sort.zone.dir;
+  rows.sort(function(a,b){
+    var av=a[sk], bv=b[sk];
+    if (typeof av==='string') return sd * av.localeCompare(bv);
+    return sd * (av-bv);
+  });
+
+  if (!rows.length) {
+    tbody.innerHTML = '<tr><td colspan="5"><div class="empty-state">No rows match.</div></td></tr>';
+    return;
+  }
+  var html = '';
+  rows.forEach(function(r) {
+    html +=
+      '<tr>' +
+      '<td>' + esc(r.zone) + '</td>' +
+      '<td class="num">' + fmt(r.Past)    + '<span class="pct">(' + pct(r.Past,    r.total) + ')</span></td>' +
+      '<td class="num">' + fmt(r.Present) + '<span class="pct">(' + pct(r.Present, r.total) + ')</span></td>' +
+      '<td class="num">' + fmt(r.Future)  + '<span class="pct">(' + pct(r.Future,  r.total) + ')</span></td>' +
+      '<td class="num"><strong>' + fmt(r.total) + '</strong></td>' +
+      '</tr>';
+  });
+  html += grandTotalRow(rows, '<span class="total-label">Grand Total</span>');
+  tbody.innerHTML = html;
+}
+
+// ── gm table ───────────────────────────────────────────────────────────────
+function renderGMTable() {
+  var tbody = document.getElementById('gmBody');
+  if (!state.filteredGM) { tbody.innerHTML = ''; return; }
+
+  var rows = state.filteredGM.slice();
+  var q = state.search.gm.toLowerCase();
+  if (q) rows = rows.filter(function(r){ return r.gm.toLowerCase().includes(q); });
+
+  var sk = state.sort.gm.key, sd = state.sort.gm.dir;
+  rows.sort(function(a,b){
+    var av=a[sk], bv=b[sk];
+    if (typeof av==='string') return sd * av.localeCompare(bv);
+    return sd * (av-bv);
+  });
+
+  if (!rows.length) {
+    tbody.innerHTML = '<tr><td colspan="5"><div class="empty-state">No rows match.</div></td></tr>';
+    return;
+  }
+  var html = '';
+  rows.forEach(function(r) {
+    html +=
+      '<tr>' +
+      '<td>' + esc(r.gm) + '</td>' +
+      '<td class="num">' + fmt(r.Past)    + '<span class="pct">(' + pct(r.Past,    r.total) + ')</span></td>' +
+      '<td class="num">' + fmt(r.Present) + '<span class="pct">(' + pct(r.Present, r.total) + ')</span></td>' +
+      '<td class="num">' + fmt(r.Future)  + '<span class="pct">(' + pct(r.Future,  r.total) + ')</span></td>' +
+      '<td class="num"><strong>' + fmt(r.total) + '</strong></td>' +
+      '</tr>';
+  });
+  html += grandTotalRow(rows, '<span class="total-label">Grand Total</span>');
+  tbody.innerHTML = html;
+}
+
+// ── breakdown table ────────────────────────────────────────────────────────
 function renderTable() {
   var tbody = document.getElementById('tableBody');
-  tbody.innerHTML = '';
-  if (!state.filteredBreakdown) return;
+  if (!state.filteredBreakdown) { tbody.innerHTML = ''; return; }
 
   var rows = state.filteredBreakdown.slice();
-  var q = state.tableSearch.toLowerCase();
+  var q = state.search.breakdown.toLowerCase();
   if (q) rows = rows.filter(function(r){
     return (r.gm+' '+r.zone+' '+r.name+' '+r.stack).toLowerCase().includes(q);
   });
+
+  var sk = state.sort.breakdown.key, sd = state.sort.breakdown.dir;
   rows.sort(function(a,b){
-    var av=a[state.sortKey], bv=b[state.sortKey];
-    if (typeof av==='string') return state.sortDir * av.localeCompare(bv);
-    return state.sortDir * (av-bv);
+    var av=a[sk], bv=b[sk];
+    if (typeof av==='string') return sd * av.localeCompare(bv);
+    return sd * (av-bv);
   });
 
   if (!rows.length) {
     tbody.innerHTML = '<tr><td colspan="8"><div class="empty-state">No rows match.</div></td></tr>';
     return;
   }
-  var frag = document.createDocumentFragment();
+
+  var html = '';
   rows.forEach(function(r) {
-    var tr = document.createElement('tr');
-    tr.innerHTML =
+    html +=
+      '<tr>' +
       '<td>'+esc(r.gm)+'</td><td>'+esc(r.zone)+'</td><td>'+esc(r.name)+'</td><td>'+esc(r.stack)+'</td>'+
-      '<td class="num">'+fmt(r.Past)+'<span class="pct">('+pct(r.Past,r.total)+')</span></td>'+
-      '<td class="num">'+fmt(r.Present)+'<span class="pct">('+pct(r.Present,r.total)+')</span></td>'+
-      '<td class="num">'+fmt(r.Future)+'<span class="pct">('+pct(r.Future,r.total)+')</span></td>'+
-      '<td class="num"><strong>'+fmt(r.total)+'</strong></td>';
-    frag.appendChild(tr);
+      '<td class="num">'+fmt(r.Past)   +'<span class="pct">('+pct(r.Past,    r.total)+')</span></td>'+
+      '<td class="num">'+fmt(r.Present)+'<span class="pct">('+pct(r.Present, r.total)+')</span></td>'+
+      '<td class="num">'+fmt(r.Future) +'<span class="pct">('+pct(r.Future,  r.total)+')</span></td>'+
+      '<td class="num"><strong>'+fmt(r.total)+'</strong></td>'+
+      '</tr>';
   });
-  tbody.appendChild(frag);
+
+  // grand total row (5 cells for leading cols, then 4 data cols)
+  var gt = { Past:0, Present:0, Future:0, total:0 };
+  rows.forEach(function(r){ gt.Past+=r.Past; gt.Present+=r.Present; gt.Future+=r.Future; gt.total+=r.total; });
+  html +=
+    '<tr class="grand-total">' +
+    '<td colspan="4"><span class="total-label">Grand Total</span></td>' +
+    '<td class="num">'+fmt(gt.Past)   +'<span class="pct">('+pct(gt.Past,    gt.total)+')</span></td>'+
+    '<td class="num">'+fmt(gt.Present)+'<span class="pct">('+pct(gt.Present, gt.total)+')</span></td>'+
+    '<td class="num">'+fmt(gt.Future) +'<span class="pct">('+pct(gt.Future,  gt.total)+')</span></td>'+
+    '<td class="num"><strong>'+fmt(gt.total)+'</strong></td>'+
+    '</tr>';
+
+  tbody.innerHTML = html;
 }
 
 // ── export ─────────────────────────────────────────────────────────────────
@@ -914,36 +1078,45 @@ function exportCsv() {
   toast('CSV exported','ok');
 }
 
+// ── sortable table headers ─────────────────────────────────────────────────
+document.querySelectorAll('th[data-table]').forEach(function(th) {
+  th.addEventListener('click', function() {
+    var tbl = th.getAttribute('data-table');
+    var k   = th.getAttribute('data-key');
+    if (state.sort[tbl].key === k) state.sort[tbl].dir *= -1;
+    else { state.sort[tbl].key = k; state.sort[tbl].dir = -1; }
+    // update sorted class within this table
+    th.closest('table').querySelectorAll('th').forEach(function(t){ t.classList.remove('sorted'); });
+    th.classList.add('sorted');
+    if (tbl === 'zone')      renderZoneTable();
+    else if (tbl === 'gm')   renderGMTable();
+    else                      renderTable();
+  });
+});
+
 // ── event wiring ───────────────────────────────────────────────────────────
 document.getElementById('dateFrom').addEventListener('change', markDirty);
 document.getElementById('dateTo').addEventListener('change', markDirty);
 
-document.getElementById('applyBtn').addEventListener('click', function(){
-  applyFiltersAndRender();
-});
+document.getElementById('applyBtn').addEventListener('click', applyFiltersAndRender);
 document.getElementById('resetBtn').addEventListener('click', function(){
   state.selections = { gms:[], zones:[], names:[], stacks:[] };
-  buildFilterOptions();
-  applyFiltersAndRender();
+  buildFilterOptions(); applyFiltersAndRender();
 });
 document.getElementById('resetFiltersBtn').addEventListener('click', function(){
   state.selections = { gms:[], zones:[], names:[], stacks:[] };
-  buildFilterOptions();
-  applyFiltersAndRender();
+  buildFilterOptions(); applyFiltersAndRender();
 });
 document.getElementById('exportBtn').addEventListener('click', exportCsv);
+
 document.getElementById('tableSearch').addEventListener('input', function(e){
-  state.tableSearch = e.target.value; renderTable();
+  state.search.breakdown = e.target.value; renderTable();
 });
-document.querySelectorAll('#dataTable th').forEach(function(th){
-  th.addEventListener('click', function(){
-    var k = th.getAttribute('data-key');
-    if (state.sortKey===k) state.sortDir *= -1;
-    else { state.sortKey=k; state.sortDir=-1; }
-    document.querySelectorAll('#dataTable th').forEach(function(t){ t.classList.remove('sorted'); });
-    th.classList.add('sorted');
-    renderTable();
-  });
+document.getElementById('zoneSearch').addEventListener('input', function(e){
+  state.search.zone = e.target.value; renderZoneTable();
+});
+document.getElementById('gmSearch').addEventListener('input', function(e){
+  state.search.gm = e.target.value; renderGMTable();
 });
 
 // ── boot ───────────────────────────────────────────────────────────────────
