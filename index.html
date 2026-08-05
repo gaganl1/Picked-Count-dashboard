@@ -244,20 +244,7 @@
     .charts-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 16px; }
     @media (max-width: 860px) { .charts-row { grid-template-columns: 1fr; } }
 
-    /* ── ZONE-GM GROUPED TABLE ── */
-    tr.zone-group td {
-      background: #e8f4f8;
-      font-weight: 800;
-      font-size: 11.5px;
-      text-transform: uppercase;
-      letter-spacing: .06em;
-      color: var(--header-a);
-      border-top: 2px solid var(--border);
-      padding: 8px 12px;
-    }
-    tr.zone-group:first-child td { border-top: none; }
-    tr.gm-row td:first-child { padding-left: 28px; color: var(--text); }
-    tr.gm-row:hover td { background: var(--present-bg); }
+
 
     .chart-wrap { height: 300px; }
     .chart-wrap.tall { height: 360px; }
@@ -473,24 +460,46 @@
     </div>
   </div>
 
-  <!-- ── ZONE → GM GROUPED TABLE ── -->
+  <!-- ── ZONE SUMMARY TABLE ── -->
   <div class="card">
     <div class="table-toolbar">
-      <div class="card-title" style="margin-bottom:0"><span class="dot"></span>Summary by Zone &amp; GM</div>
-      <input type="text" class="search-input" id="zoneGmSearch" placeholder="Search zone or GM…">
+      <div class="card-title" style="margin-bottom:0"><span class="dot"></span>Summary by Zone</div>
+      <input type="text" class="search-input" id="zoneSearch" placeholder="Search zones…">
     </div>
     <div class="table-wrap short">
-      <table id="zoneGmTable">
+      <table id="zoneTable">
         <thead>
           <tr>
-            <th data-table="zoneGm" data-key="name">Zone / GM</th>
-            <th data-table="zoneGm" data-key="Past"    class="num">Past</th>
-            <th data-table="zoneGm" data-key="Present" class="num">Present</th>
-            <th data-table="zoneGm" data-key="Future"  class="num">Future</th>
-            <th data-table="zoneGm" data-key="total"   class="num sorted">Total</th>
+            <th data-table="zone" data-key="zone">Zone</th>
+            <th data-table="zone" data-key="Past"    class="num">Past</th>
+            <th data-table="zone" data-key="Present" class="num">Present</th>
+            <th data-table="zone" data-key="Future"  class="num">Future</th>
+            <th data-table="zone" data-key="total"   class="num sorted">Total</th>
           </tr>
         </thead>
-        <tbody id="zoneGmBody"></tbody>
+        <tbody id="zoneBody"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- ── GM SUMMARY TABLE ── -->
+  <div class="card">
+    <div class="table-toolbar">
+      <div class="card-title" style="margin-bottom:0"><span class="dot"></span>Summary by GM</div>
+      <input type="text" class="search-input" id="gmSearch" placeholder="Search GMs…">
+    </div>
+    <div class="table-wrap" style="max-height:none; overflow:visible">
+      <table id="gmTable">
+        <thead>
+          <tr>
+            <th data-table="gm" data-key="gm">GM</th>
+            <th data-table="gm" data-key="Past"    class="num">Past</th>
+            <th data-table="gm" data-key="Present" class="num">Present</th>
+            <th data-table="gm" data-key="Future"  class="num">Future</th>
+            <th data-table="gm" data-key="total"   class="num sorted">Total</th>
+          </tr>
+        </thead>
+        <tbody id="gmBody"></tbody>
       </table>
     </div>
   </div>
@@ -535,14 +544,16 @@ if (typeof Chart !== 'undefined' && typeof ChartDataLabels !== 'undefined') {
 var state = {
   allRows: [],
   filteredBreakdown: [],
-  zoneGmData: [],
+  filteredZone: [],
+  filteredGM: [],
   filterOptions: { gms:[], zones:[], names:[], stacks:[], minDate:'', maxDate:'' },
   selections: { gms:[], zones:[], names:[], stacks:[] },
   sort: {
     breakdown: { key:'total', dir:-1 },
-    zoneGm:    { key:'total', dir:-1 }
+    zone:      { key:'total', dir:-1 },
+    gm:        { key:'total', dir:-1 }
   },
-  search: { breakdown:'', zoneGm:'' },
+  search: { breakdown:'', zone:'', gm:'' },
   dirty: false,
   sources: []
 };
@@ -741,7 +752,7 @@ function applyFiltersAndRender() {
   var nameSet  = state.selections.names.length  ? new Set(state.selections.names)  : null;
   var stackSet = state.selections.stacks.length ? new Set(state.selections.stacks) : null;
 
-  var trendMap = {}, breakdownMap = {}, stackTotals = {}, zoneGmMap = {};
+  var trendMap = {}, breakdownMap = {}, stackTotals = {}, zoneMap = {}, gmMap = {};
   var totals = { Past:0, Present:0, Future:0 };
   var matched = 0;
 
@@ -764,11 +775,13 @@ function applyFiltersAndRender() {
     if (!breakdownMap[bk]) breakdownMap[bk] = {gm,zone,name,stack,Past:0,Present:0,Future:0};
     breakdownMap[bk][flag] = (breakdownMap[bk][flag]||0) + count;
 
-    // zone→gm nested summary
-    if (!zoneGmMap[zone]) zoneGmMap[zone] = { zone, Past:0, Present:0, Future:0, gms:{} };
-    zoneGmMap[zone][flag] = (zoneGmMap[zone][flag]||0) + count;
-    if (!zoneGmMap[zone].gms[gm]) zoneGmMap[zone].gms[gm] = { gm, Past:0, Present:0, Future:0 };
-    zoneGmMap[zone].gms[gm][flag] = (zoneGmMap[zone].gms[gm][flag]||0) + count;
+    // zone summary
+    if (!zoneMap[zone]) zoneMap[zone] = {zone,Past:0,Present:0,Future:0};
+    zoneMap[zone][flag] = (zoneMap[zone][flag]||0) + count;
+
+    // gm summary
+    if (!gmMap[gm]) gmMap[gm] = {gm,Past:0,Present:0,Future:0};
+    gmMap[gm][flag] = (gmMap[gm][flag]||0) + count;
 
     stackTotals[stack] = (stackTotals[stack]||0) + count;
     if (totals[flag] !== undefined) totals[flag] += count;
@@ -783,12 +796,12 @@ function applyFiltersAndRender() {
     b.total = b.Past + b.Present + b.Future; return b;
   }).sort(function(a,b){ return b.total - a.total; });
 
-  var zoneGmData = Object.values(zoneGmMap).map(function(z) {
-    z.total = z.Past + z.Present + z.Future;
-    z.gmList = Object.values(z.gms).map(function(g){
-      g.total = g.Past + g.Present + g.Future; return g;
-    }).sort(function(a,b){ return b.total - a.total; });
-    return z;
+  var zoneBreakdown = Object.values(zoneMap).map(function(b){
+    b.total = b.Past + b.Present + b.Future; return b;
+  }).sort(function(a,b){ return b.total - a.total; });
+
+  var gmBreakdown = Object.values(gmMap).map(function(b){
+    b.total = b.Past + b.Present + b.Future; return b;
   }).sort(function(a,b){ return b.total - a.total; });
 
   var stackBreakdown = Object.keys(stackTotals).sort().map(function(s){
@@ -801,11 +814,13 @@ function applyFiltersAndRender() {
   renderStackDonut(stackBreakdown);
 
   state.filteredBreakdown = breakdown;
-  state.zoneGmData        = zoneGmData;
+  state.filteredZone      = zoneBreakdown;
+  state.filteredGM        = gmBreakdown;
   state.totals            = totals;
   state.grandTotal        = total;
 
-  renderZoneGmTable();
+  renderZoneTable();
+  renderGMTable();
   renderTable();
   markClean();
 }
@@ -904,63 +919,27 @@ function renderStackDonut(stackBreakdown) {
 
 
 // ── zone → gm grouped table ────────────────────────────────────────────────
-function renderZoneGmTable() {
-  var tbody = document.getElementById('zoneGmBody');
-  if (!state.zoneGmData) { tbody.innerHTML = ''; return; }
-
-  var q = (state.search.zoneGm || '').toLowerCase();
-  var gt = { Past:0, Present:0, Future:0, total:0 };
-  var html = '';
-  var anyRow = false;
-
-  var sk = state.sort.zoneGm.key, sd = state.sort.zoneGm.dir;
-  function sortFn(a, b, nameKey) {
-    if (sk === 'name') return sd * (a[nameKey]||'').localeCompare(b[nameKey]||'');
-    return sd * ((a[sk]||0) - (b[sk]||0));
-  }
-  var zones = state.zoneGmData.slice().sort(function(a,b){ return sortFn(a,b,'zone'); });
-
-  zones.forEach(function(z) {
-    // filter GMs within this zone
-    var gms = z.gmList.slice();
-    if (q) gms = gms.filter(function(g){ return g.gm.toLowerCase().includes(q) || z.zone.toLowerCase().includes(q); });
-    if (!gms.length) return;
-    gms.sort(function(a,b){ return sortFn(a,b,'gm'); });
-
-    anyRow = true;
-
-    // zone subtotals from visible gms
-    var zPast=0, zPresent=0, zFuture=0, zTotal=0;
-    gms.forEach(function(g){ zPast+=g.Past; zPresent+=g.Present; zFuture+=g.Future; zTotal+=g.total; });
-
-    // zone header row
-    html += '<tr class="zone-group">' +
-      '<td>' + esc(z.zone) + '</td>' +
-      '<td class="num">' + fmt(zPast)    + '<span class="pct"> (' + pct(zPast,    zTotal) + ')</span></td>' +
-      '<td class="num">' + fmt(zPresent) + '<span class="pct"> (' + pct(zPresent, zTotal) + ')</span></td>' +
-      '<td class="num">' + fmt(zFuture)  + '<span class="pct"> (' + pct(zFuture,  zTotal) + ')</span></td>' +
-      '<td class="num"><strong>' + fmt(zTotal) + '</strong></td>' +
-      '</tr>';
-
-    // gm child rows
-    gms.forEach(function(g) {
-      html += '<tr class="gm-row">' +
-        '<td>' + esc(g.gm) + '</td>' +
-        '<td class="num">' + fmt(g.Past)    + '<span class="pct"> (' + pct(g.Past,    g.total) + ')</span></td>' +
-        '<td class="num">' + fmt(g.Present) + '<span class="pct"> (' + pct(g.Present, g.total) + ')</span></td>' +
-        '<td class="num">' + fmt(g.Future)  + '<span class="pct"> (' + pct(g.Future,  g.total) + ')</span></td>' +
-        '<td class="num">' + fmt(g.total) + '</td>' +
-        '</tr>';
-      gt.Past+=g.Past; gt.Present+=g.Present; gt.Future+=g.Future; gt.total+=g.total;
-    });
-  });
-
-  if (!anyRow) {
+function renderSummaryTable(tbodyId, rows, nameKey, q) {
+  var tbody = document.getElementById(tbodyId);
+  if (!rows) { tbody.innerHTML = ''; return; }
+  var filtered = rows.slice();
+  if (q) filtered = filtered.filter(function(r){ return (r[nameKey]||'').toLowerCase().includes(q); });
+  if (!filtered.length) {
     tbody.innerHTML = '<tr><td colspan="5"><div class="empty-state">No rows match.</div></td></tr>';
     return;
   }
-
-  // grand total
+  var html = '';
+  filtered.forEach(function(r) {
+    html += '<tr>' +
+      '<td>' + esc(r[nameKey]) + '</td>' +
+      '<td class="num">' + fmt(r.Past)    + '<span class="pct"> (' + pct(r.Past,    r.total) + ')</span></td>' +
+      '<td class="num">' + fmt(r.Present) + '<span class="pct"> (' + pct(r.Present, r.total) + ')</span></td>' +
+      '<td class="num">' + fmt(r.Future)  + '<span class="pct"> (' + pct(r.Future,  r.total) + ')</span></td>' +
+      '<td class="num"><strong>' + fmt(r.total) + '</strong></td>' +
+      '</tr>';
+  });
+  var gt = {Past:0,Present:0,Future:0,total:0};
+  filtered.forEach(function(r){ gt.Past+=r.Past; gt.Present+=r.Present; gt.Future+=r.Future; gt.total+=r.total; });
   html += '<tr class="grand-total">' +
     '<td><span class="total-label">Grand Total</span></td>' +
     '<td class="num">' + fmt(gt.Past)    + '<span class="pct"> (' + pct(gt.Past,    gt.total) + ')</span></td>' +
@@ -968,8 +947,21 @@ function renderZoneGmTable() {
     '<td class="num">' + fmt(gt.Future)  + '<span class="pct"> (' + pct(gt.Future,  gt.total) + ')</span></td>' +
     '<td class="num"><strong>' + fmt(gt.total) + '</strong></td>' +
     '</tr>';
-
   tbody.innerHTML = html;
+}
+
+function renderZoneTable() {
+  var rows = (state.filteredZone || []).slice();
+  var sk = state.sort.zone.key, sd = state.sort.zone.dir;
+  rows.sort(function(a,b){ return typeof a[sk]==='string' ? sd*a[sk].localeCompare(b[sk]) : sd*(a[sk]-b[sk]); });
+  renderSummaryTable('zoneBody', rows, 'zone', state.search.zone.toLowerCase());
+}
+
+function renderGMTable() {
+  var rows = (state.filteredGM || []).slice();
+  var sk = state.sort.gm.key, sd = state.sort.gm.dir;
+  rows.sort(function(a,b){ return typeof a[sk]==='string' ? sd*a[sk].localeCompare(b[sk]) : sd*(a[sk]-b[sk]); });
+  renderSummaryTable('gmBody', rows, 'gm', state.search.gm.toLowerCase());
 }
 
 // ── breakdown table ────────────────────────────────────────────────────────
@@ -1051,8 +1043,9 @@ document.querySelectorAll('th[data-table]').forEach(function(th) {
     else { state.sort[tbl].key = k; state.sort[tbl].dir = -1; }
     th.closest('table').querySelectorAll('th').forEach(function(t){ t.classList.remove('sorted'); });
     th.classList.add('sorted');
-    if (tbl === 'zoneGm') renderZoneGmTable();
-    else                   renderTable();
+    if (tbl === 'zone')      renderZoneTable();
+    else if (tbl === 'gm')   renderGMTable();
+    else                      renderTable();
   });
 });
 
@@ -1074,8 +1067,11 @@ document.getElementById('exportBtn').addEventListener('click', exportCsv);
 document.getElementById('tableSearch').addEventListener('input', function(e){
   state.search.breakdown = e.target.value; renderTable();
 });
-document.getElementById('zoneGmSearch').addEventListener('input', function(e){
-  state.search.zoneGm = e.target.value; renderZoneGmTable();
+document.getElementById('zoneSearch').addEventListener('input', function(e){
+  state.search.zone = e.target.value; renderZoneTable();
+});
+document.getElementById('gmSearch').addEventListener('input', function(e){
+  state.search.gm = e.target.value; renderGMTable();
 });
 
 // ── boot ───────────────────────────────────────────────────────────────────
