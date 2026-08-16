@@ -30610,3 +30610,2216 @@ date,gm,zone,name,stack,flag,picked_count
 14-08-2026,Yatin Verma,North,BhiwandiSH_BWD_PL,MYS,Future,1372
 14-08-2026,Yatin Verma,North,BhiwandiSH_BWD_PL,MYS,Past,683
 14-08-2026,Yatin Verma,North,BhiwandiSH_BWD_PL,MYS,Present,13137
+15-08-2026,Akash Sharma,North,AjmerHub_AJM_PL,EXT,Present,43
+15-08-2026,Akash Sharma,North,AjmerHub_AJM_PL,FK,Future,1
+15-08-2026,Akash Sharma,North,AjmerHub_AJM_PL,FK,Past,2
+15-08-2026,Akash Sharma,North,AjmerHub_AJM_PL,FK,Present,747
+15-08-2026,Akash Sharma,North,AjmerHub_AJM_PL,MYE,Future,10
+15-08-2026,Akash Sharma,North,AjmerHub_AJM_PL,MYE,Present,7
+15-08-2026,Akash Sharma,North,AlwarHub_ALW_PL,EXT,Future,6
+15-08-2026,Akash Sharma,North,AlwarHub_ALW_PL,EXT,Present,29
+15-08-2026,Akash Sharma,North,AlwarHub_ALW_PL,FK,Past,2
+15-08-2026,Akash Sharma,North,AlwarHub_ALW_PL,FK,Present,1209
+15-08-2026,Akash Sharma,North,AlwarHub_ALW_PL,MYE,Future,1
+15-08-2026,Akash Sharma,North,BalotraHub_BLO_PL,EXT,Past,1
+15-08-2026,Akash Sharma,North,BalotraHub_BLO_PL,FK,Past,1
+15-08-2026,Akash Sharma,North,BalotraHub_BLO_PL,FK,Present,538
+15-08-2026,Akash Sharma,North,BeawarHub_BEA_PL,EXT,Future,1
+15-08-2026,Akash Sharma,North,BeawarHub_BEA_PL,FK,Present,185
+15-08-2026,Akash Sharma,North,BhankrotaHub_JAI_PL,EXT,Past,20
+15-08-2026,Akash Sharma,North,BhankrotaHub_JAI_PL,EXT,Present,35
+15-08-2026,Akash Sharma,North,BhankrotaHub_JAI_PL,FK,Future,294
+15-08-2026,Akash Sharma,North,BhankrotaHub_JAI_PL,FK,Past,103
+15-08-2026,Akash Sharma,North,BhankrotaHub_JAI_PL,FK,Present,20885
+15-08-2026,Akash Sharma,North,BhankrotaHub_JAI_PL,MYE,Future,282
+15-08-2026,Akash Sharma,North,BhankrotaHub_JAI_PL,MYE,Present,1137
+15-08-2026,Akash Sharma,North,BhankrotaHub_JAI_PL,MYS,Future,1
+15-08-2026,Akash Sharma,North,BhankrotaHub_JAI_PL,MYS,Past,1
+15-08-2026,Akash Sharma,North,BhankrotaHub_JAI_PL,MYS,Present,2446
+15-08-2026,Akash Sharma,North,BharatpurHub_BTP_PL,EXT,Past,10
+15-08-2026,Akash Sharma,North,BharatpurHub_BTP_PL,EXT,Present,23
+15-08-2026,Akash Sharma,North,BharatpurHub_BTP_PL,FK,Future,11
+15-08-2026,Akash Sharma,North,BharatpurHub_BTP_PL,FK,Present,399
+15-08-2026,Akash Sharma,North,BhilwaraHub_BLW_PL,EXT,Future,5
+15-08-2026,Akash Sharma,North,BhilwaraHub_BLW_PL,EXT,Past,1
+15-08-2026,Akash Sharma,North,BhilwaraHub_BLW_PL,EXT,Present,112
+15-08-2026,Akash Sharma,North,BhilwaraHub_BLW_PL,FK,Future,65
+15-08-2026,Akash Sharma,North,BhilwaraHub_BLW_PL,FK,Past,20
+15-08-2026,Akash Sharma,North,BhilwaraHub_BLW_PL,FK,Present,5996
+15-08-2026,Akash Sharma,North,BhilwaraHub_BLW_PL,MYE,Future,23
+15-08-2026,Akash Sharma,North,BhilwaraHub_BLW_PL,MYE,Past,1
+15-08-2026,Akash Sharma,North,BhilwaraHub_BLW_PL,MYE,Present,65
+15-08-2026,Akash Sharma,North,BhiwadiHub_DHR_PL,EXT,Past,6
+15-08-2026,Akash Sharma,North,BhiwadiHub_DHR_PL,EXT,Present,11
+15-08-2026,Akash Sharma,North,BhiwadiHub_DHR_PL,FK,Present,7
+15-08-2026,Akash Sharma,North,BikanerHub_BKB_PL,EXT,Future,8
+15-08-2026,Akash Sharma,North,BikanerHub_BKB_PL,EXT,Past,4
+15-08-2026,Akash Sharma,North,BikanerHub_BKB_PL,EXT,Present,23
+15-08-2026,Akash Sharma,North,BikanerHub_BKB_PL,FK,Future,618
+15-08-2026,Akash Sharma,North,BikanerHub_BKB_PL,FK,Past,12
+15-08-2026,Akash Sharma,North,BikanerHub_BKB_PL,FK,Present,2646
+15-08-2026,Akash Sharma,North,BikanerHub_BKB_PL,MYE,Future,4
+15-08-2026,Akash Sharma,North,BikanerHub_BKB_PL,MYE,Present,5
+15-08-2026,Akash Sharma,North,ChoumuHub_JAI_PL,EXT,Present,2
+15-08-2026,Akash Sharma,North,ChoumuHub_JAI_PL,FK,Future,19
+15-08-2026,Akash Sharma,North,ChoumuHub_JAI_PL,FK,Past,3
+15-08-2026,Akash Sharma,North,ChoumuHub_JAI_PL,FK,Present,569
+15-08-2026,Akash Sharma,North,DholpurHub_DLP_PL,EXT,Present,1
+15-08-2026,Akash Sharma,North,HanumangarhHub_HAN_PL,EXT,Future,1
+15-08-2026,Akash Sharma,North,HanumangarhHub_HAN_PL,FK,Future,31
+15-08-2026,Akash Sharma,North,HanumangarhHub_HAN_PL,FK,Present,222
+15-08-2026,Akash Sharma,North,HanumangarhHub_HAN_PL,MYE,Future,2
+15-08-2026,Akash Sharma,North,HawamahalHub_JAI_PL,EXT,Future,3
+15-08-2026,Akash Sharma,North,HawamahalHub_JAI_PL,EXT,Past,2
+15-08-2026,Akash Sharma,North,HawamahalHub_JAI_PL,EXT,Present,39
+15-08-2026,Akash Sharma,North,HawamahalHub_JAI_PL,FK,Future,517
+15-08-2026,Akash Sharma,North,HawamahalHub_JAI_PL,FK,Past,9
+15-08-2026,Akash Sharma,North,HawamahalHub_JAI_PL,FK,Present,10317
+15-08-2026,Akash Sharma,North,HawamahalHub_JAI_PL,MYE,Future,7
+15-08-2026,Akash Sharma,North,HawamahalHub_JAI_PL,MYE,Present,242
+15-08-2026,Akash Sharma,North,HawamahalHub_JAI_PL,MYS,Past,1
+15-08-2026,Akash Sharma,North,HawamahalHub_JAI_PL,MYS,Present,547
+15-08-2026,Akash Sharma,North,IdentifyPlusTonkODH_TNK_PL,EXT,Future,1
+15-08-2026,Akash Sharma,North,IdentifyPlusTonkODH_TNK_PL,EXT,Present,1
+15-08-2026,Akash Sharma,North,IdentifyPlusTonkODH_TNK_PL,FK,Past,91
+15-08-2026,Akash Sharma,North,JaipurHub_JAI_PL,EXT,Future,10
+15-08-2026,Akash Sharma,North,JaipurHub_JAI_PL,EXT,Past,31
+15-08-2026,Akash Sharma,North,JaipurHub_JAI_PL,EXT,Present,196
+15-08-2026,Akash Sharma,North,JaipurHub_JAI_PL,FK,Future,891
+15-08-2026,Akash Sharma,North,JaipurHub_JAI_PL,FK,Past,470
+15-08-2026,Akash Sharma,North,JaipurHub_JAI_PL,FK,Present,30770
+15-08-2026,Akash Sharma,North,JaipurHub_JAI_PL,MYE,Future,314
+15-08-2026,Akash Sharma,North,JaipurHub_JAI_PL,MYE,Past,21
+15-08-2026,Akash Sharma,North,JaipurHub_JAI_PL,MYE,Present,941
+15-08-2026,Akash Sharma,North,JaipurHub_JAI_PL,MYS,Future,38
+15-08-2026,Akash Sharma,North,JaipurHub_JAI_PL,MYS,Present,3011
+15-08-2026,Akash Sharma,North,JhunjhunuHub_JNJ_PL,EXT,Present,5
+15-08-2026,Akash Sharma,North,JhunjhunuHub_JNJ_PL,FK,Future,4
+15-08-2026,Akash Sharma,North,JhunjhunuHub_JNJ_PL,FK,Present,60
+15-08-2026,Akash Sharma,North,JhunjhunuHub_JNJ_PL,MYE,Present,3
+15-08-2026,Akash Sharma,North,JodhpurHub_JDH_PL,EXT,Future,2
+15-08-2026,Akash Sharma,North,JodhpurHub_JDH_PL,EXT,Past,134
+15-08-2026,Akash Sharma,North,JodhpurHub_JDH_PL,EXT,Present,143
+15-08-2026,Akash Sharma,North,JodhpurHub_JDH_PL,FK,Future,115
+15-08-2026,Akash Sharma,North,JodhpurHub_JDH_PL,FK,Past,27
+15-08-2026,Akash Sharma,North,JodhpurHub_JDH_PL,FK,Present,9054
+15-08-2026,Akash Sharma,North,JodhpurHub_JDH_PL,MYE,Future,6
+15-08-2026,Akash Sharma,North,JodhpurHub_JDH_PL,MYE,Past,9
+15-08-2026,Akash Sharma,North,JodhpurHub_JDH_PL,MYE,Present,9
+15-08-2026,Akash Sharma,North,KotaHub_KTU_PL,EXT,Past,2
+15-08-2026,Akash Sharma,North,KotaHub_KTU_PL,EXT,Present,46
+15-08-2026,Akash Sharma,North,KotaHub_KTU_PL,FK,Future,294
+15-08-2026,Akash Sharma,North,KotaHub_KTU_PL,FK,Past,4
+15-08-2026,Akash Sharma,North,KotaHub_KTU_PL,FK,Present,857
+15-08-2026,Akash Sharma,North,KotaHub_KTU_PL,MYE,Past,1
+15-08-2026,Akash Sharma,North,KotaHub_KTU_PL,MYE,Present,6
+15-08-2026,Akash Sharma,North,MakranaHub_MAK_PL,FK,Future,3
+15-08-2026,Akash Sharma,North,MakranaHub_MAK_PL,FK,Present,256
+15-08-2026,Akash Sharma,North,MakranaHub_MAK_PL,MYE,Future,11
+15-08-2026,Akash Sharma,North,MakranaHub_MAK_PL,MYE,Present,45
+15-08-2026,Akash Sharma,North,MalviyaNagarhub_JAI_PL,EXT,Future,16
+15-08-2026,Akash Sharma,North,MalviyaNagarhub_JAI_PL,EXT,Past,3
+15-08-2026,Akash Sharma,North,MalviyaNagarhub_JAI_PL,EXT,Present,82
+15-08-2026,Akash Sharma,North,MalviyaNagarhub_JAI_PL,FK,Future,3255
+15-08-2026,Akash Sharma,North,MalviyaNagarhub_JAI_PL,FK,Past,60
+15-08-2026,Akash Sharma,North,MalviyaNagarhub_JAI_PL,FK,Present,10433
+15-08-2026,Akash Sharma,North,MalviyaNagarhub_JAI_PL,MYE,Future,43
+15-08-2026,Akash Sharma,North,MalviyaNagarhub_JAI_PL,MYE,Present,765
+15-08-2026,Akash Sharma,North,MalviyaNagarhub_JAI_PL,MYS,Future,84
+15-08-2026,Akash Sharma,North,MalviyaNagarhub_JAI_PL,MYS,Past,1
+15-08-2026,Akash Sharma,North,MalviyaNagarhub_JAI_PL,MYS,Present,709
+15-08-2026,Akash Sharma,North,PaliHub_PAL_PL,EXT,Future,2
+15-08-2026,Akash Sharma,North,PaliHub_PAL_PL,EXT,Past,21
+15-08-2026,Akash Sharma,North,PaliHub_PAL_PL,EXT,Present,27
+15-08-2026,Akash Sharma,North,PaliHub_PAL_PL,FK,Future,32
+15-08-2026,Akash Sharma,North,PaliHub_PAL_PL,FK,Present,799
+15-08-2026,Akash Sharma,North,PilaniHub_PIL_PL,EXT,Present,5
+15-08-2026,Akash Sharma,North,PilaniHub_PIL_PL,FK,Past,1
+15-08-2026,Akash Sharma,North,PilaniHub_PIL_PL,FK,Present,110
+15-08-2026,Akash Sharma,North,ShyamnagarHub_JAI_PL,FK,Past,18
+15-08-2026,Akash Sharma,North,ShyamnagarHub_JAI_PL,FK,Present,693
+15-08-2026,Akash Sharma,North,SikarHub_SIK_PL,EXT,Past,11
+15-08-2026,Akash Sharma,North,SikarHub_SIK_PL,EXT,Present,347
+15-08-2026,Akash Sharma,North,SikarHub_SIK_PL,FK,Present,75
+15-08-2026,Akash Sharma,North,SitapuraHub_JAI_PL,EXT,Future,7
+15-08-2026,Akash Sharma,North,SitapuraHub_JAI_PL,EXT,Past,4
+15-08-2026,Akash Sharma,North,SitapuraHub_JAI_PL,EXT,Present,154
+15-08-2026,Akash Sharma,North,SitapuraHub_JAI_PL,FK,Future,1039
+15-08-2026,Akash Sharma,North,SitapuraHub_JAI_PL,FK,Past,89
+15-08-2026,Akash Sharma,North,SitapuraHub_JAI_PL,FK,Present,36691
+15-08-2026,Akash Sharma,North,SitapuraHub_JAI_PL,MYE,Future,329
+15-08-2026,Akash Sharma,North,SitapuraHub_JAI_PL,MYE,Past,43
+15-08-2026,Akash Sharma,North,SitapuraHub_JAI_PL,MYE,Present,2044
+15-08-2026,Akash Sharma,North,SitapuraHub_JAI_PL,MYS,Future,27
+15-08-2026,Akash Sharma,North,SitapuraHub_JAI_PL,MYS,Past,126
+15-08-2026,Akash Sharma,North,SitapuraHub_JAI_PL,MYS,Present,7176
+15-08-2026,Akash Sharma,North,SriGanganagarHub_SGN_PL,EXT,Past,1
+15-08-2026,Akash Sharma,North,SriGanganagarHub_SGN_PL,EXT,Present,14
+15-08-2026,Akash Sharma,North,SriGanganagarHub_SGN_PL,FK,Past,40
+15-08-2026,Akash Sharma,North,SriGanganagarHub_SGN_PL,FK,Present,553
+15-08-2026,Akash Sharma,North,SriGanganagarHub_SGN_PL,MYE,Future,1
+15-08-2026,Akash Sharma,North,SriGanganagarHub_SGN_PL,MYE,Present,2
+15-08-2026,Akash Sharma,North,UdaipurHub_UDR_PL,EXT,Future,5
+15-08-2026,Akash Sharma,North,UdaipurHub_UDR_PL,EXT,Past,3
+15-08-2026,Akash Sharma,North,UdaipurHub_UDR_PL,EXT,Present,36
+15-08-2026,Akash Sharma,North,UdaipurHub_UDR_PL,FK,Future,3
+15-08-2026,Akash Sharma,North,UdaipurHub_UDR_PL,FK,Past,4
+15-08-2026,Akash Sharma,North,UdaipurHub_UDR_PL,FK,Present,258
+15-08-2026,Akash Sharma,North,UdaipurHub_UDR_PL,MYE,Future,10
+15-08-2026,Akash Sharma,North,UdaipurHub_UDR_PL,MYE,Past,5
+15-08-2026,Akash Sharma,North,UdaipurHub_UDR_PL,MYE,Present,13
+15-08-2026,Akash Sharma,North,VKIAHub_JAI_PL,EXT,Future,5
+15-08-2026,Akash Sharma,North,VKIAHub_JAI_PL,EXT,Past,20
+15-08-2026,Akash Sharma,North,VKIAHub_JAI_PL,EXT,Present,98
+15-08-2026,Akash Sharma,North,VKIAHub_JAI_PL,FK,Future,3393
+15-08-2026,Akash Sharma,North,VKIAHub_JAI_PL,FK,Past,266
+15-08-2026,Akash Sharma,North,VKIAHub_JAI_PL,FK,Present,60410
+15-08-2026,Akash Sharma,North,VKIAHub_JAI_PL,MYE,Future,132
+15-08-2026,Akash Sharma,North,VKIAHub_JAI_PL,MYE,Past,1
+15-08-2026,Akash Sharma,North,VKIAHub_JAI_PL,MYE,Present,177
+15-08-2026,Akash Sharma,North,VKIAHub_JAI_PL,MYS,Future,235
+15-08-2026,Akash Sharma,North,VKIAHub_JAI_PL,MYS,Present,606
+15-08-2026,Amitava Dutta,East,ADITYAPURHUB_IXW_PL,EXT,Present,2
+15-08-2026,Amitava Dutta,East,ADITYAPURHUB_IXW_PL,FK,Present,144
+15-08-2026,Amitava Dutta,East,ANISHABADHUB_PAT_PL,EXT,Present,1
+15-08-2026,Amitava Dutta,East,ANISHABADHUB_PAT_PL,FK,Present,7
+15-08-2026,Amitava Dutta,East,ArrahHub_ARH_PL,EXT,Future,3
+15-08-2026,Amitava Dutta,East,ArrahHub_ARH_PL,EXT,Past,1
+15-08-2026,Amitava Dutta,East,ArrahHub_ARH_PL,EXT,Present,8
+15-08-2026,Amitava Dutta,East,ArrahHub_ARH_PL,FK,Present,6
+15-08-2026,Amitava Dutta,East,AshokNagarHub_PAT_PL,EXT,Future,2
+15-08-2026,Amitava Dutta,East,AshokNagarHub_PAT_PL,EXT,Present,2
+15-08-2026,Amitava Dutta,East,AshokNagarHub_PAT_PL,FK,Present,22
+15-08-2026,Amitava Dutta,East,AshokNagarHub_PAT_PL,MYE,Future,4
+15-08-2026,Amitava Dutta,East,BaleshwarHub_BAW_PL,FK,Present,11
+15-08-2026,Amitava Dutta,East,BaripadaHub_BPO_PL,EXT,Future,2
+15-08-2026,Amitava Dutta,East,BaripadaHub_BPO_PL,EXT,Present,5
+15-08-2026,Amitava Dutta,East,BaripadaHub_BPO_PL,MYE,Future,2
+15-08-2026,Amitava Dutta,East,BaripadaHub_BPO_PL,MYE,Present,1
+15-08-2026,Amitava Dutta,East,BegusaraiHub_BGI_PL,FK,Future,16
+15-08-2026,Amitava Dutta,East,BegusaraiHub_BGI_PL,FK,Present,19
+15-08-2026,Amitava Dutta,East,BegusaraiHub_BGI_PL,MYE,Future,1
+15-08-2026,Amitava Dutta,East,BEHEAHUB_ARH_PL,FK,Present,5
+15-08-2026,Amitava Dutta,East,BerhampurHub_BMP_PL,EXT,Past,1
+15-08-2026,Amitava Dutta,East,BerhampurHub_BMP_PL,EXT,Present,4
+15-08-2026,Amitava Dutta,East,BerhampurHub_BMP_PL,MYE,Present,2
+15-08-2026,Amitava Dutta,East,BhadrakHub_BHC_PL,EXT,Present,1
+15-08-2026,Amitava Dutta,East,BhagalpurHub_BGP_PL,EXT,Present,14
+15-08-2026,Amitava Dutta,East,BhagalpurHub_BGP_PL,FK,Present,176
+15-08-2026,Amitava Dutta,East,BhawanipatnaHub_BWP_PL,EXT,Past,1
+15-08-2026,Amitava Dutta,East,BhilaiHub_BIA_PL,EXT,Present,3
+15-08-2026,Amitava Dutta,East,BhilaiHub_BIA_PL,FK,Past,1
+15-08-2026,Amitava Dutta,East,BhilaiHub_BIA_PL,FK,Present,343
+15-08-2026,Amitava Dutta,East,BhilaiHub_BIA_PL,MYE,Future,2
+15-08-2026,Amitava Dutta,East,BhilaiHub_BIA_PL,MYE,Present,4
+15-08-2026,Amitava Dutta,East,BhubaneswarHub_BBI_PL,EXT,Past,2
+15-08-2026,Amitava Dutta,East,BhubaneswarHub_BBI_PL,MYE,Future,3
+15-08-2026,Amitava Dutta,East,BhubaneswarHub_BBI_PL,MYE,Present,2
+15-08-2026,Amitava Dutta,East,BiharSharifHub_BSF_PL,FK,Past,1
+15-08-2026,Amitava Dutta,East,BiharSharifHub_BSF_PL,FK,Present,239
+15-08-2026,Amitava Dutta,East,BokaroHub_BKO_PL,FK,Present,8
+15-08-2026,Amitava Dutta,East,BokaroHub_BKO_PL,MYE,Future,1
+15-08-2026,Amitava Dutta,East,BolangirHub_BLG_PL,EXT,Future,1
+15-08-2026,Amitava Dutta,East,BolangirHub_BLG_PL,EXT,Past,3
+15-08-2026,Amitava Dutta,East,BolangirHub_BLG_PL,FK,Present,167
+15-08-2026,Amitava Dutta,East,CABTHaladiapadarODH_BMP_PL,FK,Future,4
+15-08-2026,Amitava Dutta,East,CABTTIRTOLODH_TTL_PL,FK,Present,491
+15-08-2026,Amitava Dutta,East,CABTTopchanchiODH_TCH_PL,FK,Present,17
+15-08-2026,Amitava Dutta,East,ChaibasaHub_CBS_PL,FK,Present,31
+15-08-2026,Amitava Dutta,East,ChandraSekharpurHub_BBI_PL,EXT,Present,1
+15-08-2026,Amitava Dutta,East,ChandraSekharpurHub_BBI_PL,FK,Present,8
+15-08-2026,Amitava Dutta,East,ChandraSekharpurHub_BBI_PL,MYE,Future,2
+15-08-2026,Amitava Dutta,East,ChandraSekharpurHub_BBI_PL,MYE,Past,1
+15-08-2026,Amitava Dutta,East,ChandraSekharpurHub_BBI_PL,MYE,Present,4
+15-08-2026,Amitava Dutta,East,CuttackCDAHUB_CTC_PL,EXT,Present,1
+15-08-2026,Amitava Dutta,East,CuttackHub_BBI_PL,EXT,Future,1
+15-08-2026,Amitava Dutta,East,CuttackHub_BBI_PL,EXT,Present,23
+15-08-2026,Amitava Dutta,East,CuttackHub_BBI_PL,FK,Present,4
+15-08-2026,Amitava Dutta,East,DaltonganjHub_DTO_PL,FK,Present,57
+15-08-2026,Amitava Dutta,East,DanapurHub_DNR_PL,EXT,Future,19
+15-08-2026,Amitava Dutta,East,DanapurHub_DNR_PL,EXT,Past,8
+15-08-2026,Amitava Dutta,East,DanapurHub_DNR_PL,EXT,Present,27
+15-08-2026,Amitava Dutta,East,DanapurHub_DNR_PL,FK,Past,4
+15-08-2026,Amitava Dutta,East,DanapurHub_DNR_PL,FK,Present,832
+15-08-2026,Amitava Dutta,East,DanapurHub_DNR_PL,MYE,Future,3
+15-08-2026,Amitava Dutta,East,DanapurHub_DNR_PL,MYE,Past,5
+15-08-2026,Amitava Dutta,East,DanapurHub_DNR_PL,MYE,Present,1
+15-08-2026,Amitava Dutta,East,DarbhangaHub_DBG_PL,EXT,Future,1
+15-08-2026,Amitava Dutta,East,DarbhangaHub_DBG_PL,EXT,Past,2
+15-08-2026,Amitava Dutta,East,DarbhangaHub_DBG_PL,EXT,Present,9
+15-08-2026,Amitava Dutta,East,DarbhangaHub_DBG_PL,FK,Future,20
+15-08-2026,Amitava Dutta,East,DarbhangaHub_DBG_PL,FK,Present,57
+15-08-2026,Amitava Dutta,East,DeogharHub_DGH_PL,EXT,Future,5
+15-08-2026,Amitava Dutta,East,DeogharHub_DGH_PL,EXT,Present,3
+15-08-2026,Amitava Dutta,East,DeogharHub_DGH_PL,FK,Past,3
+15-08-2026,Amitava Dutta,East,DeogharHub_DGH_PL,FK,Present,5
+15-08-2026,Amitava Dutta,East,DumkaHub_DMK_PL,EXT,Future,3
+15-08-2026,Amitava Dutta,East,DumkaHub_DMK_PL,EXT,Present,4
+15-08-2026,Amitava Dutta,East,DumkaHub_DMK_PL,MYE,Future,4
+15-08-2026,Amitava Dutta,East,ElasticRunDhamtariODH_DMT_PL,EXT,Past,1
+15-08-2026,Amitava Dutta,East,ElasticRunDhamtariODH_DMT_PL,FK,Present,33
+15-08-2026,Amitava Dutta,East,GandhiNagarODH_DBD_PL,EXT,Future,1
+15-08-2026,Amitava Dutta,East,GandhiNagarODH_DBD_PL,EXT,Present,1
+15-08-2026,Amitava Dutta,East,GayaHub_GAY_PL,EXT,Future,2
+15-08-2026,Amitava Dutta,East,GayaHub_GAY_PL,EXT,Past,6
+15-08-2026,Amitava Dutta,East,GayaHub_GAY_PL,EXT,Present,10
+15-08-2026,Amitava Dutta,East,GayaHub_GAY_PL,FK,Past,7
+15-08-2026,Amitava Dutta,East,GayaHub_GAY_PL,FK,Present,381
+15-08-2026,Amitava Dutta,East,GiridihHub_GRD_PL,EXT,Future,1
+15-08-2026,Amitava Dutta,East,GiridihHub_GRD_PL,EXT,Past,1
+15-08-2026,Amitava Dutta,East,GOLMURIHUB_IXW_PL,FK,Present,166
+15-08-2026,Amitava Dutta,East,GopalganjHub_GOG_PL,FK,Present,73
+15-08-2026,Amitava Dutta,East,GopalganjHub_GOG_PL,MYE,Future,2
+15-08-2026,Amitava Dutta,East,GopalganjHub_GOG_PL,MYE,Present,1
+15-08-2026,Amitava Dutta,East,HajiGanjHub_PAT_PL,FK,Future,1
+15-08-2026,Amitava Dutta,East,HajiGanjHub_PAT_PL,FK,Present,70
+15-08-2026,Amitava Dutta,East,HajipurHub_HJP_PL,FK,Present,126
+15-08-2026,Amitava Dutta,East,HarmuHub_IXR_PL,EXT,Future,1
+15-08-2026,Amitava Dutta,East,HarmuHub_IXR_PL,EXT,Present,2
+15-08-2026,Amitava Dutta,East,HISUAHUB_NWD_PL,FK,Present,537
+15-08-2026,Amitava Dutta,East,JAGDALPURHUB_JGR_PL,FK,Present,71
+15-08-2026,Amitava Dutta,East,JamshedpurHub_IXW_PL,EXT,Present,11
+15-08-2026,Amitava Dutta,East,JamshedpurHub_IXW_PL,FK,Future,3
+15-08-2026,Amitava Dutta,East,JamshedpurHub_IXW_PL,FK,Present,6
+15-08-2026,Amitava Dutta,East,JamshedpurHub_IXW_PL,MYE,Past,2
+15-08-2026,Amitava Dutta,East,JamshedpurHub_IXW_PL,MYE,Present,11
+15-08-2026,Amitava Dutta,East,JhariaHub_DBD_PL,FK,Present,11
+15-08-2026,Amitava Dutta,East,KankarBaghHub_PAT_PL,EXT,Past,8
+15-08-2026,Amitava Dutta,East,KankarBaghHub_PAT_PL,EXT,Present,46
+15-08-2026,Amitava Dutta,East,KankarBaghHub_PAT_PL,FK,Future,16
+15-08-2026,Amitava Dutta,East,KankarBaghHub_PAT_PL,FK,Present,6
+15-08-2026,Amitava Dutta,East,KatiharHub_KIR_PL,EXT,Future,6
+15-08-2026,Amitava Dutta,East,KatiharHub_KIR_PL,EXT,Past,3
+15-08-2026,Amitava Dutta,East,KatiharHub_KIR_PL,EXT,Present,10
+15-08-2026,Amitava Dutta,East,KatiharHub_KIR_PL,FK,Present,18
+15-08-2026,Amitava Dutta,East,KatiharHub_KIR_PL,MYE,Future,1
+15-08-2026,Amitava Dutta,East,KendujharHub_KDJ_PL,EXT,Future,7
+15-08-2026,Amitava Dutta,East,KendujharHub_KDJ_PL,FK,Present,51
+15-08-2026,Amitava Dutta,East,KhandagiriHub_BBI_PL,EXT,Future,25
+15-08-2026,Amitava Dutta,East,KhandagiriHub_BBI_PL,EXT,Past,1
+15-08-2026,Amitava Dutta,East,KhandagiriHub_BBI_PL,EXT,Present,106
+15-08-2026,Amitava Dutta,East,KhandagiriHub_BBI_PL,FK,Future,1
+15-08-2026,Amitava Dutta,East,KhandagiriHub_BBI_PL,FK,Past,2
+15-08-2026,Amitava Dutta,East,KhandagiriHub_BBI_PL,FK,Present,18
+15-08-2026,Amitava Dutta,East,KhurdaHub_KUD_PL,EXT,Future,297
+15-08-2026,Amitava Dutta,East,KhurdaHub_KUD_PL,EXT,Present,111
+15-08-2026,Amitava Dutta,East,KishanganjHub_KNE_PL,FK,Present,39
+15-08-2026,Amitava Dutta,East,KokarHub_IXR_PL,EXT,Future,1
+15-08-2026,Amitava Dutta,East,KokarHub_IXR_PL,EXT,Present,2
+15-08-2026,Amitava Dutta,East,KokarHub_IXR_PL,MYE,Future,4
+15-08-2026,Amitava Dutta,East,KokarHub_IXR_PL,MYE,Past,6
+15-08-2026,Amitava Dutta,East,KokarHub_IXR_PL,MYE,Present,9
+15-08-2026,Amitava Dutta,East,KorbaHub_KOR_PL,EXT,Past,4
+15-08-2026,Amitava Dutta,East,KorbaHub_KOR_PL,EXT,Present,1
+15-08-2026,Amitava Dutta,East,KorbaHub_KOR_PL,FK,Present,9
+15-08-2026,Amitava Dutta,East,MadhepuraHub_DMH_PL,EXT,Future,1
+15-08-2026,Amitava Dutta,East,MadhepuraHub_DMH_PL,EXT,Present,6
+15-08-2026,Amitava Dutta,East,MadhupurHub_MDP_PL,EXT,Present,1
+15-08-2026,Amitava Dutta,East,MithanpuraHub_MZF_PL,EXT,Future,6
+15-08-2026,Amitava Dutta,East,MithanpuraHub_MZF_PL,EXT,Present,4
+15-08-2026,Amitava Dutta,East,MithanpuraHub_MZF_PL,FK,Present,48
+15-08-2026,Amitava Dutta,East,MithanpuraHub_MZF_PL,MYE,Future,4
+15-08-2026,Amitava Dutta,East,MithanpuraHub_MZF_PL,MYE,Past,1
+15-08-2026,Amitava Dutta,East,MithanpuraHub_MZF_PL,MYE,Present,4
+15-08-2026,Amitava Dutta,East,MotihariHub_MTI_PL,EXT,Future,1
+15-08-2026,Amitava Dutta,East,MotihariHub_MTI_PL,EXT,Past,4
+15-08-2026,Amitava Dutta,East,MotihariHub_MTI_PL,MYE,Future,2
+15-08-2026,Amitava Dutta,East,MotihariHub_MTI_PL,MYE,Past,2
+15-08-2026,Amitava Dutta,East,MotihariHub_MTI_PL,MYE,Present,2
+15-08-2026,Amitava Dutta,East,MungerHub_JMP_PL,EXT,Future,1
+15-08-2026,Amitava Dutta,East,MungerHub_JMP_PL,EXT,Present,7
+15-08-2026,Amitava Dutta,East,MuzaffarpurHub_MZF_PL,EXT,Past,1
+15-08-2026,Amitava Dutta,East,MuzaffarpurHub_MZF_PL,FK,Past,4
+15-08-2026,Amitava Dutta,East,MuzaffarpurHub_MZF_PL,FK,Present,61
+15-08-2026,Amitava Dutta,East,NayagarhHub_NYG_PL,EXT,Future,3
+15-08-2026,Amitava Dutta,East,NayagarhHub_NYG_PL,EXT,Present,5
+15-08-2026,Amitava Dutta,East,NayagarhHub_NYG_PL,FK,Present,2
+15-08-2026,Amitava Dutta,East,NirsaHub_NRA_PL,FK,Future,4
+15-08-2026,Amitava Dutta,East,NirsaHub_NRA_PL,FK,Present,9
+15-08-2026,Amitava Dutta,East,PanikoiliHub_JJK_PL,EXT,Future,2
+15-08-2026,Amitava Dutta,East,PanikoiliHub_JJK_PL,EXT,Present,5
+15-08-2026,Amitava Dutta,East,PanikoiliHub_JJK_PL,FK,Present,11
+15-08-2026,Amitava Dutta,East,PuriHub_PUR_PL,EXT,Future,2
+15-08-2026,Amitava Dutta,East,PuriHub_PUR_PL,EXT,Present,4
+15-08-2026,Amitava Dutta,East,PuriHub_PUR_PL,FK,Present,158
+15-08-2026,Amitava Dutta,East,PuriHub_PUR_PL,MYE,Future,1
+15-08-2026,Amitava Dutta,East,PurniaHub_PRN_PL,FK,Present,3
+15-08-2026,Amitava Dutta,East,PurniaHub_PRN_PL,MYE,Future,1
+15-08-2026,Amitava Dutta,East,PurniaHub_PRN_PL,MYE,Past,1
+15-08-2026,Amitava Dutta,East,RaipurCityHub_RPR_PL,EXT,Past,18
+15-08-2026,Amitava Dutta,East,RaipurCityHub_RPR_PL,EXT,Present,41
+15-08-2026,Amitava Dutta,East,RaipurCityHub_RPR_PL,FK,Future,1
+15-08-2026,Amitava Dutta,East,RaipurCityHub_RPR_PL,FK,Present,21
+15-08-2026,Amitava Dutta,East,RaipurCityHub_RPR_PL,MYE,Future,3
+15-08-2026,Amitava Dutta,East,RaipurCityHub_RPR_PL,MYE,Past,6
+15-08-2026,Amitava Dutta,East,RaipurCityHub_RPR_PL,MYE,Present,8
+15-08-2026,Amitava Dutta,East,RajabazarHub_PAT_PL,EXT,Present,1
+15-08-2026,Amitava Dutta,East,RajabazarHub_PAT_PL,FK,Present,50
+15-08-2026,Amitava Dutta,East,RajabazarHub_PAT_PL,MYE,Future,2
+15-08-2026,Amitava Dutta,East,RajabazarHub_PAT_PL,MYE,Past,1
+15-08-2026,Amitava Dutta,East,RajabazarHub_PAT_PL,MYE,Present,5
+15-08-2026,Amitava Dutta,East,RajivNagarHub_PAT_PL,FK,Future,1
+15-08-2026,Amitava Dutta,East,RajivNagarHub_PAT_PL,FK,Present,157
+15-08-2026,Amitava Dutta,East,RAJNANDGAONHUB_RJN_PL,FK,Present,144
+15-08-2026,Amitava Dutta,East,RatanpurHub_PAB_PL,EXT,Future,1
+15-08-2026,Amitava Dutta,East,RatanpurHub_PAB_PL,EXT,Past,2
+15-08-2026,Amitava Dutta,East,RatanpurHub_PAB_PL,EXT,Present,9
+15-08-2026,Amitava Dutta,East,RatanpurHub_PAB_PL,FK,Future,1
+15-08-2026,Amitava Dutta,East,RatanpurHub_PAB_PL,FK,Present,121
+15-08-2026,Amitava Dutta,East,RAXAULHUB_RXL_PL,FK,Future,6
+15-08-2026,Amitava Dutta,East,RAXAULHUB_RXL_PL,FK,Present,40
+15-08-2026,Amitava Dutta,East,RayagadaHub_RGD_PL,EXT,Present,1
+15-08-2026,Amitava Dutta,East,RourkelaHub_RRK_PL,EXT,Future,1
+15-08-2026,Amitava Dutta,East,RourkelaHub_RRK_PL,FK,Future,105
+15-08-2026,Amitava Dutta,East,RourkelaHub_RRK_PL,FK,Past,1
+15-08-2026,Amitava Dutta,East,RourkelaHub_RRK_PL,FK,Present,1
+15-08-2026,Amitava Dutta,East,RourkelaHub_RRK_PL,MYE,Future,1
+15-08-2026,Amitava Dutta,East,SamastipurHub_SMP_PL,EXT,Past,2
+15-08-2026,Amitava Dutta,East,SamastipurHub_SMP_PL,EXT,Present,7
+15-08-2026,Amitava Dutta,East,SamastipurHub_SMP_PL,FK,Present,32
+15-08-2026,Amitava Dutta,East,SambalpurHub_SBP_PL,EXT,Future,1
+15-08-2026,Amitava Dutta,East,SambalpurHub_SBP_PL,FK,Past,6
+15-08-2026,Amitava Dutta,East,SambalpurHub_SBP_PL,FK,Present,491
+15-08-2026,Amitava Dutta,East,SambalpurHub_SBP_PL,MYE,Future,1
+15-08-2026,Amitava Dutta,East,SANDALPURHUB_PAT_PL,EXT,Present,11
+15-08-2026,Amitava Dutta,East,SANDALPURHUB_PAT_PL,FK,Past,5
+15-08-2026,Amitava Dutta,East,SANDALPURHUB_PAT_PL,FK,Present,87
+15-08-2026,Amitava Dutta,East,SindriSplitODH_DBD_PL,EXT,Past,3
+15-08-2026,Amitava Dutta,East,SindriSplitODH_DBD_PL,EXT,Present,1
+15-08-2026,Amitava Dutta,East,SitamarhiHub_SMI_PL,EXT,Future,12
+15-08-2026,Amitava Dutta,East,SitamarhiHub_SMI_PL,EXT,Present,4
+15-08-2026,Amitava Dutta,East,SitamarhiHub_SMI_PL,MYE,Future,1
+15-08-2026,Amitava Dutta,East,SitamarhiHub_SMI_PL,MYE,Present,1
+15-08-2026,Amitava Dutta,East,SiwanHub_SWN_PL,EXT,Present,4
+15-08-2026,Amitava Dutta,East,SiwanHub_SWN_PL,FK,Future,2
+15-08-2026,Amitava Dutta,East,SiwanHub_SWN_PL,FK,Present,12
+15-08-2026,Amitava Dutta,East,SundargarhHub_SDG_PL,EXT,Past,1
+15-08-2026,Amitava Dutta,East,VxpressDhanbadSplitODH_DBD_PL,FK,Future,6
+15-08-2026,Amitava Dutta,East,VxpressDhanbadSplitODH_DBD_PL,FK,Present,23
+15-08-2026,Amitava Dutta,East,VxpressSindriODH_SIN_PL,EXT,Future,1
+15-08-2026,Amitava Dutta,East,VxpressSindriODH_SIN_PL,EXT,Present,1
+15-08-2026,Amitava Dutta,East,VxpressSindriODH_SIN_PL,FK,Future,64
+15-08-2026,Amitava Dutta,East,VxpressSindriODH_SIN_PL,FK,Present,4
+15-08-2026,Amitava Dutta,East,ZeroMilePahariHub_PAT_PL,EXT,Future,604
+15-08-2026,Amitava Dutta,East,ZeroMilePahariHub_PAT_PL,EXT,Past,5
+15-08-2026,Amitava Dutta,East,ZeroMilePahariHub_PAT_PL,EXT,Present,338
+15-08-2026,Amitava Dutta,East,ZeroMilePahariHub_PAT_PL,FK,Past,62
+15-08-2026,Amitava Dutta,East,ZeroMilePahariHub_PAT_PL,FK,Present,183
+15-08-2026,Amitava Dutta,East,ZeroMilePahariHub_PAT_PL,MYE,Present,9
+15-08-2026,Ankur Sinha,West,AnandHub_AMD_PL,EXT,Future,10
+15-08-2026,Ankur Sinha,West,AnandHub_AMD_PL,EXT,Present,12
+15-08-2026,Ankur Sinha,West,AnandHub_AMD_PL,FK,Present,154
+15-08-2026,Ankur Sinha,West,Aslalihub_ASL_IPH_PL,EXT,Present,25
+15-08-2026,Ankur Sinha,West,Aslalihub_ASL_IPH_PL,FK,Future,15
+15-08-2026,Ankur Sinha,West,Aslalihub_ASL_IPH_PL,FK,Past,16
+15-08-2026,Ankur Sinha,West,Aslalihub_ASL_IPH_PL,FK,Present,863
+15-08-2026,Ankur Sinha,West,Aslalihub_ASL_IPH_PL,MYE,Future,24
+15-08-2026,Ankur Sinha,West,Aslalihub_ASL_IPH_PL,MYE,Present,18
+15-08-2026,Ankur Sinha,West,Aslalihub_ASL_IPH_PL,MYS,Present,6
+15-08-2026,Ankur Sinha,West,BharuchHub_BRH_PL,EXT,Future,2
+15-08-2026,Ankur Sinha,West,BharuchHub_BRH_PL,EXT,Past,1
+15-08-2026,Ankur Sinha,West,BharuchHub_BRH_PL,EXT,Present,21
+15-08-2026,Ankur Sinha,West,BharuchHub_BRH_PL,FK,Future,12
+15-08-2026,Ankur Sinha,West,BharuchHub_BRH_PL,FK,Present,366
+15-08-2026,Ankur Sinha,West,BhavnagarHub_BVG_PL,EXT,Future,342
+15-08-2026,Ankur Sinha,West,BhavnagarHub_BVG_PL,EXT,Past,1
+15-08-2026,Ankur Sinha,West,BhavnagarHub_BVG_PL,EXT,Present,863
+15-08-2026,Ankur Sinha,West,BhavnagarHub_BVG_PL,FK,Future,50
+15-08-2026,Ankur Sinha,West,BhavnagarHub_BVG_PL,FK,Past,5
+15-08-2026,Ankur Sinha,West,BhavnagarHub_BVG_PL,FK,Present,4600
+15-08-2026,Ankur Sinha,West,BhavnagarHub_BVG_PL,MYE,Future,1
+15-08-2026,Ankur Sinha,West,BhavnagarHub_BVG_PL,MYE,Present,9
+15-08-2026,Ankur Sinha,West,BhujHub_BHJ_PL,EXT,Past,5
+15-08-2026,Ankur Sinha,West,BhujHub_BHJ_PL,EXT,Present,2
+15-08-2026,Ankur Sinha,West,BhujHub_BHJ_PL,FK,Present,205
+15-08-2026,Ankur Sinha,West,BhujHub_BHJ_PL,MYE,Future,1
+15-08-2026,Ankur Sinha,West,ELASTICRUNMAHUVAODH_MHV_PL,EXT,Past,5
+15-08-2026,Ankur Sinha,West,ELASTICRUNMAHUVAODH_MHV_PL,FK,Present,59
+15-08-2026,Ankur Sinha,West,GandhidhamHub_GDM_PL,EXT,Past,3
+15-08-2026,Ankur Sinha,West,GandhidhamHub_GDM_PL,FK,Present,17
+15-08-2026,Ankur Sinha,West,GandhiNagarHub_GAN_PL,EXT,Future,8
+15-08-2026,Ankur Sinha,West,GandhiNagarHub_GAN_PL,EXT,Present,45
+15-08-2026,Ankur Sinha,West,GandhiNagarHub_GAN_PL,FK,Future,28
+15-08-2026,Ankur Sinha,West,GandhiNagarHub_GAN_PL,FK,Past,10
+15-08-2026,Ankur Sinha,West,GandhiNagarHub_GAN_PL,FK,Present,2029
+15-08-2026,Ankur Sinha,West,GandhiNagarHub_GAN_PL,MYE,Future,15
+15-08-2026,Ankur Sinha,West,GandhiNagarHub_GAN_PL,MYE,Present,11
+15-08-2026,Ankur Sinha,West,GondalHub_GDN_PL,EXT,Future,1
+15-08-2026,Ankur Sinha,West,GondalHub_GDN_PL,EXT,Past,2
+15-08-2026,Ankur Sinha,West,GondalHub_GDN_PL,EXT,Present,3
+15-08-2026,Ankur Sinha,West,GondalHub_GDN_PL,FK,Present,115
+15-08-2026,Ankur Sinha,West,Halolhub_HLL_PL,FK,Present,260
+15-08-2026,Ankur Sinha,West,HimmatnagarHub_HMT_PL,EXT,Present,1
+15-08-2026,Ankur Sinha,West,HimmatnagarHub_HMT_PL,FK,Past,8
+15-08-2026,Ankur Sinha,West,HimmatnagarHub_HMT_PL,FK,Present,9
+15-08-2026,Ankur Sinha,West,JamnagarHub_QGR_PL,EXT,Present,92
+15-08-2026,Ankur Sinha,West,JamnagarHub_QGR_PL,FK,Present,96
+15-08-2026,Ankur Sinha,West,JamnagarHub_QGR_PL,MYE,Future,54
+15-08-2026,Ankur Sinha,West,JamnagarHub_QGR_PL,MYE,Present,231
+15-08-2026,Ankur Sinha,West,JasdanHub_JSN_PL,FK,Present,104
+15-08-2026,Ankur Sinha,West,JunagadhHub_IXK_PL,EXT,Past,1
+15-08-2026,Ankur Sinha,West,JunagadhHub_IXK_PL,FK,Present,486
+15-08-2026,Ankur Sinha,West,LalparHub_LLP_PL,FK,Present,52
+15-08-2026,Ankur Sinha,West,ManinagarHub_ADI_PL,EXT,Future,179
+15-08-2026,Ankur Sinha,West,ManinagarHub_ADI_PL,EXT,Past,18
+15-08-2026,Ankur Sinha,West,ManinagarHub_ADI_PL,EXT,Present,153
+15-08-2026,Ankur Sinha,West,ManinagarHub_ADI_PL,FK,Future,398
+15-08-2026,Ankur Sinha,West,ManinagarHub_ADI_PL,FK,Past,18
+15-08-2026,Ankur Sinha,West,ManinagarHub_ADI_PL,FK,Present,8099
+15-08-2026,Ankur Sinha,West,ManinagarHub_ADI_PL,MYE,Future,1
+15-08-2026,Ankur Sinha,West,ManinagarHub_ADI_PL,MYE,Past,2
+15-08-2026,Ankur Sinha,West,ManinagarHub_ADI_PL,MYE,Present,175
+15-08-2026,Ankur Sinha,West,ManinagarHub_ADI_PL,MYS,Present,78
+15-08-2026,Ankur Sinha,West,MehsanaHub_MHN_PL,EXT,Future,3
+15-08-2026,Ankur Sinha,West,MehsanaHub_MHN_PL,EXT,Past,2
+15-08-2026,Ankur Sinha,West,MehsanaHub_MHN_PL,EXT,Present,8
+15-08-2026,Ankur Sinha,West,MehsanaHub_MHN_PL,FK,Future,9
+15-08-2026,Ankur Sinha,West,MehsanaHub_MHN_PL,FK,Present,196
+15-08-2026,Ankur Sinha,West,MehsanaHub_MHN_PL,MYE,Future,2
+15-08-2026,Ankur Sinha,West,MehsanaHub_MHN_PL,MYE,Present,1
+15-08-2026,Ankur Sinha,West,MorbiHub_MRB_PL,EXT,Present,14
+15-08-2026,Ankur Sinha,West,MorbiHub_MRB_PL,FK,Future,151
+15-08-2026,Ankur Sinha,West,MorbiHub_MRB_PL,FK,Past,2
+15-08-2026,Ankur Sinha,West,MorbiHub_MRB_PL,FK,Present,988
+15-08-2026,Ankur Sinha,West,MorbiHub_MRB_PL,MYE,Present,3
+15-08-2026,Ankur Sinha,West,NadiadHub_AMD_PL,EXT,Future,236
+15-08-2026,Ankur Sinha,West,NadiadHub_AMD_PL,EXT,Past,23
+15-08-2026,Ankur Sinha,West,NadiadHub_AMD_PL,EXT,Present,2332
+15-08-2026,Ankur Sinha,West,NadiadHub_AMD_PL,FK,Present,5
+15-08-2026,Ankur Sinha,West,PalanpurHub_PLN_PL,EXT,Present,2
+15-08-2026,Ankur Sinha,West,PalanpurHub_PLN_PL,FK,Present,455
+15-08-2026,Ankur Sinha,West,PorbandarHub_POR_PL,EXT,Future,2
+15-08-2026,Ankur Sinha,West,PorbandarHub_POR_PL,EXT,Past,1
+15-08-2026,Ankur Sinha,West,PorbandarHub_POR_PL,EXT,Present,6
+15-08-2026,Ankur Sinha,West,RajkotHub_RAJ_PL,EXT,Future,2
+15-08-2026,Ankur Sinha,West,RajkotHub_RAJ_PL,EXT,Past,249
+15-08-2026,Ankur Sinha,West,RajkotHub_RAJ_PL,EXT,Present,610
+15-08-2026,Ankur Sinha,West,RajkotHub_RAJ_PL,FK,Future,1323
+15-08-2026,Ankur Sinha,West,RajkotHub_RAJ_PL,FK,Past,5360
+15-08-2026,Ankur Sinha,West,RajkotHub_RAJ_PL,FK,Present,25844
+15-08-2026,Ankur Sinha,West,RajkotHub_RAJ_PL,MYE,Present,4
+15-08-2026,Ankur Sinha,West,Rajkotsplithub_RAJ_PL,EXT,Future,86
+15-08-2026,Ankur Sinha,West,Rajkotsplithub_RAJ_PL,EXT,Past,114
+15-08-2026,Ankur Sinha,West,Rajkotsplithub_RAJ_PL,EXT,Present,541
+15-08-2026,Ankur Sinha,West,Rajkotsplithub_RAJ_PL,FK,Future,172
+15-08-2026,Ankur Sinha,West,Rajkotsplithub_RAJ_PL,FK,Past,574
+15-08-2026,Ankur Sinha,West,Rajkotsplithub_RAJ_PL,FK,Present,10685
+15-08-2026,Ankur Sinha,West,Rajkotsplithub_RAJ_PL,MYE,Future,30
+15-08-2026,Ankur Sinha,West,Rajkotsplithub_RAJ_PL,MYE,Present,2486
+15-08-2026,Ankur Sinha,West,ShyamalHub_SHY_PL,EXT,Future,4
+15-08-2026,Ankur Sinha,West,ShyamalHub_SHY_PL,EXT,Past,22
+15-08-2026,Ankur Sinha,West,ShyamalHub_SHY_PL,EXT,Present,47
+15-08-2026,Ankur Sinha,West,ShyamalHub_SHY_PL,FK,Future,36
+15-08-2026,Ankur Sinha,West,ShyamalHub_SHY_PL,FK,Past,28
+15-08-2026,Ankur Sinha,West,ShyamalHub_SHY_PL,FK,Present,1827
+15-08-2026,Ankur Sinha,West,ShyamalHub_SHY_PL,MYE,Future,22
+15-08-2026,Ankur Sinha,West,ShyamalHub_SHY_PL,MYE,Past,4
+15-08-2026,Ankur Sinha,West,ShyamalHub_SHY_PL,MYE,Present,59
+15-08-2026,Ankur Sinha,West,ShyamalOPH_IPH_PL,EXT,Past,9
+15-08-2026,Ankur Sinha,West,ShyamalOPH_IPH_PL,EXT,Present,78
+15-08-2026,Ankur Sinha,West,ShyamalOPH_IPH_PL,FK,Future,601
+15-08-2026,Ankur Sinha,West,ShyamalOPH_IPH_PL,FK,Present,1533
+15-08-2026,Ankur Sinha,West,ShyamalOPH_IPH_PL,MYE,Future,415
+15-08-2026,Ankur Sinha,West,ShyamalOPH_IPH_PL,MYE,Present,1310
+15-08-2026,Ankur Sinha,West,ShyamalOPH_IPH_PL,MYS,Present,123
+15-08-2026,Ankur Sinha,West,SurendraNagarHub_SDR_PL,EXT,Present,1
+15-08-2026,Ankur Sinha,West,SurendraNagarHub_SDR_PL,FK,Future,9
+15-08-2026,Ankur Sinha,West,SurendraNagarHub_SDR_PL,FK,Present,569
+15-08-2026,Ankur Sinha,West,UnaHub_UNA_PL,FK,Present,46
+15-08-2026,Ankur Sinha,West,VadodaraHub_BDQ_PL,EXT,Future,5
+15-08-2026,Ankur Sinha,West,VadodaraHub_BDQ_PL,EXT,Past,31
+15-08-2026,Ankur Sinha,West,VadodaraHub_BDQ_PL,EXT,Present,59
+15-08-2026,Ankur Sinha,West,VadodaraHub_BDQ_PL,FK,Future,121
+15-08-2026,Ankur Sinha,West,VadodaraHub_BDQ_PL,FK,Past,14
+15-08-2026,Ankur Sinha,West,VadodaraHub_BDQ_PL,FK,Present,2211
+15-08-2026,Ankur Sinha,West,VadodaraHub_BDQ_PL,MYE,Future,8
+15-08-2026,Ankur Sinha,West,VadodaraHub_BDQ_PL,MYE,Past,27
+15-08-2026,Ankur Sinha,West,VadodaraHub_BDQ_PL,MYE,Present,56
+15-08-2026,Ankur Sinha,West,ValsadHub_AMD_PL,EXT,Past,1
+15-08-2026,Ankur Sinha,West,ValsadHub_AMD_PL,EXT,Present,2
+15-08-2026,Ankur Sinha,West,ValsadHub_AMD_PL,FK,Future,5
+15-08-2026,Ankur Sinha,West,ValsadHub_AMD_PL,FK,Present,67
+15-08-2026,Ankur Sinha,West,VapiHub_AMD_PL,EXT,Future,23
+15-08-2026,Ankur Sinha,West,VapiHub_AMD_PL,EXT,Past,8
+15-08-2026,Ankur Sinha,West,VapiHub_AMD_PL,EXT,Present,32
+15-08-2026,Ankur Sinha,West,VapiHub_AMD_PL,FK,Future,2
+15-08-2026,Ankur Sinha,West,VapiHub_AMD_PL,FK,Present,812
+15-08-2026,Ankur Sinha,West,VapiHub_AMD_PL,MYE,Future,2
+15-08-2026,Ankur Sinha,West,VapiHub_AMD_PL,MYE,Present,8
+15-08-2026,Ankur Sinha,West,VastralHub_ADI_PL,EXT,Future,104
+15-08-2026,Ankur Sinha,West,VastralHub_ADI_PL,EXT,Past,354
+15-08-2026,Ankur Sinha,West,VastralHub_ADI_PL,EXT,Present,1295
+15-08-2026,Ankur Sinha,West,VastralHub_ADI_PL,FK,Future,510
+15-08-2026,Ankur Sinha,West,VastralHub_ADI_PL,FK,Past,236
+15-08-2026,Ankur Sinha,West,VastralHub_ADI_PL,FK,Present,12675
+15-08-2026,Ankur Sinha,West,VastralHub_ADI_PL,MYE,Present,25
+15-08-2026,Ankur Sinha,West,VastralHub_ADI_PL,MYS,Present,9
+15-08-2026,Ankur Sinha,West,VeravalHub_VRV_PL,EXT,Future,1
+15-08-2026,Ankur Sinha,West,VeravalHub_VRV_PL,EXT,Present,5
+15-08-2026,Ankur Sinha,West,VeravalHub_VRV_PL,FK,Future,28
+15-08-2026,Ankur Sinha,West,VeravalHub_VRV_PL,FK,Present,60
+15-08-2026,Anwar Babu Maldar,South,BelgaumHub_IXG_PL,EXT,Future,3
+15-08-2026,Anwar Babu Maldar,South,BelgaumHub_IXG_PL,EXT,Past,5
+15-08-2026,Anwar Babu Maldar,South,BelgaumHub_IXG_PL,EXT,Present,34
+15-08-2026,Anwar Babu Maldar,South,BelgaumHub_IXG_PL,FK,Present,56
+15-08-2026,Anwar Babu Maldar,South,BelgaumHub_IXG_PL,MYE,Present,6
+15-08-2026,Anwar Babu Maldar,South,BHATKALHUB_BKL_PL,EXT,Future,2
+15-08-2026,Anwar Babu Maldar,South,BHATKALHUB_BKL_PL,EXT,Past,2
+15-08-2026,Anwar Babu Maldar,South,BHATKALHUB_BKL_PL,EXT,Present,6
+15-08-2026,Anwar Babu Maldar,South,BHATKALHUB_BKL_PL,FK,Present,172
+15-08-2026,Anwar Babu Maldar,South,DavanagereHub_DVG_PL,EXT,Future,3
+15-08-2026,Anwar Babu Maldar,South,DavanagereHub_DVG_PL,EXT,Past,2
+15-08-2026,Anwar Babu Maldar,South,DavanagereHub_DVG_PL,EXT,Present,3
+15-08-2026,Anwar Babu Maldar,South,DavanagereHub_DVG_PL,FK,Past,2
+15-08-2026,Anwar Babu Maldar,South,HoodiHub_BLR_PL,EXT,Future,297
+15-08-2026,Anwar Babu Maldar,South,HoodiHub_BLR_PL,EXT,Past,4
+15-08-2026,Anwar Babu Maldar,South,HoodiHub_BLR_PL,EXT,Present,1102
+15-08-2026,Anwar Babu Maldar,South,HoodiHub_BLR_PL,FK,Future,52
+15-08-2026,Anwar Babu Maldar,South,HoodiHub_BLR_PL,FK,Present,1514
+15-08-2026,Anwar Babu Maldar,South,HoodiHub_BLR_PL,MYE,Future,12
+15-08-2026,Anwar Babu Maldar,South,HoodiHub_BLR_PL,MYE,Past,19
+15-08-2026,Anwar Babu Maldar,South,HoodiHub_BLR_PL,MYE,Present,40
+15-08-2026,Anwar Babu Maldar,South,HubliHub_HBX_PL,EXT,Past,2
+15-08-2026,Anwar Babu Maldar,South,HubliHub_HBX_PL,EXT,Present,16
+15-08-2026,Anwar Babu Maldar,South,HubliHub_HBX_PL,FK,Past,3
+15-08-2026,Anwar Babu Maldar,South,HubliHub_HBX_PL,FK,Present,6
+15-08-2026,Anwar Babu Maldar,South,HubliHub_HBX_PL,MYE,Future,2
+15-08-2026,Anwar Babu Maldar,South,HubliHub_HBX_PL,MYE,Past,1
+15-08-2026,Anwar Babu Maldar,South,HubliHub_HBX_PL,MYE,Present,19
+15-08-2026,Anwar Babu Maldar,South,JaydevNagarHub_JDN_PL,EXT,Past,12
+15-08-2026,Anwar Babu Maldar,South,JaydevNagarHub_JDN_PL,EXT,Present,14
+15-08-2026,Anwar Babu Maldar,South,JaydevNagarHub_JDN_PL,FK,Present,60
+15-08-2026,Anwar Babu Maldar,South,JaydevNagarHub_JDN_PL,MYE,Future,25
+15-08-2026,Anwar Babu Maldar,South,JaydevNagarHub_JDN_PL,MYE,Past,3
+15-08-2026,Anwar Babu Maldar,South,JaydevNagarHub_JDN_PL,MYE,Present,43
+15-08-2026,Anwar Babu Maldar,South,JiganiHub_BLR_PL,EXT,Future,35
+15-08-2026,Anwar Babu Maldar,South,JiganiHub_BLR_PL,EXT,Past,92
+15-08-2026,Anwar Babu Maldar,South,JiganiHub_BLR_PL,EXT,Present,253
+15-08-2026,Anwar Babu Maldar,South,JiganiHub_BLR_PL,FK,Future,6
+15-08-2026,Anwar Babu Maldar,South,JiganiHub_BLR_PL,FK,Past,5
+15-08-2026,Anwar Babu Maldar,South,JiganiHub_BLR_PL,FK,Present,435
+15-08-2026,Anwar Babu Maldar,South,JiganiHub_BLR_PL,MYE,Future,39
+15-08-2026,Anwar Babu Maldar,South,JiganiHub_BLR_PL,MYE,Past,29
+15-08-2026,Anwar Babu Maldar,South,JiganiHub_BLR_PL,MYE,Present,163
+15-08-2026,Anwar Babu Maldar,South,JiganiHub_BLR_PL,MYS,Future,3
+15-08-2026,Anwar Babu Maldar,South,JiganiHub_BLR_PL,MYS,Past,35
+15-08-2026,Anwar Babu Maldar,South,JiganiHub_BLR_PL,MYS,Present,251
+15-08-2026,Anwar Babu Maldar,South,KalyanNagarHub_BLR_PL,EXT,Future,25
+15-08-2026,Anwar Babu Maldar,South,KalyanNagarHub_BLR_PL,EXT,Past,80
+15-08-2026,Anwar Babu Maldar,South,KalyanNagarHub_BLR_PL,EXT,Present,299
+15-08-2026,Anwar Babu Maldar,South,KalyanNagarHub_BLR_PL,FK,Future,426
+15-08-2026,Anwar Babu Maldar,South,KalyanNagarHub_BLR_PL,FK,Past,21
+15-08-2026,Anwar Babu Maldar,South,KalyanNagarHub_BLR_PL,FK,Present,1886
+15-08-2026,Anwar Babu Maldar,South,KalyanNagarHub_BLR_PL,MYE,Future,44
+15-08-2026,Anwar Babu Maldar,South,KalyanNagarHub_BLR_PL,MYE,Past,14
+15-08-2026,Anwar Babu Maldar,South,KalyanNagarHub_BLR_PL,MYE,Present,131
+15-08-2026,Anwar Babu Maldar,South,KanakpuraRdHub_BLR_PL,EXT,Future,57
+15-08-2026,Anwar Babu Maldar,South,KanakpuraRdHub_BLR_PL,EXT,Past,53
+15-08-2026,Anwar Babu Maldar,South,KanakpuraRdHub_BLR_PL,EXT,Present,724
+15-08-2026,Anwar Babu Maldar,South,KanakpuraRdHub_BLR_PL,FK,Future,11
+15-08-2026,Anwar Babu Maldar,South,KanakpuraRdHub_BLR_PL,FK,Present,832
+15-08-2026,Anwar Babu Maldar,South,KanakpuraRdHub_BLR_PL,MYE,Future,197
+15-08-2026,Anwar Babu Maldar,South,KanakpuraRdHub_BLR_PL,MYE,Past,3
+15-08-2026,Anwar Babu Maldar,South,KanakpuraRdHub_BLR_PL,MYE,Present,287
+15-08-2026,Anwar Babu Maldar,South,KanakpuraRdHub_BLR_PL,MYS,Future,195
+15-08-2026,Anwar Babu Maldar,South,KanakpuraRdHub_BLR_PL,MYS,Present,567
+15-08-2026,Anwar Babu Maldar,South,KengeriHub_BLR_PL,EXT,Future,29
+15-08-2026,Anwar Babu Maldar,South,KengeriHub_BLR_PL,EXT,Present,45
+15-08-2026,Anwar Babu Maldar,South,KengeriHub_BLR_PL,FK,Present,414
+15-08-2026,Anwar Babu Maldar,South,KengeriHub_BLR_PL,MYE,Future,25
+15-08-2026,Anwar Babu Maldar,South,KengeriHub_BLR_PL,MYE,Past,2
+15-08-2026,Anwar Babu Maldar,South,KengeriHub_BLR_PL,MYE,Present,56
+15-08-2026,Anwar Babu Maldar,South,MangaloreHub_IXE_PL,EXT,Present,1
+15-08-2026,Anwar Babu Maldar,South,MangaloreHub_IXE_PL,MYE,Future,27
+15-08-2026,Anwar Babu Maldar,South,MangaloreHub_IXE_PL,MYE,Past,1
+15-08-2026,Anwar Babu Maldar,South,MangaloreHub_IXE_PL,MYE,Present,24
+15-08-2026,Anwar Babu Maldar,South,ManipalHub_MPL_PL,EXT,Future,1
+15-08-2026,Anwar Babu Maldar,South,ManipalHub_MPL_PL,EXT,Present,5
+15-08-2026,Anwar Babu Maldar,South,ManipalHub_MPL_PL,MYE,Future,1
+15-08-2026,Anwar Babu Maldar,South,ManipalHub_MPL_PL,MYE,Present,1
+15-08-2026,Anwar Babu Maldar,South,MysorerdHub_BLR_PL,EXT,Future,202
+15-08-2026,Anwar Babu Maldar,South,MysorerdHub_BLR_PL,EXT,Past,469
+15-08-2026,Anwar Babu Maldar,South,MysorerdHub_BLR_PL,EXT,Present,204
+15-08-2026,Anwar Babu Maldar,South,MysorerdHub_BLR_PL,FK,Future,183
+15-08-2026,Anwar Babu Maldar,South,MysorerdHub_BLR_PL,FK,Past,25
+15-08-2026,Anwar Babu Maldar,South,MysorerdHub_BLR_PL,FK,Present,8979
+15-08-2026,Anwar Babu Maldar,South,MysorerdHub_BLR_PL,MYE,Future,24
+15-08-2026,Anwar Babu Maldar,South,MysorerdHub_BLR_PL,MYE,Past,2
+15-08-2026,Anwar Babu Maldar,South,MysorerdHub_BLR_PL,MYE,Present,64
+15-08-2026,Anwar Babu Maldar,South,NelamangalaHub_BLR_PL,EXT,Future,859
+15-08-2026,Anwar Babu Maldar,South,NelamangalaHub_BLR_PL,EXT,Past,3
+15-08-2026,Anwar Babu Maldar,South,NelamangalaHub_BLR_PL,EXT,Present,2469
+15-08-2026,Anwar Babu Maldar,South,NelamangalaHub_BLR_PL,FK,Future,19
+15-08-2026,Anwar Babu Maldar,South,NelamangalaHub_BLR_PL,FK,Past,7
+15-08-2026,Anwar Babu Maldar,South,NelamangalaHub_BLR_PL,FK,Present,2324
+15-08-2026,Anwar Babu Maldar,South,NelamangalaHub_BLR_PL,MYE,Future,9
+15-08-2026,Anwar Babu Maldar,South,NelamangalaHub_BLR_PL,MYE,Present,46
+15-08-2026,Anwar Babu Maldar,South,NelamangalaHub_BLR_PL,MYS,Past,3
+15-08-2026,Anwar Babu Maldar,South,NelamangalaHub_BLR_PL,MYS,Present,97
+15-08-2026,Anwar Babu Maldar,South,Samethanahalli_MYNTRA_BLR_PL,MYS,Future,206
+15-08-2026,Anwar Babu Maldar,South,Samethanahalli_MYNTRA_BLR_PL,MYS,Present,779
+15-08-2026,Anwar Babu Maldar,South,SoukyaRoad_BLR_PL,EXT,Future,2133
+15-08-2026,Anwar Babu Maldar,South,SoukyaRoad_BLR_PL,EXT,Past,38
+15-08-2026,Anwar Babu Maldar,South,SoukyaRoad_BLR_PL,EXT,Present,6009
+15-08-2026,Anwar Babu Maldar,South,SoukyaRoad_BLR_PL,FK,Future,420
+15-08-2026,Anwar Babu Maldar,South,SoukyaRoad_BLR_PL,FK,Present,5
+15-08-2026,Anwar Babu Maldar,South,SoukyaRoad_BLR_PL,MYE,Present,17
+15-08-2026,Anwar Babu Maldar,South,Yashwantpurahub_BLR_PL,EXT,Future,98
+15-08-2026,Anwar Babu Maldar,South,Yashwantpurahub_BLR_PL,EXT,Past,1
+15-08-2026,Anwar Babu Maldar,South,Yashwantpurahub_BLR_PL,EXT,Present,370
+15-08-2026,Anwar Babu Maldar,South,Yashwantpurahub_BLR_PL,FK,Future,226
+15-08-2026,Anwar Babu Maldar,South,Yashwantpurahub_BLR_PL,FK,Past,111
+15-08-2026,Anwar Babu Maldar,South,Yashwantpurahub_BLR_PL,FK,Present,4622
+15-08-2026,Anwar Babu Maldar,South,Yashwantpurahub_BLR_PL,MYE,Future,539
+15-08-2026,Anwar Babu Maldar,South,Yashwantpurahub_BLR_PL,MYE,Past,4
+15-08-2026,Anwar Babu Maldar,South,Yashwantpurahub_BLR_PL,MYE,Present,419
+15-08-2026,Anwar Babu Maldar,South,Yashwantpurahub_BLR_PL,MYS,Past,9
+15-08-2026,Anwar Babu Maldar,South,Yashwantpurahub_BLR_PL,MYS,Present,2010
+15-08-2026,Anwar Babu Maldar,South,YelahankaHub_BLR_PL,EXT,Future,265
+15-08-2026,Anwar Babu Maldar,South,YelahankaHub_BLR_PL,EXT,Past,13
+15-08-2026,Anwar Babu Maldar,South,YelahankaHub_BLR_PL,EXT,Present,949
+15-08-2026,Anwar Babu Maldar,South,YelahankaHub_BLR_PL,FK,Future,8
+15-08-2026,Anwar Babu Maldar,South,YelahankaHub_BLR_PL,FK,Past,1
+15-08-2026,Anwar Babu Maldar,South,YelahankaHub_BLR_PL,FK,Present,494
+15-08-2026,Anwar Babu Maldar,South,YelahankaHub_BLR_PL,MYE,Future,27
+15-08-2026,Anwar Babu Maldar,South,YelahankaHub_BLR_PL,MYE,Past,20
+15-08-2026,Anwar Babu Maldar,South,YelahankaHub_BLR_PL,MYE,Present,118
+15-08-2026,Arvind Bansal (DNCR),North,Alipur_DEL_PL,EXT,Future,163
+15-08-2026,Arvind Bansal (DNCR),North,Alipur_DEL_PL,EXT,Past,26
+15-08-2026,Arvind Bansal (DNCR),North,Alipur_DEL_PL,EXT,Present,576
+15-08-2026,Arvind Bansal (DNCR),North,Alipur_DEL_PL,FK,Future,4
+15-08-2026,Arvind Bansal (DNCR),North,Alipur_DEL_PL,FK,Past,353
+15-08-2026,Arvind Bansal (DNCR),North,Alipur_DEL_PL,FK,Present,1524
+15-08-2026,Arvind Bansal (DNCR),North,AshokviharHub_DEL_PL,EXT,Past,29
+15-08-2026,Arvind Bansal (DNCR),North,AshokviharHub_DEL_PL,EXT,Present,3
+15-08-2026,Arvind Bansal (DNCR),North,AshokviharHub_DEL_PL,FK,Past,1
+15-08-2026,Arvind Bansal (DNCR),North,AshokviharHub_DEL_PL,FK,Present,547
+15-08-2026,Arvind Bansal (DNCR),North,AshokviharHub_DEL_PL,MYE,Future,5
+15-08-2026,Arvind Bansal (DNCR),North,AshokviharHub_DEL_PL,MYE,Past,2
+15-08-2026,Arvind Bansal (DNCR),North,AshokviharHub_DEL_PL,MYE,Present,33
+15-08-2026,Arvind Bansal (DNCR),North,BahadurgarhHub_BHD_PL,EXT,Future,2
+15-08-2026,Arvind Bansal (DNCR),North,BahadurgarhHub_BHD_PL,EXT,Present,43
+15-08-2026,Arvind Bansal (DNCR),North,BahadurgarhHub_BHD_PL,FK,Present,889
+15-08-2026,Arvind Bansal (DNCR),North,BallabhgarhHub_Del_PL,EXT,Future,41
+15-08-2026,Arvind Bansal (DNCR),North,BallabhgarhHub_Del_PL,EXT,Past,37
+15-08-2026,Arvind Bansal (DNCR),North,BallabhgarhHub_Del_PL,EXT,Present,154
+15-08-2026,Arvind Bansal (DNCR),North,BallabhgarhHub_Del_PL,FK,Future,5
+15-08-2026,Arvind Bansal (DNCR),North,BallabhgarhHub_Del_PL,FK,Past,45
+15-08-2026,Arvind Bansal (DNCR),North,BallabhgarhHub_Del_PL,FK,Present,1020
+15-08-2026,Arvind Bansal (DNCR),North,BallabhgarhHub_Del_PL,MYE,Future,14
+15-08-2026,Arvind Bansal (DNCR),North,BallabhgarhHub_Del_PL,MYE,Past,1
+15-08-2026,Arvind Bansal (DNCR),North,BallabhgarhHub_Del_PL,MYE,Present,10
+15-08-2026,Arvind Bansal (DNCR),North,BawanaHub_DEL_PL,EXT,Future,10
+15-08-2026,Arvind Bansal (DNCR),North,BawanaHub_DEL_PL,EXT,Past,3
+15-08-2026,Arvind Bansal (DNCR),North,BawanaHub_DEL_PL,EXT,Present,129
+15-08-2026,Arvind Bansal (DNCR),North,BawanaHub_DEL_PL,FK,Future,24
+15-08-2026,Arvind Bansal (DNCR),North,BawanaHub_DEL_PL,FK,Past,8
+15-08-2026,Arvind Bansal (DNCR),North,BawanaHub_DEL_PL,FK,Present,494
+15-08-2026,Arvind Bansal (DNCR),North,BijwasanHub_DEL_PL,EXT,Future,252
+15-08-2026,Arvind Bansal (DNCR),North,BijwasanHub_DEL_PL,EXT,Past,2
+15-08-2026,Arvind Bansal (DNCR),North,BijwasanHub_DEL_PL,EXT,Present,410
+15-08-2026,Arvind Bansal (DNCR),North,BijwasanHub_DEL_PL,FK,Future,6
+15-08-2026,Arvind Bansal (DNCR),North,BijwasanHub_DEL_PL,FK,Past,8
+15-08-2026,Arvind Bansal (DNCR),North,BijwasanHub_DEL_PL,FK,Present,3574
+15-08-2026,Arvind Bansal (DNCR),North,Britania_DEL_PL,EXT,Present,1
+15-08-2026,Arvind Bansal (DNCR),North,Britania_DEL_PL,FK,Future,1
+15-08-2026,Arvind Bansal (DNCR),North,Britania_DEL_PL,FK,Present,822
+15-08-2026,Arvind Bansal (DNCR),North,BudhViharHub_DEL_PL,EXT,Past,3
+15-08-2026,Arvind Bansal (DNCR),North,BudhViharHub_DEL_PL,EXT,Present,1918
+15-08-2026,Arvind Bansal (DNCR),North,BudhViharHub_DEL_PL,FK,Future,112
+15-08-2026,Arvind Bansal (DNCR),North,BudhViharHub_DEL_PL,FK,Past,272
+15-08-2026,Arvind Bansal (DNCR),North,BudhViharHub_DEL_PL,FK,Present,2689
+15-08-2026,Arvind Bansal (DNCR),North,BudhViharHub_DEL_PL,MYE,Future,586
+15-08-2026,Arvind Bansal (DNCR),North,BudhViharHub_DEL_PL,MYE,Present,613
+15-08-2026,Arvind Bansal (DNCR),North,BurariHub_DEL_PL,FK,Future,18
+15-08-2026,Arvind Bansal (DNCR),North,BurariHub_DEL_PL,FK,Present,329
+15-08-2026,Arvind Bansal (DNCR),North,Chhatarpur_DEL_PL,FK,Past,3
+15-08-2026,Arvind Bansal (DNCR),North,Chhatarpur_DEL_PL,FK,Present,776
+15-08-2026,Arvind Bansal (DNCR),North,Chhatarpur_DEL_PL,MYE,Past,11
+15-08-2026,Arvind Bansal (DNCR),North,Chhatarpur_DEL_PL,MYE,Present,5
+15-08-2026,Arvind Bansal (DNCR),North,DasnaHub_DEL_PL,EXT,Future,3
+15-08-2026,Arvind Bansal (DNCR),North,DasnaHub_DEL_PL,EXT,Past,2
+15-08-2026,Arvind Bansal (DNCR),North,DasnaHub_DEL_PL,EXT,Present,15
+15-08-2026,Arvind Bansal (DNCR),North,DasnaHub_DEL_PL,FK,Future,49
+15-08-2026,Arvind Bansal (DNCR),North,DasnaHub_DEL_PL,FK,Past,225
+15-08-2026,Arvind Bansal (DNCR),North,DasnaHub_DEL_PL,FK,Present,3235
+15-08-2026,Arvind Bansal (DNCR),North,FaridabadHub_DEL_PL,FK,Future,32
+15-08-2026,Arvind Bansal (DNCR),North,FaridabadHub_DEL_PL,FK,Past,76
+15-08-2026,Arvind Bansal (DNCR),North,FaridabadHub_DEL_PL,FK,Present,1230
+15-08-2026,Arvind Bansal (DNCR),North,Farukhnagar_MYNTRA_DEL_PL,MYS,Future,125
+15-08-2026,Arvind Bansal (DNCR),North,Farukhnagar_MYNTRA_DEL_PL,MYS,Past,1
+15-08-2026,Arvind Bansal (DNCR),North,Farukhnagar_MYNTRA_DEL_PL,MYS,Present,1721
+15-08-2026,Arvind Bansal (DNCR),North,GandhinagarHub_DEL_PL,EXT,Past,2
+15-08-2026,Arvind Bansal (DNCR),North,GandhinagarHub_DEL_PL,EXT,Present,205
+15-08-2026,Arvind Bansal (DNCR),North,GandhinagarHub_DEL_PL,FK,Future,69
+15-08-2026,Arvind Bansal (DNCR),North,GandhinagarHub_DEL_PL,FK,Past,3
+15-08-2026,Arvind Bansal (DNCR),North,GandhinagarHub_DEL_PL,FK,Present,2305
+15-08-2026,Arvind Bansal (DNCR),North,GurgaonHub_DEL_PL,EXT,Future,17
+15-08-2026,Arvind Bansal (DNCR),North,GurgaonHub_DEL_PL,EXT,Past,6
+15-08-2026,Arvind Bansal (DNCR),North,GurgaonHub_DEL_PL,EXT,Present,153
+15-08-2026,Arvind Bansal (DNCR),North,GurgaonHub_DEL_PL,FK,Future,4
+15-08-2026,Arvind Bansal (DNCR),North,GurgaonHub_DEL_PL,FK,Past,24
+15-08-2026,Arvind Bansal (DNCR),North,GurgaonHub_DEL_PL,FK,Present,4966
+15-08-2026,Arvind Bansal (DNCR),North,GurgaonHub_DEL_PL,MYE,Future,6
+15-08-2026,Arvind Bansal (DNCR),North,GurgaonHub_DEL_PL,MYE,Past,4
+15-08-2026,Arvind Bansal (DNCR),North,GurgaonHub_DEL_PL,MYE,Present,31
+15-08-2026,Arvind Bansal (DNCR),North,GurgaonOPHHUB_PL,EXT,Future,81
+15-08-2026,Arvind Bansal (DNCR),North,GurgaonOPHHUB_PL,EXT,Past,20
+15-08-2026,Arvind Bansal (DNCR),North,GurgaonOPHHUB_PL,EXT,Present,1280
+15-08-2026,Arvind Bansal (DNCR),North,GurgaonOPHHUB_PL,FK,Future,7
+15-08-2026,Arvind Bansal (DNCR),North,GurgaonOPHHUB_PL,FK,Past,30
+15-08-2026,Arvind Bansal (DNCR),North,GurgaonOPHHUB_PL,FK,Present,85
+15-08-2026,Arvind Bansal (DNCR),North,IPextension_DEL_PL,EXT,Past,1
+15-08-2026,Arvind Bansal (DNCR),North,IPextension_DEL_PL,EXT,Present,5
+15-08-2026,Arvind Bansal (DNCR),North,IPextension_DEL_PL,FK,Present,1322
+15-08-2026,Arvind Bansal (DNCR),North,JasolaHub_DEL_PL,EXT,Past,61
+15-08-2026,Arvind Bansal (DNCR),North,JasolaHub_DEL_PL,EXT,Present,13
+15-08-2026,Arvind Bansal (DNCR),North,JasolaHub_DEL_PL,FK,Future,93
+15-08-2026,Arvind Bansal (DNCR),North,JasolaHub_DEL_PL,FK,Past,8
+15-08-2026,Arvind Bansal (DNCR),North,JasolaHub_DEL_PL,FK,Present,571
+15-08-2026,Arvind Bansal (DNCR),North,JasolaHub_DEL_PL,MYE,Past,1
+15-08-2026,Arvind Bansal (DNCR),North,Jhilmil_DEL_PL,EXT,Present,2
+15-08-2026,Arvind Bansal (DNCR),North,Jhilmil_DEL_PL,FK,Future,330
+15-08-2026,Arvind Bansal (DNCR),North,Jhilmil_DEL_PL,FK,Past,942
+15-08-2026,Arvind Bansal (DNCR),North,Jhilmil_DEL_PL,FK,Present,9273
+15-08-2026,Arvind Bansal (DNCR),North,Jhilmil_DEL_PL,MYE,Present,1
+15-08-2026,Arvind Bansal (DNCR),North,KanjhawalaHub_DEL_PL,FK,Present,787
+15-08-2026,Arvind Bansal (DNCR),North,KarolbaghHub_DEL_PL,EXT,Past,6
+15-08-2026,Arvind Bansal (DNCR),North,KarolbaghHub_DEL_PL,FK,Future,2
+15-08-2026,Arvind Bansal (DNCR),North,KarolbaghHub_DEL_PL,FK,Past,38
+15-08-2026,Arvind Bansal (DNCR),North,KarolbaghHub_DEL_PL,FK,Present,562
+15-08-2026,Arvind Bansal (DNCR),North,MangolpuriHub_DEL_PL,EXT,Future,113
+15-08-2026,Arvind Bansal (DNCR),North,MangolpuriHub_DEL_PL,EXT,Past,5
+15-08-2026,Arvind Bansal (DNCR),North,MangolpuriHub_DEL_PL,EXT,Present,1150
+15-08-2026,Arvind Bansal (DNCR),North,MangolpuriHub_DEL_PL,FK,Future,509
+15-08-2026,Arvind Bansal (DNCR),North,MangolpuriHub_DEL_PL,FK,Past,116
+15-08-2026,Arvind Bansal (DNCR),North,MangolpuriHub_DEL_PL,FK,Present,10987
+15-08-2026,Arvind Bansal (DNCR),North,MangolpuriHub_DEL_PL,MYE,Future,9
+15-08-2026,Arvind Bansal (DNCR),North,MangolpuriHub_DEL_PL,MYE,Past,6
+15-08-2026,Arvind Bansal (DNCR),North,MangolpuriHub_DEL_PL,MYE,Present,9
+15-08-2026,Arvind Bansal (DNCR),North,Motibaghhub_DEL_PL,EXT,Past,1
+15-08-2026,Arvind Bansal (DNCR),North,Motibaghhub_DEL_PL,EXT,Present,1
+15-08-2026,Arvind Bansal (DNCR),North,Motibaghhub_DEL_PL,FK,Future,5
+15-08-2026,Arvind Bansal (DNCR),North,Motibaghhub_DEL_PL,FK,Past,15
+15-08-2026,Arvind Bansal (DNCR),North,Motibaghhub_DEL_PL,FK,Present,398
+15-08-2026,Arvind Bansal (DNCR),North,Motibaghhub_DEL_PL,MYE,Future,5
+15-08-2026,Arvind Bansal (DNCR),North,Motibaghhub_DEL_PL,MYE,Past,1
+15-08-2026,Arvind Bansal (DNCR),North,MundkaHub_DEL_PL,EXT,Present,22
+15-08-2026,Arvind Bansal (DNCR),North,MundkaHub_DEL_PL,FK,Future,401
+15-08-2026,Arvind Bansal (DNCR),North,MundkaHub_DEL_PL,FK,Past,14
+15-08-2026,Arvind Bansal (DNCR),North,MundkaHub_DEL_PL,FK,Present,3996
+15-08-2026,Arvind Bansal (DNCR),North,NajafgarhHub_DEL_PL,EXT,Past,7
+15-08-2026,Arvind Bansal (DNCR),North,NajafgarhHub_DEL_PL,FK,Future,154
+15-08-2026,Arvind Bansal (DNCR),North,NajafgarhHub_DEL_PL,FK,Past,98
+15-08-2026,Arvind Bansal (DNCR),North,NajafgarhHub_DEL_PL,FK,Present,4681
+15-08-2026,Arvind Bansal (DNCR),North,NajafgarhHub_DEL_PL,MYE,Present,1
+15-08-2026,Arvind Bansal (DNCR),North,NehruPlaceHub_DEL_PL,EXT,Past,9
+15-08-2026,Arvind Bansal (DNCR),North,NehruPlaceHub_DEL_PL,EXT,Present,8
+15-08-2026,Arvind Bansal (DNCR),North,NehruPlaceHub_DEL_PL,FK,Past,21
+15-08-2026,Arvind Bansal (DNCR),North,NehruPlaceHub_DEL_PL,FK,Present,6459
+15-08-2026,Arvind Bansal (DNCR),North,NehruPlaceHub_DEL_PL,MYE,Future,9
+15-08-2026,Arvind Bansal (DNCR),North,NehruPlaceHub_DEL_PL,MYE,Past,27
+15-08-2026,Arvind Bansal (DNCR),North,NehruPlaceHub_DEL_PL,MYE,Present,10
+15-08-2026,Arvind Bansal (DNCR),North,NoidaHub_DEL_PL,EXT,Past,12
+15-08-2026,Arvind Bansal (DNCR),North,NoidaHub_DEL_PL,EXT,Present,39
+15-08-2026,Arvind Bansal (DNCR),North,NoidaHub_DEL_PL,FK,Future,59
+15-08-2026,Arvind Bansal (DNCR),North,NoidaHub_DEL_PL,FK,Past,75
+15-08-2026,Arvind Bansal (DNCR),North,NoidaHub_DEL_PL,FK,Present,595
+15-08-2026,Arvind Bansal (DNCR),North,Peeragarhi_DEL_PL,FK,Present,263
+15-08-2026,Arvind Bansal (DNCR),North,Peeragarhi_DEL_PL,MYE,Present,1
+15-08-2026,Arvind Bansal (DNCR),North,Phase3NoidaHub_DEL_PL,EXT,Future,143
+15-08-2026,Arvind Bansal (DNCR),North,Phase3NoidaHub_DEL_PL,EXT,Past,11
+15-08-2026,Arvind Bansal (DNCR),North,Phase3NoidaHub_DEL_PL,EXT,Present,1083
+15-08-2026,Arvind Bansal (DNCR),North,Phase3NoidaHub_DEL_PL,FK,Future,77
+15-08-2026,Arvind Bansal (DNCR),North,Phase3NoidaHub_DEL_PL,FK,Past,192
+15-08-2026,Arvind Bansal (DNCR),North,Phase3NoidaHub_DEL_PL,FK,Present,881
+15-08-2026,Arvind Bansal (DNCR),North,Pitampurahub_DEL_PL,EXT,Past,15
+15-08-2026,Arvind Bansal (DNCR),North,Pitampurahub_DEL_PL,EXT,Present,732
+15-08-2026,Arvind Bansal (DNCR),North,Pitampurahub_DEL_PL,FK,Future,503
+15-08-2026,Arvind Bansal (DNCR),North,Pitampurahub_DEL_PL,FK,Past,79
+15-08-2026,Arvind Bansal (DNCR),North,Pitampurahub_DEL_PL,FK,Present,4256
+15-08-2026,Arvind Bansal (DNCR),North,PrahladPur_DEL_PL,EXT,Past,105
+15-08-2026,Arvind Bansal (DNCR),North,PrahladPur_DEL_PL,EXT,Present,64
+15-08-2026,Arvind Bansal (DNCR),North,PrahladPur_DEL_PL,FK,Future,168
+15-08-2026,Arvind Bansal (DNCR),North,PrahladPur_DEL_PL,FK,Past,778
+15-08-2026,Arvind Bansal (DNCR),North,PrahladPur_DEL_PL,FK,Present,3156
+15-08-2026,Arvind Bansal (DNCR),North,PrahladPur_DEL_PL,MYE,Present,35
+15-08-2026,Arvind Bansal (DNCR),North,PrahladPur_DEL_PL,MYS,Present,75
+15-08-2026,Arvind Bansal (DNCR),North,Ramaroadhub_DEL_PL,FK,Future,1
+15-08-2026,Arvind Bansal (DNCR),North,Ramaroadhub_DEL_PL,FK,Present,185
+15-08-2026,Arvind Bansal (DNCR),North,Ramaroadhub_DEL_PL,MYE,Present,9
+15-08-2026,Arvind Bansal (DNCR),North,Rohinihub_DEL_PL,EXT,Future,1
+15-08-2026,Arvind Bansal (DNCR),North,Rohinihub_DEL_PL,EXT,Past,2
+15-08-2026,Arvind Bansal (DNCR),North,Rohinihub_DEL_PL,EXT,Present,19
+15-08-2026,Arvind Bansal (DNCR),North,Rohinihub_DEL_PL,FK,Future,440
+15-08-2026,Arvind Bansal (DNCR),North,Rohinihub_DEL_PL,FK,Past,5
+15-08-2026,Arvind Bansal (DNCR),North,Rohinihub_DEL_PL,FK,Present,1433
+15-08-2026,Arvind Bansal (DNCR),North,Rohinihub_DEL_PL,MYE,Future,1
+15-08-2026,Arvind Bansal (DNCR),North,Rohinihub_DEL_PL,MYE,Present,36
+15-08-2026,Arvind Bansal (DNCR),North,SahibabadHub_DEL_PL,EXT,Future,114
+15-08-2026,Arvind Bansal (DNCR),North,SahibabadHub_DEL_PL,EXT,Past,139
+15-08-2026,Arvind Bansal (DNCR),North,SahibabadHub_DEL_PL,EXT,Present,695
+15-08-2026,Arvind Bansal (DNCR),North,SahibabadHub_DEL_PL,FK,Future,113
+15-08-2026,Arvind Bansal (DNCR),North,SahibabadHub_DEL_PL,FK,Past,115
+15-08-2026,Arvind Bansal (DNCR),North,SahibabadHub_DEL_PL,FK,Present,2870
+15-08-2026,Arvind Bansal (DNCR),North,SahibabadHub_DEL_PL,MYE,Future,8
+15-08-2026,Arvind Bansal (DNCR),North,SahibabadHub_DEL_PL,MYE,Present,30
+15-08-2026,Arvind Bansal (DNCR),North,ShalimarGardenHub_DEL_PL,EXT,Present,16
+15-08-2026,Arvind Bansal (DNCR),North,ShalimarGardenHub_DEL_PL,FK,Future,381
+15-08-2026,Arvind Bansal (DNCR),North,ShalimarGardenHub_DEL_PL,FK,Present,7524
+15-08-2026,Arvind Bansal (DNCR),North,UttamNagarHub_DEL_PL,EXT,Future,15
+15-08-2026,Arvind Bansal (DNCR),North,UttamNagarHub_DEL_PL,EXT,Past,4
+15-08-2026,Arvind Bansal (DNCR),North,UttamNagarHub_DEL_PL,EXT,Present,78
+15-08-2026,Arvind Bansal (DNCR),North,UttamNagarHub_DEL_PL,FK,Future,301
+15-08-2026,Arvind Bansal (DNCR),North,UttamNagarHub_DEL_PL,FK,Past,1
+15-08-2026,Arvind Bansal (DNCR),North,UttamNagarHub_DEL_PL,FK,Present,626
+15-08-2026,Arvind Bansal (DNCR),North,VasundharaHub_DEL_PL,EXT,Past,3
+15-08-2026,Arvind Bansal (DNCR),North,VasundharaHub_DEL_PL,EXT,Present,1
+15-08-2026,Arvind Bansal (DNCR),North,VasundharaHub_DEL_PL,FK,Future,85
+15-08-2026,Arvind Bansal (DNCR),North,VasundharaHub_DEL_PL,FK,Past,70
+15-08-2026,Arvind Bansal (DNCR),North,VasundharaHub_DEL_PL,FK,Present,4331
+15-08-2026,Arvind Bansal (DNCR),North,VasundharaHub_DEL_PL,MYE,Future,51
+15-08-2026,Arvind Bansal (DNCR),North,VasundharaHub_DEL_PL,MYS,Future,85
+15-08-2026,Arvind Bansal (DNCR),North,VasundharaHub_DEL_PL,MYS,Present,1
+15-08-2026,Arvind Bansal (DNCR),North,VikasNagarHub_DEL_PL,EXT,Present,5
+15-08-2026,Arvind Bansal (DNCR),North,VikasNagarHub_DEL_PL,FK,Future,336
+15-08-2026,Arvind Bansal (DNCR),North,VikasNagarHub_DEL_PL,FK,Present,1142
+15-08-2026,Arvind Bansal (DNCR),North,WelcomeHub_DEL_PL,EXT,Past,2
+15-08-2026,Arvind Bansal (DNCR),North,WelcomeHub_DEL_PL,FK,Future,136
+15-08-2026,Arvind Bansal (DNCR),North,WelcomeHub_DEL_PL,FK,Past,48
+15-08-2026,Arvind Bansal (DNCR),North,WelcomeHub_DEL_PL,FK,Present,6748
+15-08-2026,Arvind Bansal (DNCR),North,YamunaViharHub_DEL_PL,FK,Future,3
+15-08-2026,Arvind Bansal (DNCR),North,YamunaViharHub_DEL_PL,FK,Past,26
+15-08-2026,Arvind Bansal (DNCR),North,YamunaViharHub_DEL_PL,FK,Present,82
+15-08-2026,Arvind Bansal (DNCR),North,YamunaViharHub_DEL_PL,MYE,Future,4
+15-08-2026,Arvind Bansal (DNCR),North,YamunaViharHub_DEL_PL,MYE,Present,1
+15-08-2026,Arvind Bansal (HR),North,AmbalaHub_UMB_PL,EXT,Past,5
+15-08-2026,Arvind Bansal (HR),North,AmbalaHub_UMB_PL,EXT,Present,42
+15-08-2026,Arvind Bansal (HR),North,AmbalaHub_UMB_PL,FK,Future,44
+15-08-2026,Arvind Bansal (HR),North,AmbalaHub_UMB_PL,FK,Past,107
+15-08-2026,Arvind Bansal (HR),North,AmbalaHub_UMB_PL,FK,Present,1575
+15-08-2026,Arvind Bansal (HR),North,AmbalaHub_UMB_PL,MYE,Present,1
+15-08-2026,Arvind Bansal (HR),North,BhiwaniHub_DEL_PL,EXT,Future,12
+15-08-2026,Arvind Bansal (HR),North,BhiwaniHub_DEL_PL,FK,Future,16
+15-08-2026,Arvind Bansal (HR),North,BhiwaniHub_DEL_PL,FK,Present,484
+15-08-2026,Arvind Bansal (HR),North,ELASTICRUNHANSIODH_HNS_PL,EXT,Past,3
+15-08-2026,Arvind Bansal (HR),North,ELASTICRUNHANSIODH_HNS_PL,EXT,Present,17
+15-08-2026,Arvind Bansal (HR),North,ELASTICRUNHANSIODH_HNS_PL,FK,Future,976
+15-08-2026,Arvind Bansal (HR),North,ELASTICRUNHANSIODH_HNS_PL,FK,Past,128
+15-08-2026,Arvind Bansal (HR),North,ELASTICRUNHANSIODH_HNS_PL,FK,Present,9591
+15-08-2026,Arvind Bansal (HR),North,FatehabadHub_FHB_PL,EXT,Future,3
+15-08-2026,Arvind Bansal (HR),North,FatehabadHub_FHB_PL,EXT,Past,2
+15-08-2026,Arvind Bansal (HR),North,FatehabadHub_FHB_PL,EXT,Present,24
+15-08-2026,Arvind Bansal (HR),North,FatehabadHub_FHB_PL,FK,Future,1
+15-08-2026,Arvind Bansal (HR),North,FatehabadHub_FHB_PL,FK,Past,1
+15-08-2026,Arvind Bansal (HR),North,FatehabadHub_FHB_PL,FK,Present,3241
+15-08-2026,Arvind Bansal (HR),North,HissarHub_HSS_PL,EXT,Future,4
+15-08-2026,Arvind Bansal (HR),North,HissarHub_HSS_PL,EXT,Past,229
+15-08-2026,Arvind Bansal (HR),North,HissarHub_HSS_PL,EXT,Present,1972
+15-08-2026,Arvind Bansal (HR),North,HissarHub_HSS_PL,FK,Future,353
+15-08-2026,Arvind Bansal (HR),North,HissarHub_HSS_PL,FK,Past,29
+15-08-2026,Arvind Bansal (HR),North,HissarHub_HSS_PL,FK,Present,16736
+15-08-2026,Arvind Bansal (HR),North,HissarHub_HSS_PL,MYE,Future,4
+15-08-2026,Arvind Bansal (HR),North,HissarHub_HSS_PL,MYE,Present,3
+15-08-2026,Arvind Bansal (HR),North,IDENTIFYPLUSELLENABADODH_ELB_PL,EXT,Present,6
+15-08-2026,Arvind Bansal (HR),North,IDENTIFYPLUSELLENABADODH_ELB_PL,FK,Present,34
+15-08-2026,Arvind Bansal (HR),North,JhajjarHub_JJJ_PL,FK,Present,86
+15-08-2026,Arvind Bansal (HR),North,JindHub_JND_PL,EXT,Future,2
+15-08-2026,Arvind Bansal (HR),North,JindHub_JND_PL,EXT,Present,53
+15-08-2026,Arvind Bansal (HR),North,JindHub_JND_PL,FK,Future,117
+15-08-2026,Arvind Bansal (HR),North,JindHub_JND_PL,FK,Past,9
+15-08-2026,Arvind Bansal (HR),North,JindHub_JND_PL,FK,Present,1168
+15-08-2026,Arvind Bansal (HR),North,KaithalHub_KTL_PL,FK,Past,1
+15-08-2026,Arvind Bansal (HR),North,KaithalHub_KTL_PL,FK,Present,25
+15-08-2026,Arvind Bansal (HR),North,KarnalHub_KAL_PL,EXT,Past,15
+15-08-2026,Arvind Bansal (HR),North,KarnalHub_KAL_PL,EXT,Present,17
+15-08-2026,Arvind Bansal (HR),North,KarnalHub_KAL_PL,FK,Future,94
+15-08-2026,Arvind Bansal (HR),North,KarnalHub_KAL_PL,FK,Past,3
+15-08-2026,Arvind Bansal (HR),North,KarnalHub_KAL_PL,FK,Present,454
+15-08-2026,Arvind Bansal (HR),North,KarnalHub_KAL_PL,MYE,Future,26
+15-08-2026,Arvind Bansal (HR),North,KarnalHub_KAL_PL,MYE,Present,2
+15-08-2026,Arvind Bansal (HR),North,KundliHub_KND_PL,EXT,Past,4
+15-08-2026,Arvind Bansal (HR),North,KundliHub_KND_PL,EXT,Present,1
+15-08-2026,Arvind Bansal (HR),North,KundliHub_KND_PL,FK,Future,264
+15-08-2026,Arvind Bansal (HR),North,KundliHub_KND_PL,FK,Present,26
+15-08-2026,Arvind Bansal (HR),North,KurukshetraHub_KUR_PL,EXT,Future,17
+15-08-2026,Arvind Bansal (HR),North,KurukshetraHub_KUR_PL,EXT,Past,13
+15-08-2026,Arvind Bansal (HR),North,KurukshetraHub_KUR_PL,EXT,Present,5
+15-08-2026,Arvind Bansal (HR),North,KurukshetraHub_KUR_PL,FK,Past,2
+15-08-2026,Arvind Bansal (HR),North,KurukshetraHub_KUR_PL,FK,Present,73
+15-08-2026,Arvind Bansal (HR),North,KurukshetraHub_KUR_PL,MYE,Past,3
+15-08-2026,Arvind Bansal (HR),North,KurukshetraHub_KUR_PL,MYE,Present,3
+15-08-2026,Arvind Bansal (HR),North,LadwaHub_LAD_PL,FK,Past,30
+15-08-2026,Arvind Bansal (HR),North,LadwaHub_LAD_PL,FK,Present,237
+15-08-2026,Arvind Bansal (HR),North,NarnaulHub_NNL_PL,EXT,Past,2
+15-08-2026,Arvind Bansal (HR),North,NarnaulHub_NNL_PL,FK,Present,67
+15-08-2026,Arvind Bansal (HR),North,NarnaulHub_NNL_PL,MYE,Future,1
+15-08-2026,Arvind Bansal (HR),North,PalwalHub_PLW_PL,EXT,Present,7
+15-08-2026,Arvind Bansal (HR),North,PalwalHub_PLW_PL,FK,Future,2
+15-08-2026,Arvind Bansal (HR),North,PalwalHub_PLW_PL,FK,Past,7
+15-08-2026,Arvind Bansal (HR),North,PalwalHub_PLW_PL,FK,Present,103
+15-08-2026,Arvind Bansal (HR),North,PanipatHub_PPT_PL,EXT,Future,5
+15-08-2026,Arvind Bansal (HR),North,PanipatHub_PPT_PL,EXT,Past,3
+15-08-2026,Arvind Bansal (HR),North,PanipatHub_PPT_PL,EXT,Present,103
+15-08-2026,Arvind Bansal (HR),North,PanipatHub_PPT_PL,FK,Future,2125
+15-08-2026,Arvind Bansal (HR),North,PanipatHub_PPT_PL,FK,Past,395
+15-08-2026,Arvind Bansal (HR),North,PanipatHub_PPT_PL,FK,Present,32508
+15-08-2026,Arvind Bansal (HR),North,PanipatHub_PPT_PL,MYE,Future,16
+15-08-2026,Arvind Bansal (HR),North,PanipatHub_PPT_PL,MYE,Present,1
+15-08-2026,Arvind Bansal (HR),North,RATIAODH_RTA_PL,FK,Present,554
+15-08-2026,Arvind Bansal (HR),North,RewariHub_RWR_PL,EXT,Past,1
+15-08-2026,Arvind Bansal (HR),North,RewariHub_RWR_PL,FK,Present,31
+15-08-2026,Arvind Bansal (HR),North,RewariHub_RWR_PL,MYE,Future,1
+15-08-2026,Arvind Bansal (HR),North,RewariHub_RWR_PL,MYE,Past,1
+15-08-2026,Arvind Bansal (HR),North,RewariHub_RWR_PL,MYE,Present,8
+15-08-2026,Arvind Bansal (HR),North,RohtakHub_ROH_PL,EXT,Past,6
+15-08-2026,Arvind Bansal (HR),North,RohtakHub_ROH_PL,EXT,Present,29
+15-08-2026,Arvind Bansal (HR),North,RohtakHub_ROH_PL,FK,Future,227
+15-08-2026,Arvind Bansal (HR),North,RohtakHub_ROH_PL,FK,Past,80
+15-08-2026,Arvind Bansal (HR),North,RohtakHub_ROH_PL,FK,Present,2009
+15-08-2026,Arvind Bansal (HR),North,RohtakHub_ROH_PL,MYE,Future,3
+15-08-2026,Arvind Bansal (HR),North,RohtakHub_ROH_PL,MYE,Present,3
+15-08-2026,Arvind Bansal (HR),North,SirsaHub_SRS_PL,EXT,Past,1
+15-08-2026,Arvind Bansal (HR),North,SirsaHub_SRS_PL,EXT,Present,97
+15-08-2026,Arvind Bansal (HR),North,SirsaHub_SRS_PL,FK,Future,27
+15-08-2026,Arvind Bansal (HR),North,SirsaHub_SRS_PL,FK,Past,2
+15-08-2026,Arvind Bansal (HR),North,SirsaHub_SRS_PL,FK,Present,337
+15-08-2026,Arvind Bansal (HR),North,SonepatHub_SOP_PL,EXT,Past,18
+15-08-2026,Arvind Bansal (HR),North,SonepatHub_SOP_PL,EXT,Present,27
+15-08-2026,Arvind Bansal (HR),North,SonepatHub_SOP_PL,FK,Future,3
+15-08-2026,Arvind Bansal (HR),North,SonepatHub_SOP_PL,FK,Past,2
+15-08-2026,Arvind Bansal (HR),North,SonepatHub_SOP_PL,FK,Present,450
+15-08-2026,Arvind Bansal (HR),North,SonepatHub_SOP_PL,MYE,Future,4
+15-08-2026,Arvind Bansal (HR),North,SonepatHub_SOP_PL,MYE,Present,2
+15-08-2026,Arvind Bansal (HR),North,TohanaHub_THN_PL,EXT,Past,22
+15-08-2026,Arvind Bansal (HR),North,TohanaHub_THN_PL,EXT,Present,1
+15-08-2026,Arvind Bansal (HR),North,YamunaNagarHub_YNR_PL,EXT,Future,53
+15-08-2026,Arvind Bansal (HR),North,YamunaNagarHub_YNR_PL,EXT,Past,2
+15-08-2026,Arvind Bansal (HR),North,YamunaNagarHub_YNR_PL,EXT,Present,4
+15-08-2026,Arvind Bansal (HR),North,YamunaNagarHub_YNR_PL,FK,Future,3
+15-08-2026,Arvind Bansal (HR),North,YamunaNagarHub_YNR_PL,FK,Present,1662
+15-08-2026,Arvind Bansal (HR),North,YamunaNagarHub_YNR_PL,MYE,Present,2
+15-08-2026,Arvind Bansal (UP),North,AgraHub_AGR_PL,EXT,Present,7
+15-08-2026,Arvind Bansal (UP),North,AgraHub_AGR_PL,FK,Past,3
+15-08-2026,Arvind Bansal (UP),North,AgraHub_AGR_PL,FK,Present,640
+15-08-2026,Arvind Bansal (UP),North,AgraHub_AGR_PL,MYE,Future,106
+15-08-2026,Arvind Bansal (UP),North,ERAgraOPHHub_AGR_PL,EXT,Future,29
+15-08-2026,Arvind Bansal (UP),North,ERAgraOPHHub_AGR_PL,EXT,Past,5
+15-08-2026,Arvind Bansal (UP),North,ERAgraOPHHub_AGR_PL,EXT,Present,165
+15-08-2026,Arvind Bansal (UP),North,ERAgraOPHHub_AGR_PL,FK,Future,251
+15-08-2026,Arvind Bansal (UP),North,ERAgraOPHHub_AGR_PL,FK,Past,99
+15-08-2026,Arvind Bansal (UP),North,ERAgraOPHHub_AGR_PL,FK,Present,4291
+15-08-2026,Arvind Bansal (UP),North,KhandsaBlockI_MYNTRA_GRM_PL,MYS,Past,3881
+15-08-2026,Arvind Bansal (UP),North,KhandsaBlockI_MYNTRA_GRM_PL,MYS,Present,9232
+15-08-2026,Arvind Bansal (UP),North,Myntra_GurgaonMP_PL,EXT,Future,222
+15-08-2026,Arvind Bansal (UP),North,Myntra_GurgaonMP_PL,EXT,Past,48
+15-08-2026,Arvind Bansal (UP),North,SFXAgraOPHHub_AGR_PL,EXT,Future,29
+15-08-2026,Arvind Bansal (UP),North,SFXAgraOPHHub_AGR_PL,EXT,Past,13
+15-08-2026,Arvind Bansal (UP),North,SFXAgraOPHHub_AGR_PL,EXT,Present,302
+15-08-2026,Arvind Bansal (UP),North,SFXAgraOPHHub_AGR_PL,FK,Future,41
+15-08-2026,Arvind Bansal (UP),North,SFXAgraOPHHub_AGR_PL,FK,Past,308
+15-08-2026,Arvind Bansal (UP),North,SFXAgraOPHHub_AGR_PL,FK,Present,8723
+15-08-2026,Arvind Bansal (UP),North,SFXAgraOPHHub_AGR_PL,MYE,Future,19
+15-08-2026,Arvind Bansal (UP),North,SikandraNH2Hub_AGR_PL,EXT,Future,60
+15-08-2026,Arvind Bansal (UP),North,SikandraNH2Hub_AGR_PL,EXT,Present,389
+15-08-2026,Arvind Bansal (UP),North,SikandraNH2Hub_AGR_PL,FK,Future,10
+15-08-2026,Arvind Bansal (UP),North,SikandraNH2Hub_AGR_PL,FK,Past,6
+15-08-2026,Arvind Bansal (UP),North,SikandraNH2Hub_AGR_PL,FK,Present,2142
+15-08-2026,Arvind Bansal (UP),North,SRCVAgraHub_AGR_OPH_PL,EXT,Future,80
+15-08-2026,Arvind Bansal (UP),North,SRCVAgraHub_AGR_OPH_PL,EXT,Past,1
+15-08-2026,Arvind Bansal (UP),North,SRCVAgraHub_AGR_OPH_PL,EXT,Present,328
+15-08-2026,Arvind Bansal (UP),North,SRCVAgraHub_AGR_OPH_PL,FK,Future,844
+15-08-2026,Arvind Bansal (UP),North,SRCVAgraHub_AGR_OPH_PL,FK,Past,49
+15-08-2026,Arvind Bansal (UP),North,SRCVAgraHub_AGR_OPH_PL,FK,Present,4066
+15-08-2026,Arvind Bansal (UP),North,SRCVAgraHub_AGR_OPH_PL,MYE,Future,7
+15-08-2026,Arvind Bansal (UP),North,SRCVAgraHub_AGR_OPH_PL,MYE,Present,1
+15-08-2026,Ashvani Bhatt,West,AmroliHub_STV_PL,EXT,Past,3
+15-08-2026,Ashvani Bhatt,West,AmroliHub_STV_PL,EXT,Present,175
+15-08-2026,Ashvani Bhatt,West,AmroliHub_STV_PL,FK,Future,394
+15-08-2026,Ashvani Bhatt,West,AmroliHub_STV_PL,FK,Past,29
+15-08-2026,Ashvani Bhatt,West,AmroliHub_STV_PL,FK,Present,9914
+15-08-2026,Ashvani Bhatt,West,DindoliHub_STV_PL,EXT,Future,74
+15-08-2026,Ashvani Bhatt,West,DindoliHub_STV_PL,EXT,Past,24
+15-08-2026,Ashvani Bhatt,West,DindoliHub_STV_PL,EXT,Present,1290
+15-08-2026,Ashvani Bhatt,West,DindoliHub_STV_PL,FK,Future,4413
+15-08-2026,Ashvani Bhatt,West,DindoliHub_STV_PL,FK,Past,200
+15-08-2026,Ashvani Bhatt,West,DindoliHub_STV_PL,FK,Present,37647
+15-08-2026,Ashvani Bhatt,West,DindoliHub_STV_PL,MYE,Future,228
+15-08-2026,Ashvani Bhatt,West,DindoliHub_STV_PL,MYE,Past,5
+15-08-2026,Ashvani Bhatt,West,DindoliHub_STV_PL,MYE,Present,1136
+15-08-2026,Ashvani Bhatt,West,DindoliHub_STV_PL,MYS,Future,503
+15-08-2026,Ashvani Bhatt,West,DindoliHub_STV_PL,MYS,Present,1471
+15-08-2026,Ashvani Bhatt,West,KamrejHub_STV_PL,EXT,Future,47
+15-08-2026,Ashvani Bhatt,West,KamrejHub_STV_PL,EXT,Past,19
+15-08-2026,Ashvani Bhatt,West,KamrejHub_STV_PL,EXT,Present,278
+15-08-2026,Ashvani Bhatt,West,KamrejHub_STV_PL,FK,Future,1498
+15-08-2026,Ashvani Bhatt,West,KamrejHub_STV_PL,FK,Past,19
+15-08-2026,Ashvani Bhatt,West,KamrejHub_STV_PL,FK,Present,27870
+15-08-2026,Ashvani Bhatt,West,KamrejHub_STV_PL,MYE,Future,33
+15-08-2026,Ashvani Bhatt,West,KamrejHub_STV_PL,MYE,Present,67
+15-08-2026,Ashvani Bhatt,West,KamrejHub_STV_PL,MYS,Present,32
+15-08-2026,Ashvani Bhatt,West,Motavarachahub_STV_PL,EXT,Past,42
+15-08-2026,Ashvani Bhatt,West,Motavarachahub_STV_PL,EXT,Present,95
+15-08-2026,Ashvani Bhatt,West,Motavarachahub_STV_PL,FK,Future,720
+15-08-2026,Ashvani Bhatt,West,Motavarachahub_STV_PL,FK,Past,287
+15-08-2026,Ashvani Bhatt,West,Motavarachahub_STV_PL,FK,Present,29035
+15-08-2026,Ashvani Bhatt,West,Motavarachahub_STV_PL,MYE,Future,56
+15-08-2026,Ashvani Bhatt,West,Motavarachahub_STV_PL,MYE,Present,77
+15-08-2026,Ashvani Bhatt,West,Motavarachahub_STV_PL,MYS,Future,15
+15-08-2026,Ashvani Bhatt,West,Motavarachahub_STV_PL,MYS,Present,50
+15-08-2026,Ashvani Bhatt,West,MotaVarachhaSplitHub_STV_PL,EXT,Future,18
+15-08-2026,Ashvani Bhatt,West,MotaVarachhaSplitHub_STV_PL,EXT,Past,8
+15-08-2026,Ashvani Bhatt,West,MotaVarachhaSplitHub_STV_PL,EXT,Present,234
+15-08-2026,Ashvani Bhatt,West,MotaVarachhaSplitHub_STV_PL,FK,Future,361
+15-08-2026,Ashvani Bhatt,West,MotaVarachhaSplitHub_STV_PL,FK,Past,65
+15-08-2026,Ashvani Bhatt,West,MotaVarachhaSplitHub_STV_PL,FK,Present,33053
+15-08-2026,Ashvani Bhatt,West,MotaVarachhaSplitHub_STV_PL,MYE,Future,31
+15-08-2026,Ashvani Bhatt,West,MotaVarachhaSplitHub_STV_PL,MYE,Present,138
+15-08-2026,Ashvani Bhatt,West,MotaVarachhaSplitHub_STV_PL,MYS,Future,119
+15-08-2026,Ashvani Bhatt,West,MotaVarachhaSplitHub_STV_PL,MYS,Present,849
+15-08-2026,Ashvani Bhatt,West,MyntraUdhnaHub_SRT_PL,MYS,Future,2313
+15-08-2026,Ashvani Bhatt,West,MyntraUdhnaHub_SRT_PL,MYS,Past,76
+15-08-2026,Ashvani Bhatt,West,MyntraUdhnaHub_SRT_PL,MYS,Present,8178
+15-08-2026,Ashvani Bhatt,West,NavsariHub_STV_PL,EXT,Future,570
+15-08-2026,Ashvani Bhatt,West,NavsariHub_STV_PL,EXT,Past,8
+15-08-2026,Ashvani Bhatt,West,NavsariHub_STV_PL,EXT,Present,273
+15-08-2026,Ashvani Bhatt,West,NavsariHub_STV_PL,FK,Future,131
+15-08-2026,Ashvani Bhatt,West,NavsariHub_STV_PL,FK,Present,732
+15-08-2026,Ashvani Bhatt,West,NavsariHub_STV_PL,MYE,Future,2
+15-08-2026,Ashvani Bhatt,West,NavsariHub_STV_PL,MYE,Present,7
+15-08-2026,Ashvani Bhatt,West,SaniyaHub_STV_PL,EXT,Future,2
+15-08-2026,Ashvani Bhatt,West,SaniyaHub_STV_PL,EXT,Past,18
+15-08-2026,Ashvani Bhatt,West,SaniyaHub_STV_PL,EXT,Present,279
+15-08-2026,Ashvani Bhatt,West,SaniyaHub_STV_PL,FK,Future,1609
+15-08-2026,Ashvani Bhatt,West,SaniyaHub_STV_PL,FK,Past,30
+15-08-2026,Ashvani Bhatt,West,SaniyaHub_STV_PL,FK,Present,39561
+15-08-2026,Ashvani Bhatt,West,SaniyaHub_STV_PL,MYE,Future,137
+15-08-2026,Ashvani Bhatt,West,SaniyaHub_STV_PL,MYE,Past,18
+15-08-2026,Ashvani Bhatt,West,SaniyaHub_STV_PL,MYE,Present,730
+15-08-2026,Ashvani Bhatt,West,SaniyaHub_STV_PL,MYS,Present,730
+15-08-2026,Ashvani Bhatt,West,SaroliHub_STV_PL,EXT,Future,7
+15-08-2026,Ashvani Bhatt,West,SaroliHub_STV_PL,EXT,Past,114
+15-08-2026,Ashvani Bhatt,West,SaroliHub_STV_PL,EXT,Present,370
+15-08-2026,Ashvani Bhatt,West,SaroliHub_STV_PL,FK,Future,1255
+15-08-2026,Ashvani Bhatt,West,SaroliHub_STV_PL,FK,Past,17
+15-08-2026,Ashvani Bhatt,West,SaroliHub_STV_PL,FK,Present,28787
+15-08-2026,Ashvani Bhatt,West,SaroliHub_STV_PL,MYE,Future,67
+15-08-2026,Ashvani Bhatt,West,SaroliHub_STV_PL,MYE,Past,2
+15-08-2026,Ashvani Bhatt,West,SaroliHub_STV_PL,MYE,Present,311
+15-08-2026,Ashvani Bhatt,West,SaroliHubSplit_STV_PL,EXT,Future,1
+15-08-2026,Ashvani Bhatt,West,SaroliHubSplit_STV_PL,EXT,Past,100
+15-08-2026,Ashvani Bhatt,West,SaroliHubSplit_STV_PL,EXT,Present,157
+15-08-2026,Ashvani Bhatt,West,SaroliHubSplit_STV_PL,FK,Future,2976
+15-08-2026,Ashvani Bhatt,West,SaroliHubSplit_STV_PL,FK,Past,31
+15-08-2026,Ashvani Bhatt,West,SaroliHubSplit_STV_PL,FK,Present,30028
+15-08-2026,Ashvani Bhatt,West,SaroliHubSplit_STV_PL,MYE,Future,122
+15-08-2026,Ashvani Bhatt,West,SaroliHubSplit_STV_PL,MYE,Past,47
+15-08-2026,Ashvani Bhatt,West,SaroliHubSplit_STV_PL,MYE,Present,680
+15-08-2026,Ashvani Bhatt,West,SingapurHub_STV_PL,EXT,Future,45
+15-08-2026,Ashvani Bhatt,West,SingapurHub_STV_PL,EXT,Past,484
+15-08-2026,Ashvani Bhatt,West,SingapurHub_STV_PL,EXT,Present,1210
+15-08-2026,Ashvani Bhatt,West,SingapurHub_STV_PL,FK,Future,1755
+15-08-2026,Ashvani Bhatt,West,SingapurHub_STV_PL,FK,Past,85
+15-08-2026,Ashvani Bhatt,West,SingapurHub_STV_PL,FK,Present,53928
+15-08-2026,Ashvani Bhatt,West,SingapurHub_STV_PL,MYE,Future,1
+15-08-2026,Ashvani Bhatt,West,SingapurHub_STV_PL,MYE,Present,10
+15-08-2026,Ashvani Bhatt,West,SingapurHub_STV_PL,MYS,Future,35
+15-08-2026,Ashvani Bhatt,West,SingapurHub_STV_PL,MYS,Present,122
+15-08-2026,Ashvani Bhatt,West,StationTempHub_STV_PL,EXT,Past,14
+15-08-2026,Ashvani Bhatt,West,StationTempHub_STV_PL,EXT,Present,299
+15-08-2026,Ashvani Bhatt,West,StationTempHub_STV_PL,FK,Future,3189
+15-08-2026,Ashvani Bhatt,West,StationTempHub_STV_PL,FK,Past,25
+15-08-2026,Ashvani Bhatt,West,StationTempHub_STV_PL,FK,Present,34694
+15-08-2026,Ashvani Bhatt,West,StationTempHub_STV_PL,MYE,Future,68
+15-08-2026,Ashvani Bhatt,West,StationTempHub_STV_PL,MYE,Past,2
+15-08-2026,Ashvani Bhatt,West,StationTempHub_STV_PL,MYE,Present,404
+15-08-2026,Ashvani Bhatt,West,StationTempHub_STV_PL,MYS,Future,62
+15-08-2026,Ashvani Bhatt,West,StationTempHub_STV_PL,MYS,Present,432
+15-08-2026,Ashvani Bhatt,West,SuratHub_STV_PL,EXT,Future,1304
+15-08-2026,Ashvani Bhatt,West,SuratHub_STV_PL,EXT,Past,138
+15-08-2026,Ashvani Bhatt,West,SuratHub_STV_PL,EXT,Present,5349
+15-08-2026,Ashvani Bhatt,West,SuratHub_STV_PL,FK,Future,5907
+15-08-2026,Ashvani Bhatt,West,SuratHub_STV_PL,FK,Past,159
+15-08-2026,Ashvani Bhatt,West,SuratHub_STV_PL,FK,Present,88269
+15-08-2026,Ashvani Bhatt,West,SuratHub_STV_PL,MYE,Future,70
+15-08-2026,Ashvani Bhatt,West,SuratHub_STV_PL,MYE,Past,1
+15-08-2026,Ashvani Bhatt,West,SuratHub_STV_PL,MYE,Present,130
+15-08-2026,Ashvani Bhatt,West,SuratHub_STV_PL,MYS,Future,8
+15-08-2026,Ashvani Bhatt,West,SuratHub_STV_PL,MYS,Past,4
+15-08-2026,Ashvani Bhatt,West,SuratHub_STV_PL,MYS,Present,199
+15-08-2026,Ashvani Bhatt,West,SuratTempHub_STV,EXT,Future,31
+15-08-2026,Ashvani Bhatt,West,SuratTempHub_STV,EXT,Past,64
+15-08-2026,Ashvani Bhatt,West,SuratTempHub_STV,EXT,Present,445
+15-08-2026,Ashvani Bhatt,West,SuratTempHub_STV,FK,Future,1362
+15-08-2026,Ashvani Bhatt,West,SuratTempHub_STV,FK,Past,230
+15-08-2026,Ashvani Bhatt,West,SuratTempHub_STV,FK,Present,30122
+15-08-2026,Ashvani Bhatt,West,SuratTempHub_STV,MYE,Future,104
+15-08-2026,Ashvani Bhatt,West,SuratTempHub_STV,MYE,Past,97
+15-08-2026,Ashvani Bhatt,West,SuratTempHub_STV,MYE,Present,915
+15-08-2026,Ashvani Bhatt,West,SuratTempHub_STV,MYS,Future,14
+15-08-2026,Ashvani Bhatt,West,SuratTempHub_STV,MYS,Past,396
+15-08-2026,Ashvani Bhatt,West,SuratTempHub_STV,MYS,Present,784
+15-08-2026,Ashvani Bhatt,West,UdhnaHub_STV_PL,EXT,Future,24
+15-08-2026,Ashvani Bhatt,West,UdhnaHub_STV_PL,EXT,Past,15
+15-08-2026,Ashvani Bhatt,West,UdhnaHub_STV_PL,EXT,Present,930
+15-08-2026,Ashvani Bhatt,West,UdhnaHub_STV_PL,FK,Future,244
+15-08-2026,Ashvani Bhatt,West,UdhnaHub_STV_PL,FK,Past,10
+15-08-2026,Ashvani Bhatt,West,UdhnaHub_STV_PL,FK,Present,25963
+15-08-2026,Ashvani Bhatt,West,UdhnaHub_STV_PL,MYE,Future,351
+15-08-2026,Ashvani Bhatt,West,UdhnaHub_STV_PL,MYE,Past,1
+15-08-2026,Ashvani Bhatt,West,UdhnaHub_STV_PL,MYE,Present,1881
+15-08-2026,Ashvani Bhatt,West,UdhnaHub_STV_PL,MYS,Future,428
+15-08-2026,Ashvani Bhatt,West,UdhnaHub_STV_PL,MYS,Past,1
+15-08-2026,Ashvani Bhatt,West,UdhnaHub_STV_PL,MYS,Present,1346
+15-08-2026,Ashvani Bhatt,West,VarachhaHub_STV_PL,EXT,Present,23
+15-08-2026,Ashvani Bhatt,West,VarachhaHub_STV_PL,FK,Present,1829
+15-08-2026,Ashvani Bhatt,West,VareliSurat_MYNTRA_SRT_PL,MYS,Future,1305
+15-08-2026,Ashvani Bhatt,West,VareliSurat_MYNTRA_SRT_PL,MYS,Past,740
+15-08-2026,Ashvani Bhatt,West,VareliSurat_MYNTRA_SRT_PL,MYS,Present,15028
+15-08-2026,Ashvani Bhatt,West,YogiChowkTempHub_STV_PL,EXT,Future,90
+15-08-2026,Ashvani Bhatt,West,YogiChowkTempHub_STV_PL,EXT,Past,138
+15-08-2026,Ashvani Bhatt,West,YogiChowkTempHub_STV_PL,EXT,Present,1639
+15-08-2026,Ashvani Bhatt,West,YogiChowkTempHub_STV_PL,FK,Future,1749
+15-08-2026,Ashvani Bhatt,West,YogiChowkTempHub_STV_PL,FK,Past,104
+15-08-2026,Ashvani Bhatt,West,YogiChowkTempHub_STV_PL,FK,Present,63246
+15-08-2026,Ashvani Bhatt,West,YogiChowkTempHub_STV_PL,MYE,Future,82
+15-08-2026,Ashvani Bhatt,West,YogiChowkTempHub_STV_PL,MYE,Past,2
+15-08-2026,Ashvani Bhatt,West,YogiChowkTempHub_STV_PL,MYE,Present,652
+15-08-2026,Ashvani Bhatt,West,YogiChowkTempHub_STV_PL,MYS,Future,35
+15-08-2026,Ashvani Bhatt,West,YogiChowkTempHub_STV_PL,MYS,Present,446
+15-08-2026,Ashwarya Singh,West,BhiwandiHub_BHI_PL,EXT,Future,143
+15-08-2026,Ashwarya Singh,West,BhiwandiHub_BHI_PL,EXT,Past,45
+15-08-2026,Ashwarya Singh,West,BhiwandiHub_BHI_PL,EXT,Present,634
+15-08-2026,Ashwarya Singh,West,BhiwandiHub_BHI_PL,FK,Present,99
+15-08-2026,Ashwarya Singh,West,BhiwandiHub_BHI_PL,MYE,Past,9
+15-08-2026,Ashwarya Singh,West,BhiwandiHub_BHI_PL,MYE,Present,214
+15-08-2026,Ashwarya Singh,West,BhiwandiHub_BHI_PL,MYS,Past,19
+15-08-2026,Ashwarya Singh,West,BhiwandiHub_BHI_PL,MYS,Present,369
+15-08-2026,Ashwarya Singh,West,Bhiwandisplithub_BHI_PL,EXT,Future,141
+15-08-2026,Ashwarya Singh,West,Bhiwandisplithub_BHI_PL,EXT,Past,11
+15-08-2026,Ashwarya Singh,West,Bhiwandisplithub_BHI_PL,EXT,Present,1870
+15-08-2026,Ashwarya Singh,West,Bhiwandisplithub_BHI_PL,FK,Future,124
+15-08-2026,Ashwarya Singh,West,Bhiwandisplithub_BHI_PL,FK,Past,4
+15-08-2026,Ashwarya Singh,West,Bhiwandisplithub_BHI_PL,FK,Present,3043
+15-08-2026,Ashwarya Singh,West,Bhiwandisplithub_BHI_PL,MYE,Future,115
+15-08-2026,Ashwarya Singh,West,Bhiwandisplithub_BHI_PL,MYE,Present,635
+15-08-2026,Ashwarya Singh,West,Bhiwandisplithub_BHI_PL,MYS,Present,1383
+15-08-2026,Ashwarya Singh,West,FortHub_MUM_PL,EXT,Future,5
+15-08-2026,Ashwarya Singh,West,FortHub_MUM_PL,EXT,Past,44
+15-08-2026,Ashwarya Singh,West,FortHub_MUM_PL,EXT,Present,169
+15-08-2026,Ashwarya Singh,West,FortHub_MUM_PL,FK,Future,157
+15-08-2026,Ashwarya Singh,West,FortHub_MUM_PL,FK,Past,23
+15-08-2026,Ashwarya Singh,West,FortHub_MUM_PL,FK,Present,3951
+15-08-2026,Ashwarya Singh,West,FortHub_MUM_PL,MYE,Future,162
+15-08-2026,Ashwarya Singh,West,FortHub_MUM_PL,MYE,Past,1
+15-08-2026,Ashwarya Singh,West,FortHub_MUM_PL,MYE,Present,23
+15-08-2026,Ashwarya Singh,West,GoregaonMPHub_MUM_PL,EXT,Future,2
+15-08-2026,Ashwarya Singh,West,GoregaonMPHub_MUM_PL,EXT,Past,12
+15-08-2026,Ashwarya Singh,West,GoregaonMPHub_MUM_PL,EXT,Present,84
+15-08-2026,Ashwarya Singh,West,GoregaonMPHub_MUM_PL,FK,Future,144
+15-08-2026,Ashwarya Singh,West,GoregaonMPHub_MUM_PL,FK,Past,6
+15-08-2026,Ashwarya Singh,West,GoregaonMPHub_MUM_PL,FK,Present,1339
+15-08-2026,Ashwarya Singh,West,GoregaonMPHub_MUM_PL,MYE,Future,9
+15-08-2026,Ashwarya Singh,West,GoregaonMPHub_MUM_PL,MYE,Past,18
+15-08-2026,Ashwarya Singh,West,GoregaonMPHub_MUM_PL,MYE,Present,42
+15-08-2026,Ashwarya Singh,West,KalyanHub_MUM_PL,EXT,Past,12
+15-08-2026,Ashwarya Singh,West,KalyanHub_MUM_PL,EXT,Present,35
+15-08-2026,Ashwarya Singh,West,KalyanHub_MUM_PL,FK,Future,14
+15-08-2026,Ashwarya Singh,West,KalyanHub_MUM_PL,FK,Past,2
+15-08-2026,Ashwarya Singh,West,KalyanHub_MUM_PL,FK,Present,1369
+15-08-2026,Ashwarya Singh,West,KalyanHub_MUM_PL,MYE,Future,9
+15-08-2026,Ashwarya Singh,West,KalyanHub_MUM_PL,MYE,Past,2
+15-08-2026,Ashwarya Singh,West,KalyanHub_MUM_PL,MYE,Present,95
+15-08-2026,Ashwarya Singh,West,KOORIEEMUMBRAODH_MBR_PL,FK,Future,8
+15-08-2026,Ashwarya Singh,West,KOORIEEMUMBRAODH_MBR_PL,FK,Present,132
+15-08-2026,Ashwarya Singh,West,MiraRoadHub_MUM_PL,EXT,Future,2
+15-08-2026,Ashwarya Singh,West,MiraRoadHub_MUM_PL,EXT,Past,26
+15-08-2026,Ashwarya Singh,West,MiraRoadHub_MUM_PL,EXT,Present,59
+15-08-2026,Ashwarya Singh,West,MiraRoadHub_MUM_PL,FK,Past,13
+15-08-2026,Ashwarya Singh,West,MiraRoadHub_MUM_PL,FK,Present,947
+15-08-2026,Ashwarya Singh,West,MiraRoadHub_MUM_PL,MYE,Future,3
+15-08-2026,Ashwarya Singh,West,MiraRoadHub_MUM_PL,MYE,Present,46
+15-08-2026,Ashwarya Singh,West,MiraRoadHub_MUM_PL,MYS,Future,6
+15-08-2026,Ashwarya Singh,West,MiraRoadHub_MUM_PL,MYS,Past,1
+15-08-2026,Ashwarya Singh,West,MiraRoadHub_MUM_PL,MYS,Present,31
+15-08-2026,Ashwarya Singh,West,SakinakaHub_MUM_PL,EXT,Past,1
+15-08-2026,Ashwarya Singh,West,SakinakaHub_MUM_PL,EXT,Present,7
+15-08-2026,Ashwarya Singh,West,SakinakaHub_MUM_PL,FK,Future,82
+15-08-2026,Ashwarya Singh,West,SakinakaHub_MUM_PL,FK,Past,62
+15-08-2026,Ashwarya Singh,West,SakinakaHub_MUM_PL,FK,Present,2877
+15-08-2026,Ashwarya Singh,West,SakinakaHub_MUM_PL,MYE,Future,36
+15-08-2026,Ashwarya Singh,West,SakinakaHub_MUM_PL,MYE,Past,1
+15-08-2026,Ashwarya Singh,West,SakinakaHub_MUM_PL,MYE,Present,69
+15-08-2026,Ashwarya Singh,West,SakinakaHub_MUM_PL,MYS,Present,36
+15-08-2026,Ashwarya Singh,West,Sewrihub_Mum_PL,EXT,Future,52
+15-08-2026,Ashwarya Singh,West,Sewrihub_Mum_PL,EXT,Past,3
+15-08-2026,Ashwarya Singh,West,Sewrihub_Mum_PL,EXT,Present,322
+15-08-2026,Ashwarya Singh,West,Sewrihub_Mum_PL,FK,Future,408
+15-08-2026,Ashwarya Singh,West,Sewrihub_Mum_PL,FK,Past,44
+15-08-2026,Ashwarya Singh,West,Sewrihub_Mum_PL,FK,Present,10879
+15-08-2026,Ashwarya Singh,West,Sewrihub_Mum_PL,MYE,Future,401
+15-08-2026,Ashwarya Singh,West,Sewrihub_Mum_PL,MYE,Past,1
+15-08-2026,Ashwarya Singh,West,Sewrihub_Mum_PL,MYE,Present,122
+15-08-2026,Ashwarya Singh,West,Sewrihub_Mum_PL,MYS,Future,91
+15-08-2026,Ashwarya Singh,West,Sewrihub_Mum_PL,MYS,Past,1
+15-08-2026,Ashwarya Singh,West,Sewrihub_Mum_PL,MYS,Present,1101
+15-08-2026,Ashwarya Singh,West,ThaneHub_MUM_PL,EXT,Past,3
+15-08-2026,Ashwarya Singh,West,ThaneHub_MUM_PL,EXT,Present,24
+15-08-2026,Ashwarya Singh,West,ThaneHub_MUM_PL,FK,Past,1
+15-08-2026,Ashwarya Singh,West,ThaneHub_MUM_PL,FK,Present,296
+15-08-2026,Ashwarya Singh,West,ThaneHub_MUM_PL,MYE,Future,11
+15-08-2026,Ashwarya Singh,West,ThaneHub_MUM_PL,MYE,Past,1
+15-08-2026,Ashwarya Singh,West,ThaneHub_MUM_PL,MYE,Present,11
+15-08-2026,Ashwarya Singh,West,VasaiHub_MUM_PL,EXT,Past,1
+15-08-2026,Ashwarya Singh,West,VasaiHub_MUM_PL,EXT,Present,22
+15-08-2026,Ashwarya Singh,West,VasaiHub_MUM_PL,FK,Future,77
+15-08-2026,Ashwarya Singh,West,VasaiHub_MUM_PL,FK,Past,2
+15-08-2026,Ashwarya Singh,West,VasaiHub_MUM_PL,FK,Present,1639
+15-08-2026,Ashwarya Singh,West,VasaiHub_MUM_PL,MYE,Future,68
+15-08-2026,Ashwarya Singh,West,VasaiHub_MUM_PL,MYE,Past,27
+15-08-2026,Ashwarya Singh,West,VasaiHub_MUM_PL,MYE,Present,24
+15-08-2026,Ashwarya Singh,West,VashiHub_MUM_PL,EXT,Future,72
+15-08-2026,Ashwarya Singh,West,VashiHub_MUM_PL,EXT,Past,1
+15-08-2026,Ashwarya Singh,West,VashiHub_MUM_PL,EXT,Present,1170
+15-08-2026,Ashwarya Singh,West,VashiHub_MUM_PL,FK,Past,10
+15-08-2026,Ashwarya Singh,West,VashiHub_MUM_PL,FK,Present,915
+15-08-2026,Ashwarya Singh,West,VashiHub_MUM_PL,MYE,Future,22
+15-08-2026,Ashwarya Singh,West,VashiHub_MUM_PL,MYE,Past,3
+15-08-2026,Ashwarya Singh,West,VashiHub_MUM_PL,MYE,Present,70
+15-08-2026,Loveleen Singh,North,AmritsarHub_ATQ_PL,EXT,Past,3
+15-08-2026,Loveleen Singh,North,AmritsarHub_ATQ_PL,EXT,Present,10
+15-08-2026,Loveleen Singh,North,AmritsarHub_ATQ_PL,FK,Past,3
+15-08-2026,Loveleen Singh,North,AmritsarHub_ATQ_PL,MYE,Future,5
+15-08-2026,Loveleen Singh,North,AmritsarHub_ATQ_PL,MYE,Past,3
+15-08-2026,Loveleen Singh,North,AmritsarHub_ATQ_PL,MYE,Present,61
+15-08-2026,Loveleen Singh,North,BarnalaHub_BRN_PL,FK,Past,1
+15-08-2026,Loveleen Singh,North,BhatindaHub_BUP_PL,EXT,Past,7
+15-08-2026,Loveleen Singh,North,BhatindaHub_BUP_PL,EXT,Present,1
+15-08-2026,Loveleen Singh,North,BhatindaHub_BUP_PL,FK,Past,1
+15-08-2026,Loveleen Singh,North,BhatindaHub_BUP_PL,FK,Present,22
+15-08-2026,Loveleen Singh,North,BhatindaHub_BUP_PL,MYE,Present,2
+15-08-2026,Loveleen Singh,North,ChandigarhHub_CHD_PL,EXT,Future,2
+15-08-2026,Loveleen Singh,North,ChandigarhHub_CHD_PL,EXT,Past,3
+15-08-2026,Loveleen Singh,North,ChandigarhHub_CHD_PL,EXT,Present,26
+15-08-2026,Loveleen Singh,North,ChandigarhHub_CHD_PL,FK,Present,1
+15-08-2026,Loveleen Singh,North,ChandigarhHub_CHD_PL,MYE,Future,5
+15-08-2026,Loveleen Singh,North,ChandigarhHub_CHD_PL,MYE,Present,5
+15-08-2026,Loveleen Singh,North,ChandigarhRoadHub_LUH_PL,EXT,Past,1
+15-08-2026,Loveleen Singh,North,ChandigarhRoadHub_LUH_PL,EXT,Present,27
+15-08-2026,Loveleen Singh,North,ChandigarhRoadHub_LUH_PL,FK,Future,8
+15-08-2026,Loveleen Singh,North,ChandigarhRoadHub_LUH_PL,FK,Past,162
+15-08-2026,Loveleen Singh,North,ChandigarhRoadHub_LUH_PL,FK,Present,1115
+15-08-2026,Loveleen Singh,North,ChandigarhRoadSplitHub_LUH_PL,EXT,Past,3
+15-08-2026,Loveleen Singh,North,ChandigarhRoadSplitHub_LUH_PL,EXT,Present,123
+15-08-2026,Loveleen Singh,North,ChandigarhRoadSplitHub_LUH_PL,FK,Future,51
+15-08-2026,Loveleen Singh,North,ChandigarhRoadSplitHub_LUH_PL,FK,Past,33
+15-08-2026,Loveleen Singh,North,ChandigarhRoadSplitHub_LUH_PL,FK,Present,2166
+15-08-2026,Loveleen Singh,North,ChandigarhRoadSplitHub_LUH_PL,MYE,Future,11
+15-08-2026,Loveleen Singh,North,ChandigarhRoadSplitHub_LUH_PL,MYE,Present,31
+15-08-2026,Loveleen Singh,North,ChandigarhRoadSplitHub_LUH_PL,MYS,Future,82
+15-08-2026,Loveleen Singh,North,ChandigarhRoadSplitHub_LUH_PL,MYS,Present,348
+15-08-2026,Loveleen Singh,North,DehradunHub_DED_PL,EXT,Future,2
+15-08-2026,Loveleen Singh,North,DehradunHub_DED_PL,EXT,Past,5
+15-08-2026,Loveleen Singh,North,DehradunHub_DED_PL,EXT,Present,23
+15-08-2026,Loveleen Singh,North,DehradunHub_DED_PL,FK,Future,1
+15-08-2026,Loveleen Singh,North,DehradunHub_DED_PL,FK,Present,92
+15-08-2026,Loveleen Singh,North,DehradunHub_DED_PL,MYE,Future,27
+15-08-2026,Loveleen Singh,North,DehradunHub_DED_PL,MYE,Past,9
+15-08-2026,Loveleen Singh,North,DehradunHub_DED_PL,MYE,Present,57
+15-08-2026,Loveleen Singh,North,Fazilkahub_FAL_PL,EXT,Future,1
+15-08-2026,Loveleen Singh,North,Fazilkahub_FAL_PL,EXT,Present,11
+15-08-2026,Loveleen Singh,North,Fazilkahub_FAL_PL,FK,Present,3
+15-08-2026,Loveleen Singh,North,FerozepurHub_FER_PL,FK,Past,1
+15-08-2026,Loveleen Singh,North,FerozepurHub_FER_PL,FK,Present,8
+15-08-2026,Loveleen Singh,North,FerozepurRoadHub_LUH_PL,EXT,Present,2
+15-08-2026,Loveleen Singh,North,FerozepurRoadHub_LUH_PL,FK,Present,96
+15-08-2026,Loveleen Singh,North,FerozepurRoadHub_LUH_PL,MYE,Present,1
+15-08-2026,Loveleen Singh,North,GIDDERBAHAHUB_GID_PL,EXT,Past,1
+15-08-2026,Loveleen Singh,North,GurdaspurHub_GDS_PL,EXT,Future,3
+15-08-2026,Loveleen Singh,North,GurdaspurHub_GDS_PL,EXT,Present,11
+15-08-2026,Loveleen Singh,North,GurdaspurHub_GDS_PL,FK,Future,1
+15-08-2026,Loveleen Singh,North,HaldwaniHub_HWI_PL,EXT,Past,1
+15-08-2026,Loveleen Singh,North,HaldwaniHub_HWI_PL,FK,Past,4
+15-08-2026,Loveleen Singh,North,HaldwaniHub_HWI_PL,FK,Present,19
+15-08-2026,Loveleen Singh,North,HaldwaniHub_HWI_PL,MYE,Future,1
+15-08-2026,Loveleen Singh,North,HaldwaniHub_HWI_PL,MYE,Present,18
+15-08-2026,Loveleen Singh,North,HaridwarHub_HRD_PL,FK,Future,3
+15-08-2026,Loveleen Singh,North,HaridwarHub_HRD_PL,FK,Past,1
+15-08-2026,Loveleen Singh,North,HaridwarHub_HRD_PL,FK,Present,269
+15-08-2026,Loveleen Singh,North,HaridwarHub_HRD_PL,MYE,Present,1
+15-08-2026,Loveleen Singh,North,HoshiarpurHub_HAP_PL,EXT,Present,24
+15-08-2026,Loveleen Singh,North,JalandharSplitOPH_JLR_PL,FK,Past,87
+15-08-2026,Loveleen Singh,North,JalandharSplitOPH_JLR_PL,MYE,Past,2
+15-08-2026,Loveleen Singh,North,KashipurHub_KAS_PL,EXT,Present,4
+15-08-2026,Loveleen Singh,North,KashipurHub_KAS_PL,FK,Past,16
+15-08-2026,Loveleen Singh,North,MohaliHub_IXC_PL,EXT,Past,5
+15-08-2026,Loveleen Singh,North,MohaliHub_IXC_PL,EXT,Present,2
+15-08-2026,Loveleen Singh,North,MohaliHub_IXC_PL,MYE,Future,80
+15-08-2026,Loveleen Singh,North,MohaliHub_IXC_PL,MYE,Past,1
+15-08-2026,Loveleen Singh,North,MohaliHub_IXC_PL,MYE,Present,322
+15-08-2026,Loveleen Singh,North,MuktsarHub_MKT_PL,EXT,Past,6
+15-08-2026,Loveleen Singh,North,MuktsarHub_MKT_PL,FK,Present,1
+15-08-2026,Loveleen Singh,North,PanchkulaMPHub_PNK_PL,EXT,Past,27
+15-08-2026,Loveleen Singh,North,PanchkulaMPHub_PNK_PL,EXT,Present,109
+15-08-2026,Loveleen Singh,North,PanchkulaMPHub_PNK_PL,FK,Future,2
+15-08-2026,Loveleen Singh,North,PanchkulaMPHub_PNK_PL,FK,Present,3
+15-08-2026,Loveleen Singh,North,PanchkulaMPHub_PNK_PL,MYE,Future,5
+15-08-2026,Loveleen Singh,North,PanchkulaMPHub_PNK_PL,MYE,Present,11
+15-08-2026,Loveleen Singh,North,PatialaHub_PTA_PL,EXT,Future,2
+15-08-2026,Loveleen Singh,North,PatialaHub_PTA_PL,EXT,Past,6
+15-08-2026,Loveleen Singh,North,PatialaHub_PTA_PL,EXT,Present,16
+15-08-2026,Loveleen Singh,North,PatialaHub_PTA_PL,MYE,Present,2
+15-08-2026,Loveleen Singh,North,RishikeshHub_HRD_PL,EXT,Future,4
+15-08-2026,Loveleen Singh,North,RishikeshHub_HRD_PL,EXT,Past,1
+15-08-2026,Loveleen Singh,North,RishikeshHub_HRD_PL,EXT,Present,2
+15-08-2026,Loveleen Singh,North,RishikeshHub_HRD_PL,FK,Future,2
+15-08-2026,Loveleen Singh,North,RishikeshHub_HRD_PL,FK,Past,4
+15-08-2026,Loveleen Singh,North,RishikeshHub_HRD_PL,FK,Present,5
+15-08-2026,Loveleen Singh,North,RoorkeeHub_HRD_PL,EXT,Future,1
+15-08-2026,Loveleen Singh,North,RoorkeeHub_HRD_PL,EXT,Past,3
+15-08-2026,Loveleen Singh,North,RoorkeeHub_HRD_PL,EXT,Present,20
+15-08-2026,Loveleen Singh,North,RoorkeeHub_HRD_PL,FK,Future,19
+15-08-2026,Loveleen Singh,North,RoorkeeHub_HRD_PL,FK,Past,331
+15-08-2026,Loveleen Singh,North,RoorkeeHub_HRD_PL,FK,Present,274
+15-08-2026,Loveleen Singh,North,RoorkeeHub_HRD_PL,MYE,Future,3
+15-08-2026,Loveleen Singh,North,RoorkeeHub_HRD_PL,MYE,Present,5
+15-08-2026,Loveleen Singh,North,RudrapurHub_RDP_PL,EXT,Future,1
+15-08-2026,Loveleen Singh,North,RudrapurHub_RDP_PL,EXT,Past,4
+15-08-2026,Loveleen Singh,North,RudrapurHub_RDP_PL,FK,Future,1
+15-08-2026,Loveleen Singh,North,RudrapurHub_RDP_PL,MYE,Future,9
+15-08-2026,Loveleen Singh,North,RudrapurHub_RDP_PL,MYE,Present,11
+15-08-2026,Loveleen Singh,North,SelaquiHub_DED_PL,EXT,Present,10
+15-08-2026,Loveleen Singh,North,SIGMAJAGRAONODH_JGN_PL,EXT,Present,5
+15-08-2026,Loveleen Singh,North,SolanHub_SLN_PL,EXT,Present,1
+15-08-2026,Manoj Harsh,North,AliganjHub_LKO_PL,EXT,Future,2
+15-08-2026,Manoj Harsh,North,AliganjHub_LKO_PL,EXT,Past,6
+15-08-2026,Manoj Harsh,North,AliganjHub_LKO_PL,EXT,Present,19
+15-08-2026,Manoj Harsh,North,AliganjHub_LKO_PL,FK,Past,7
+15-08-2026,Manoj Harsh,North,AliganjHub_LKO_PL,FK,Present,879
+15-08-2026,Manoj Harsh,North,AliganjHub_LKO_PL,MYE,Future,21
+15-08-2026,Manoj Harsh,North,AliganjHub_LKO_PL,MYE,Present,67
+15-08-2026,Manoj Harsh,North,AligarhHub_ALG_PL,EXT,Future,4
+15-08-2026,Manoj Harsh,North,AligarhHub_ALG_PL,EXT,Past,4
+15-08-2026,Manoj Harsh,North,AligarhHub_ALG_PL,EXT,Present,27
+15-08-2026,Manoj Harsh,North,AligarhHub_ALG_PL,FK,Future,59
+15-08-2026,Manoj Harsh,North,AligarhHub_ALG_PL,FK,Past,38
+15-08-2026,Manoj Harsh,North,AligarhHub_ALG_PL,FK,Present,3093
+15-08-2026,Manoj Harsh,North,AligarhHub_ALG_PL,MYE,Future,7
+15-08-2026,Manoj Harsh,North,AligarhHub_ALG_PL,MYE,Present,11
+15-08-2026,Manoj Harsh,North,AllahabadHub_ALD_PL,EXT,Future,2
+15-08-2026,Manoj Harsh,North,AllahabadHub_ALD_PL,EXT,Past,9
+15-08-2026,Manoj Harsh,North,AllahabadHub_ALD_PL,EXT,Present,6
+15-08-2026,Manoj Harsh,North,AllahabadHub_ALD_PL,FK,Present,14
+15-08-2026,Manoj Harsh,North,AllahabadHub_ALD_PL,MYE,Future,8
+15-08-2026,Manoj Harsh,North,AllahabadHub_ALD_PL,MYE,Past,14
+15-08-2026,Manoj Harsh,North,AllahabadHub_ALD_PL,MYE,Present,12
+15-08-2026,Manoj Harsh,North,AmrohaHub_AOA_PL,EXT,Future,14
+15-08-2026,Manoj Harsh,North,AmrohaHub_AOA_PL,EXT,Past,6
+15-08-2026,Manoj Harsh,North,AmrohaHub_AOA_PL,EXT,Present,32
+15-08-2026,Manoj Harsh,North,AmrohaHub_AOA_PL,FK,Future,35
+15-08-2026,Manoj Harsh,North,AmrohaHub_AOA_PL,FK,Past,13
+15-08-2026,Manoj Harsh,North,AmrohaHub_AOA_PL,FK,Present,1099
+15-08-2026,Manoj Harsh,North,ArtoniAgra_MYNTRA_AGR_PL,MYS,Future,1712
+15-08-2026,Manoj Harsh,North,ArtoniAgra_MYNTRA_AGR_PL,MYS,Past,19
+15-08-2026,Manoj Harsh,North,ArtoniAgra_MYNTRA_AGR_PL,MYS,Present,2435
+15-08-2026,Manoj Harsh,North,AzamgarhHub_AZM_PL,EXT,Future,5
+15-08-2026,Manoj Harsh,North,AzamgarhHub_AZM_PL,EXT,Present,5
+15-08-2026,Manoj Harsh,North,BahraichHub_BAI_PL,EXT,Future,5
+15-08-2026,Manoj Harsh,North,BahraichHub_BAI_PL,EXT,Present,13
+15-08-2026,Manoj Harsh,North,BahraichHub_BAI_PL,FK,Past,3
+15-08-2026,Manoj Harsh,North,BahraichHub_BAI_PL,FK,Present,194
+15-08-2026,Manoj Harsh,North,BarabankiHub_BBK_PL,EXT,Future,2
+15-08-2026,Manoj Harsh,North,BarabankiHub_BBK_PL,EXT,Past,2
+15-08-2026,Manoj Harsh,North,BarabankiHub_BBK_PL,EXT,Present,7
+15-08-2026,Manoj Harsh,North,BarabankiHub_BBK_PL,FK,Future,1
+15-08-2026,Manoj Harsh,North,BarabankiHub_BBK_PL,FK,Past,2
+15-08-2026,Manoj Harsh,North,BarabankiHub_BBK_PL,FK,Present,3
+15-08-2026,Manoj Harsh,North,BarabankiHub_BBK_PL,MYE,Present,8
+15-08-2026,Manoj Harsh,North,BareillyHub_BRY_PL,EXT,Future,4
+15-08-2026,Manoj Harsh,North,BareillyHub_BRY_PL,EXT,Past,14
+15-08-2026,Manoj Harsh,North,BareillyHub_BRY_PL,EXT,Present,46
+15-08-2026,Manoj Harsh,North,BareillyHub_BRY_PL,FK,Future,225
+15-08-2026,Manoj Harsh,North,BareillyHub_BRY_PL,FK,Past,6
+15-08-2026,Manoj Harsh,North,BareillyHub_BRY_PL,FK,Present,438
+15-08-2026,Manoj Harsh,North,BareillyHub_BRY_PL,MYE,Future,7
+15-08-2026,Manoj Harsh,North,BareillyHub_BRY_PL,MYE,Past,2
+15-08-2026,Manoj Harsh,North,BareillyHub_BRY_PL,MYE,Present,2
+15-08-2026,Manoj Harsh,North,BHUHub_VNS_PL,EXT,Past,1
+15-08-2026,Manoj Harsh,North,BHUHub_VNS_PL,EXT,Present,8
+15-08-2026,Manoj Harsh,North,BHUHub_VNS_PL,FK,Past,8
+15-08-2026,Manoj Harsh,North,BHUHub_VNS_PL,FK,Present,41
+15-08-2026,Manoj Harsh,North,BulandshahrHub_BUR_PL,EXT,Present,14
+15-08-2026,Manoj Harsh,North,BulandshahrHub_BUR_PL,FK,Future,1
+15-08-2026,Manoj Harsh,North,BulandshahrHub_BUR_PL,FK,Past,1
+15-08-2026,Manoj Harsh,North,BulandshahrHub_BUR_PL,FK,Present,713
+15-08-2026,Manoj Harsh,North,ChunarHub_CHU_PL,FK,Future,4
+15-08-2026,Manoj Harsh,North,ChunarHub_CHU_PL,FK,Present,214
+15-08-2026,Manoj Harsh,North,DeoriaHub_DRA_PL,EXT,Future,7
+15-08-2026,Manoj Harsh,North,DeoriaHub_DRA_PL,EXT,Past,5
+15-08-2026,Manoj Harsh,North,DeoriaHub_DRA_PL,EXT,Present,10
+15-08-2026,Manoj Harsh,North,DhampurHub_DHM_PL,EXT,Future,2
+15-08-2026,Manoj Harsh,North,DhampurHub_DHM_PL,EXT,Present,10
+15-08-2026,Manoj Harsh,North,EtwahHub_ETW_PL,EXT,Present,25
+15-08-2026,Manoj Harsh,North,EtwahHub_ETW_PL,FK,Future,97
+15-08-2026,Manoj Harsh,North,EtwahHub_ETW_PL,FK,Present,179
+15-08-2026,Manoj Harsh,North,Firozabad_FZD_PL,EXT,Future,1
+15-08-2026,Manoj Harsh,North,Firozabad_FZD_PL,EXT,Past,3
+15-08-2026,Manoj Harsh,North,Firozabad_FZD_PL,EXT,Present,40
+15-08-2026,Manoj Harsh,North,Firozabad_FZD_PL,FK,Future,43
+15-08-2026,Manoj Harsh,North,Firozabad_FZD_PL,FK,Past,5
+15-08-2026,Manoj Harsh,North,Firozabad_FZD_PL,FK,Present,4926
+15-08-2026,Manoj Harsh,North,Firozabad_FZD_PL,MYE,Future,20
+15-08-2026,Manoj Harsh,North,Firozabad_FZD_PL,MYE,Present,43
+15-08-2026,Manoj Harsh,North,GeorgeTownHub_ALD_PL,EXT,Past,27
+15-08-2026,Manoj Harsh,North,GeorgeTownHub_ALD_PL,EXT,Present,2
+15-08-2026,Manoj Harsh,North,GeorgeTownHub_ALD_PL,FK,Past,24
+15-08-2026,Manoj Harsh,North,GeorgeTownHub_ALD_PL,FK,Present,536
+15-08-2026,Manoj Harsh,North,GhazipurHub_GIR_PL,EXT,Future,8
+15-08-2026,Manoj Harsh,North,GhazipurHub_GIR_PL,EXT,Present,6
+15-08-2026,Manoj Harsh,North,GhazipurHub_GIR_PL,FK,Present,41
+15-08-2026,Manoj Harsh,North,GondaHub_GND_PL,EXT,Future,2
+15-08-2026,Manoj Harsh,North,GondaHub_GND_PL,EXT,Past,1
+15-08-2026,Manoj Harsh,North,GondaHub_GND_PL,EXT,Present,19
+15-08-2026,Manoj Harsh,North,GondaHub_GND_PL,FK,Future,55
+15-08-2026,Manoj Harsh,North,GondaHub_GND_PL,FK,Present,17
+15-08-2026,Manoj Harsh,North,GondaHub_GND_PL,MYE,Future,5
+15-08-2026,Manoj Harsh,North,GorakhpurHub_GOP_PL,EXT,Future,9
+15-08-2026,Manoj Harsh,North,GorakhpurHub_GOP_PL,EXT,Past,10
+15-08-2026,Manoj Harsh,North,GorakhpurHub_GOP_PL,EXT,Present,11
+15-08-2026,Manoj Harsh,North,GorakhpurHub_GOP_PL,FK,Future,14
+15-08-2026,Manoj Harsh,North,GorakhpurHub_GOP_PL,FK,Past,51
+15-08-2026,Manoj Harsh,North,GorakhpurHub_GOP_PL,FK,Present,274
+15-08-2026,Manoj Harsh,North,GorakhpurHub_GOP_PL,MYE,Future,3
+15-08-2026,Manoj Harsh,North,GorakhpurHub_GOP_PL,MYE,Present,1
+15-08-2026,Manoj Harsh,North,GoshainganjHub_GOS_PL,EXT,Present,2
+15-08-2026,Manoj Harsh,North,GoshainganjHub_GOS_PL,FK,Past,19
+15-08-2026,Manoj Harsh,North,GoshainganjHub_GOS_PL,FK,Present,1
+15-08-2026,Manoj Harsh,North,GumtiHub_PL,EXT,Future,25
+15-08-2026,Manoj Harsh,North,GumtiHub_PL,EXT,Past,13
+15-08-2026,Manoj Harsh,North,GumtiHub_PL,EXT,Present,117
+15-08-2026,Manoj Harsh,North,GumtiHub_PL,FK,Future,105
+15-08-2026,Manoj Harsh,North,GumtiHub_PL,FK,Past,149
+15-08-2026,Manoj Harsh,North,GumtiHub_PL,FK,Present,2153
+15-08-2026,Manoj Harsh,North,GumtiHub_PL,MYE,Future,36
+15-08-2026,Manoj Harsh,North,GumtiHub_PL,MYE,Past,22
+15-08-2026,Manoj Harsh,North,GumtiHub_PL,MYE,Present,14
+15-08-2026,Manoj Harsh,North,HapurHub_HPU_PL,EXT,Present,2
+15-08-2026,Manoj Harsh,North,HapurHub_HPU_PL,FK,Present,552
+15-08-2026,Manoj Harsh,North,HathrasHub_HTH_PL,EXT,Past,2
+15-08-2026,Manoj Harsh,North,HathrasHub_HTH_PL,EXT,Present,7
+15-08-2026,Manoj Harsh,North,HathrasHub_HTH_PL,FK,Future,35
+15-08-2026,Manoj Harsh,North,HathrasHub_HTH_PL,FK,Past,13
+15-08-2026,Manoj Harsh,North,HathrasHub_HTH_PL,FK,Present,1257
+15-08-2026,Manoj Harsh,North,JhansiHub_JHS_PL,FK,Past,12
+15-08-2026,Manoj Harsh,North,JhansiHub_JHS_PL,FK,Present,198
+15-08-2026,Manoj Harsh,North,JhansiHub_JHS_PL,MYE,Future,1
+15-08-2026,Manoj Harsh,North,JhansiHub_JHS_PL,MYE,Present,3
+15-08-2026,Manoj Harsh,North,KannaujiHub_KAU_PL,EXT,Future,3
+15-08-2026,Manoj Harsh,North,KannaujiHub_KAU_PL,EXT,Past,17
+15-08-2026,Manoj Harsh,North,KannaujiHub_KAU_PL,EXT,Present,7
+15-08-2026,Manoj Harsh,North,KhurjaHub_KRJ_PL,EXT,Present,1
+15-08-2026,Manoj Harsh,North,KhurjaHub_KRJ_PL,FK,Future,1
+15-08-2026,Manoj Harsh,North,KhurjaHub_KRJ_PL,FK,Past,46
+15-08-2026,Manoj Harsh,North,KhurjaHub_KRJ_PL,FK,Present,305
+15-08-2026,Manoj Harsh,North,MathuraHub_MTH_PL,EXT,Future,12
+15-08-2026,Manoj Harsh,North,MathuraHub_MTH_PL,EXT,Past,9
+15-08-2026,Manoj Harsh,North,MathuraHub_MTH_PL,EXT,Present,76
+15-08-2026,Manoj Harsh,North,MathuraHub_MTH_PL,FK,Future,10
+15-08-2026,Manoj Harsh,North,MathuraHub_MTH_PL,FK,Past,8
+15-08-2026,Manoj Harsh,North,MathuraHub_MTH_PL,FK,Present,2345
+15-08-2026,Manoj Harsh,North,MathuraHub_MTH_PL,MYE,Future,8
+15-08-2026,Manoj Harsh,North,MathuraHub_MTH_PL,MYE,Present,6
+15-08-2026,Manoj Harsh,North,MauHub_MAU_PL,EXT,Future,3
+15-08-2026,Manoj Harsh,North,MauHub_MAU_PL,EXT,Present,18
+15-08-2026,Manoj Harsh,North,MauHub_MAU_PL,FK,Present,176
+15-08-2026,Manoj Harsh,North,MeerutHub_PL,EXT,Future,45
+15-08-2026,Manoj Harsh,North,MeerutHub_PL,EXT,Past,3
+15-08-2026,Manoj Harsh,North,MeerutHub_PL,EXT,Present,16
+15-08-2026,Manoj Harsh,North,MeerutHub_PL,FK,Future,1952
+15-08-2026,Manoj Harsh,North,MeerutHub_PL,FK,Past,109
+15-08-2026,Manoj Harsh,North,MeerutHub_PL,FK,Present,20144
+15-08-2026,Manoj Harsh,North,MeerutHub_PL,MYE,Future,60
+15-08-2026,Manoj Harsh,North,MeerutHub_PL,MYE,Past,1
+15-08-2026,Manoj Harsh,North,MirzapurHub_MZP_PL,EXT,Future,3
+15-08-2026,Manoj Harsh,North,MirzapurHub_MZP_PL,EXT,Present,7
+15-08-2026,Manoj Harsh,North,MirzapurHub_MZP_PL,FK,Future,4
+15-08-2026,Manoj Harsh,North,MirzapurHub_MZP_PL,FK,Past,14
+15-08-2026,Manoj Harsh,North,MirzapurHub_MZP_PL,FK,Present,2
+15-08-2026,Manoj Harsh,North,MirzapurHub_MZP_PL,MYE,Present,1
+15-08-2026,Manoj Harsh,North,ModinagarHub_MEE_PL,EXT,Future,38
+15-08-2026,Manoj Harsh,North,ModinagarHub_MEE_PL,EXT,Present,51
+15-08-2026,Manoj Harsh,North,ModinagarHub_MEE_PL,FK,Past,125
+15-08-2026,Manoj Harsh,North,ModinagarHub_MEE_PL,FK,Present,1208
+15-08-2026,Manoj Harsh,North,MoradabadHub_MRD_PL,EXT,Past,1
+15-08-2026,Manoj Harsh,North,MoradabadHub_MRD_PL,EXT,Present,2
+15-08-2026,Manoj Harsh,North,MoradabadHub_MRD_PL,FK,Future,5
+15-08-2026,Manoj Harsh,North,MoradabadHub_MRD_PL,FK,Past,82
+15-08-2026,Manoj Harsh,North,MoradabadHub_MRD_PL,FK,Present,518
+15-08-2026,Manoj Harsh,North,MoradabadHub_MRD_PL,MYE,Future,1
+15-08-2026,Manoj Harsh,North,MuhammadabadHub_MUH_PL,FK,Present,36
+15-08-2026,Manoj Harsh,North,MuzaffarnagarHub_MFN_PL,EXT,Future,5
+15-08-2026,Manoj Harsh,North,MuzaffarnagarHub_MFN_PL,EXT,Past,34
+15-08-2026,Manoj Harsh,North,MuzaffarnagarHub_MFN_PL,EXT,Present,10
+15-08-2026,Manoj Harsh,North,MuzaffarnagarHub_MFN_PL,FK,Future,9
+15-08-2026,Manoj Harsh,North,MuzaffarnagarHub_MFN_PL,FK,Past,31
+15-08-2026,Manoj Harsh,North,MuzaffarnagarHub_MFN_PL,FK,Present,280
+15-08-2026,Manoj Harsh,North,OrderlyBazarHub_VNS_PL,EXT,Future,5
+15-08-2026,Manoj Harsh,North,OrderlyBazarHub_VNS_PL,EXT,Past,2
+15-08-2026,Manoj Harsh,North,OrderlyBazarHub_VNS_PL,EXT,Present,25
+15-08-2026,Manoj Harsh,North,OrderlyBazarHub_VNS_PL,FK,Present,358
+15-08-2026,Manoj Harsh,North,PilibhitHub_PII_PL,EXT,Future,9
+15-08-2026,Manoj Harsh,North,PilibhitHub_PII_PL,EXT,Present,14
+15-08-2026,Manoj Harsh,North,PilibhitHub_PII_PL,FK,Past,1
+15-08-2026,Manoj Harsh,North,PilibhitHub_PII_PL,FK,Present,1
+15-08-2026,Manoj Harsh,North,SaharanpurHub_SHP_PL,EXT,Past,4
+15-08-2026,Manoj Harsh,North,SaharanpurHub_SHP_PL,EXT,Present,25
+15-08-2026,Manoj Harsh,North,SaharanpurHub_SHP_PL,FK,Future,133
+15-08-2026,Manoj Harsh,North,SaharanpurHub_SHP_PL,FK,Past,1208
+15-08-2026,Manoj Harsh,North,SaharanpurHub_SHP_PL,FK,Present,5243
+15-08-2026,Manoj Harsh,North,SaharanpurHub_SHP_PL,MYE,Future,9
+15-08-2026,Manoj Harsh,North,SaharanpurHub_SHP_PL,MYE,Present,5
+15-08-2026,Manoj Harsh,North,ShahjahanpurHub_SJH_PL,EXT,Present,15
+15-08-2026,Manoj Harsh,North,ShahjahanpurHub_SJH_PL,MYE,Future,1
+15-08-2026,Manoj Harsh,North,Sigra_PL,EXT,Future,2
+15-08-2026,Manoj Harsh,North,Sigra_PL,EXT,Past,4
+15-08-2026,Manoj Harsh,North,Sigra_PL,EXT,Present,45
+15-08-2026,Manoj Harsh,North,Sigra_PL,FK,Future,20
+15-08-2026,Manoj Harsh,North,Sigra_PL,FK,Past,16
+15-08-2026,Manoj Harsh,North,Sigra_PL,FK,Present,72
+15-08-2026,Manoj Harsh,North,Sigra_PL,MYE,Future,6
+15-08-2026,Manoj Harsh,North,Sigra_PL,MYE,Present,3
+15-08-2026,Manoj Harsh,North,SirsaganjHub_SRS_PL,FK,Present,40
+15-08-2026,Manoj Harsh,North,SitapurHub_SIT_PL,EXT,Present,6
+15-08-2026,Manoj Harsh,North,SitapurHub_SIT_PL,FK,Present,27
+15-08-2026,Manoj Harsh,North,SitapurHub_SIT_PL,MYE,Present,23
+15-08-2026,Manoj Harsh,North,SultanpurHub_STP_PL,EXT,Future,18
+15-08-2026,Manoj Harsh,North,SultanpurHub_STP_PL,EXT,Present,23
+15-08-2026,Manoj Harsh,North,SultanpurHub_STP_PL,FK,Present,18
+15-08-2026,Manoj Harsh,North,TransportNagarHub_LKO_PL,EXT,Future,343
+15-08-2026,Manoj Harsh,North,TransportNagarHub_LKO_PL,EXT,Past,21
+15-08-2026,Manoj Harsh,North,TransportNagarHub_LKO_PL,EXT,Present,559
+15-08-2026,Manoj Harsh,North,TransportNagarHub_LKO_PL,FK,Past,30
+15-08-2026,Manoj Harsh,North,TransportNagarHub_LKO_PL,FK,Present,579
+15-08-2026,Manoj Harsh,North,TransportNagarHub_LKO_PL,MYE,Future,3
+15-08-2026,Manoj Harsh,North,TransportNagarHub_LKO_PL,MYE,Past,10
+15-08-2026,Manoj Harsh,North,TransportNagarHub_LKO_PL,MYE,Present,9
+15-08-2026,Manoj Harsh,North,VrindavanHub_MTH_PL,EXT,Future,1
+15-08-2026,Manoj Harsh,North,VrindavanHub_MTH_PL,EXT,Past,1
+15-08-2026,Manoj Harsh,North,VrindavanHub_MTH_PL,EXT,Present,1
+15-08-2026,Manoj Harsh,North,VrindavanHub_MTH_PL,FK,Present,108
+15-08-2026,ranju.chandran,South,DharmapuriHub_DMP_PL,EXT,Future,1
+15-08-2026,ranju.chandran,South,DharmapuriHub_DMP_PL,EXT,Present,3
+15-08-2026,ranju.chandran,South,DharmapuriHub_DMP_PL,FK,Present,103
+15-08-2026,ranju.chandran,South,DindigulHub_DND_PL,EXT,Present,5
+15-08-2026,ranju.chandran,South,DindigulHub_DND_PL,MYE,Present,1
+15-08-2026,ranju.chandran,South,ErodeHub_ERD_PL,FK,Past,2
+15-08-2026,ranju.chandran,South,ErodeHub_ERD_PL,FK,Present,24
+15-08-2026,ranju.chandran,South,ErodeHub_ERD_PL,MYE,Present,7
+15-08-2026,ranju.chandran,South,GuindyHub_CHN_PL,EXT,Future,233
+15-08-2026,ranju.chandran,South,GuindyHub_CHN_PL,EXT,Past,45
+15-08-2026,ranju.chandran,South,GuindyHub_CHN_PL,EXT,Present,286
+15-08-2026,ranju.chandran,South,GuindyHub_CHN_PL,FK,Future,9
+15-08-2026,ranju.chandran,South,GuindyHub_CHN_PL,FK,Past,46
+15-08-2026,ranju.chandran,South,GuindyHub_CHN_PL,FK,Present,2370
+15-08-2026,ranju.chandran,South,GuindyHub_CHN_PL,MYE,Future,44
+15-08-2026,ranju.chandran,South,GuindyHub_CHN_PL,MYE,Past,19
+15-08-2026,ranju.chandran,South,GuindyHub_CHN_PL,MYE,Present,89
+15-08-2026,ranju.chandran,South,KarurHub_KRR_PL,EXT,Present,11
+15-08-2026,ranju.chandran,South,KarurHub_KRR_PL,FK,Future,22
+15-08-2026,ranju.chandran,South,KarurHub_KRR_PL,FK,Present,356
+15-08-2026,ranju.chandran,South,KilpaukHub_CHN_PL,EXT,Future,6
+15-08-2026,ranju.chandran,South,KilpaukHub_CHN_PL,EXT,Past,7
+15-08-2026,ranju.chandran,South,KilpaukHub_CHN_PL,EXT,Present,12
+15-08-2026,ranju.chandran,South,KilpaukHub_CHN_PL,FK,Future,54
+15-08-2026,ranju.chandran,South,KilpaukHub_CHN_PL,FK,Past,2
+15-08-2026,ranju.chandran,South,KilpaukHub_CHN_PL,FK,Present,660
+15-08-2026,ranju.chandran,South,KilpaukHub_CHN_PL,MYE,Future,4
+15-08-2026,ranju.chandran,South,KilpaukHub_CHN_PL,MYE,Past,6
+15-08-2026,ranju.chandran,South,KilpaukHub_CHN_PL,MYE,Present,10
+15-08-2026,ranju.chandran,South,KrishnagiriHub_KSG_PL,EXT,Future,6
+15-08-2026,ranju.chandran,South,MalumichampattiHub_MUC_PL,EXT,Future,51
+15-08-2026,ranju.chandran,South,MalumichampattiHub_MUC_PL,EXT,Present,797
+15-08-2026,ranju.chandran,South,MalumichampattiHub_MUC_PL,FK,Past,6
+15-08-2026,ranju.chandran,South,MalumichampattiHub_MUC_PL,FK,Present,37
+15-08-2026,ranju.chandran,South,MinjurHub_CHN_PL,EXT,Future,17
+15-08-2026,ranju.chandran,South,MinjurHub_CHN_PL,EXT,Present,36
+15-08-2026,ranju.chandran,South,MinjurHub_CHN_PL,FK,Future,46
+15-08-2026,ranju.chandran,South,MinjurHub_CHN_PL,FK,Present,557
+15-08-2026,ranju.chandran,South,NagercoilHub_NGL_PL,EXT,Past,1
+15-08-2026,ranju.chandran,South,NagercoilHub_NGL_PL,EXT,Present,3
+15-08-2026,ranju.chandran,South,NagercoilHub_NGL_PL,FK,Future,10
+15-08-2026,ranju.chandran,South,NagercoilHub_NGL_PL,FK,Past,14
+15-08-2026,ranju.chandran,South,NagercoilHub_NGL_PL,MYE,Future,4
+15-08-2026,ranju.chandran,South,NagercoilHub_NGL_PL,MYE,Past,1
+15-08-2026,ranju.chandran,South,NamakkalHub_NKK_PL,EXT,Future,6
+15-08-2026,ranju.chandran,South,NamakkalHub_NKK_PL,EXT,Present,1
+15-08-2026,ranju.chandran,South,PallipalayamHub_ERD_PL,FK,Future,18
+15-08-2026,ranju.chandran,South,PallipalayamHub_ERD_PL,FK,Present,444
+15-08-2026,ranju.chandran,South,PondicherryHub_PDY_PL,EXT,Future,3
+15-08-2026,ranju.chandran,South,PondicherryHub_PDY_PL,EXT,Past,1
+15-08-2026,ranju.chandran,South,PondicherryHub_PDY_PL,EXT,Present,7
+15-08-2026,ranju.chandran,South,PondicherryHub_PDY_PL,MYE,Future,1
+15-08-2026,ranju.chandran,South,PondicherryHub_PDY_PL,MYE,Present,2
+15-08-2026,ranju.chandran,South,SalemHub_SXV_PL,EXT,Future,2
+15-08-2026,ranju.chandran,South,SalemHub_SXV_PL,EXT,Present,10
+15-08-2026,ranju.chandran,South,SalemHub_SXV_PL,FK,Future,37
+15-08-2026,ranju.chandran,South,SalemHub_SXV_PL,FK,Present,539
+15-08-2026,ranju.chandran,South,SalemHub_SXV_PL,MYE,Future,16
+15-08-2026,ranju.chandran,South,SalemHub_SXV_PL,MYE,Present,10
+15-08-2026,ranju.chandran,South,ShollinganallurHub_CHN_PL,EXT,Future,1
+15-08-2026,ranju.chandran,South,ShollinganallurHub_CHN_PL,EXT,Past,1
+15-08-2026,ranju.chandran,South,ShollinganallurHub_CHN_PL,EXT,Present,7
+15-08-2026,ranju.chandran,South,ShollinganallurHub_CHN_PL,FK,Past,3
+15-08-2026,ranju.chandran,South,ShollinganallurHub_CHN_PL,FK,Present,1
+15-08-2026,ranju.chandran,South,ShollinganallurHub_CHN_PL,MYE,Future,6
+15-08-2026,ranju.chandran,South,TempleCityHub_IXM_PL,FK,Present,34
+15-08-2026,ranju.chandran,South,TempleCityHub_IXM_PL,MYE,Future,2
+15-08-2026,ranju.chandran,South,TempleCityHub_IXM_PL,MYE,Past,1
+15-08-2026,ranju.chandran,South,ThadagamRD_THA_PL,FK,Future,5
+15-08-2026,ranju.chandran,South,ThadagamRD_THA_PL,FK,Present,717
+15-08-2026,ranju.chandran,South,TirupurHub_TPR_PL,EXT,Future,227
+15-08-2026,ranju.chandran,South,TirupurHub_TPR_PL,EXT,Past,572
+15-08-2026,ranju.chandran,South,TirupurHub_TPR_PL,EXT,Present,285
+15-08-2026,ranju.chandran,South,TirupurHub_TPR_PL,FK,Future,150
+15-08-2026,ranju.chandran,South,TirupurHub_TPR_PL,FK,Past,58
+15-08-2026,ranju.chandran,South,TirupurHub_TPR_PL,FK,Present,20833
+15-08-2026,ranju.chandran,South,TirupurHub_TPR_PL,MYE,Future,41
+15-08-2026,ranju.chandran,South,TirupurHub_TPR_PL,MYE,Past,6
+15-08-2026,ranju.chandran,South,TirupurHub_TPR_PL,MYE,Present,191
+15-08-2026,ranju.chandran,South,TirupurHub_TPR_PL,MYS,Future,54
+15-08-2026,ranju.chandran,South,TirupurHub_TPR_PL,MYS,Present,485
+15-08-2026,ranju.chandran,South,TrichyHub_TRZ_PL,EXT,Present,4
+15-08-2026,ranju.chandran,South,TrichyHub_TRZ_PL,FK,Present,10
+15-08-2026,ranju.chandran,South,TrichyHub_TRZ_PL,MYE,Future,2
+15-08-2026,ranju.chandran,South,TrichyHub_TRZ_PL,MYE,Past,4
+15-08-2026,ranju.chandran,South,TrichyHub_TRZ_PL,MYE,Present,4
+15-08-2026,ranju.chandran,South,VelloreHub_VLR_PL,EXT,Present,12
+15-08-2026,ranju.chandran,South,VelloreHub_VLR_PL,MYE,Present,1
+15-08-2026,ranju.chandran,South,VijayamangalamHub_VJM_PL,FK,Past,1
+15-08-2026,ranju.chandran,South,VijayamangalamHub_VJM_PL,FK,Present,29
+15-08-2026,Ritesh Bara,East,AdraHub_ADR_PL,FK,Past,2
+15-08-2026,Ritesh Bara,East,AdraHub_ADR_PL,FK,Present,4
+15-08-2026,Ritesh Bara,East,AmbikaKalnaHub_ABK_PL,EXT,Future,10
+15-08-2026,Ritesh Bara,East,AmbikaKalnaHub_ABK_PL,EXT,Past,8
+15-08-2026,Ritesh Bara,East,AmbikaKalnaHub_ABK_PL,EXT,Present,27
+15-08-2026,Ritesh Bara,East,AmbikaKalnaHub_ABK_PL,FK,Present,83
+15-08-2026,Ritesh Bara,East,AndalHub_DGP_PL,EXT,Present,1
+15-08-2026,Ritesh Bara,East,ArambaghHub_AMB_PL,EXT,Past,1
+15-08-2026,Ritesh Bara,East,ArambaghHub_AMB_PL,FK,Past,3
+15-08-2026,Ritesh Bara,East,ArambaghHub_AMB_PL,FK,Present,171
+15-08-2026,Ritesh Bara,East,BandelHub_BND_PL,EXT,Future,20
+15-08-2026,Ritesh Bara,East,BandelHub_BND_PL,EXT,Present,4
+15-08-2026,Ritesh Bara,East,BandelHub_BND_PL,FK,Future,42
+15-08-2026,Ritesh Bara,East,BandelHub_BND_PL,FK,Past,1
+15-08-2026,Ritesh Bara,East,BandelHub_BND_PL,FK,Present,76
+15-08-2026,Ritesh Bara,East,BankuraHub_BKR_PL,EXT,Present,6
+15-08-2026,Ritesh Bara,East,BasirhatHub_BSH_PL,EXT,Past,16
+15-08-2026,Ritesh Bara,East,BasirhatHub_BSH_PL,EXT,Present,66
+15-08-2026,Ritesh Bara,East,BasirhatHub_BSH_PL,FK,Future,13
+15-08-2026,Ritesh Bara,East,BasirhatHub_BSH_PL,FK,Past,1
+15-08-2026,Ritesh Bara,East,BasirhatHub_BSH_PL,FK,Present,233
+15-08-2026,Ritesh Bara,East,BehalaHub_KOL_PL,EXT,Future,98
+15-08-2026,Ritesh Bara,East,BehalaHub_KOL_PL,EXT,Past,12
+15-08-2026,Ritesh Bara,East,BehalaHub_KOL_PL,EXT,Present,422
+15-08-2026,Ritesh Bara,East,BehalaHub_KOL_PL,FK,Future,262
+15-08-2026,Ritesh Bara,East,BehalaHub_KOL_PL,FK,Past,13
+15-08-2026,Ritesh Bara,East,BehalaHub_KOL_PL,FK,Present,4707
+15-08-2026,Ritesh Bara,East,BehalaHub_KOL_PL,MYE,Future,5
+15-08-2026,Ritesh Bara,East,BehalaHub_KOL_PL,MYE,Present,4
+15-08-2026,Ritesh Bara,East,BeldangaHub_BEB_PL,FK,Present,5
+15-08-2026,Ritesh Bara,East,BelghariaHub_KOL_PL,EXT,Future,19
+15-08-2026,Ritesh Bara,East,BelghariaHub_KOL_PL,EXT,Past,11
+15-08-2026,Ritesh Bara,East,BelghariaHub_KOL_PL,EXT,Present,212
+15-08-2026,Ritesh Bara,East,BelghariaHub_KOL_PL,FK,Future,168
+15-08-2026,Ritesh Bara,East,BelghariaHub_KOL_PL,FK,Past,2
+15-08-2026,Ritesh Bara,East,BelghariaHub_KOL_PL,FK,Present,1236
+15-08-2026,Ritesh Bara,East,BelghariaHub_KOL_PL,MYE,Future,11
+15-08-2026,Ritesh Bara,East,BelghariaHub_KOL_PL,MYE,Present,35
+15-08-2026,Ritesh Bara,East,BelghariaHub_KOL_PL,MYS,Present,1
+15-08-2026,Ritesh Bara,East,BETHUADAHARIODH_BET_PL,FK,Present,1
+15-08-2026,Ritesh Bara,East,BishnupurHub_VSU_PL,EXT,Future,1
+15-08-2026,Ritesh Bara,East,BishnupurHub_VSU_PL,EXT,Present,4
+15-08-2026,Ritesh Bara,East,BishnupurHub_VSU_PL,FK,Present,186
+15-08-2026,Ritesh Bara,East,BolpurHub_BHP_PL,EXT,Present,4
+15-08-2026,Ritesh Bara,East,BolpurHub_BHP_PL,FK,Future,8
+15-08-2026,Ritesh Bara,East,BolpurHub_BHP_PL,FK,Present,570
+15-08-2026,Ritesh Bara,East,BongaonHub_KOL_PL,EXT,Future,5
+15-08-2026,Ritesh Bara,East,BongaonHub_KOL_PL,EXT,Past,2
+15-08-2026,Ritesh Bara,East,BongaonHub_KOL_PL,FK,Future,104
+15-08-2026,Ritesh Bara,East,BongaonHub_KOL_PL,FK,Past,1
+15-08-2026,Ritesh Bara,East,BongaonHub_KOL_PL,FK,Present,1652
+15-08-2026,Ritesh Bara,East,BurdwanHub_BDM_PL,EXT,Future,3
+15-08-2026,Ritesh Bara,East,BurdwanHub_BDM_PL,EXT,Present,22
+15-08-2026,Ritesh Bara,East,BurdwanHub_BDM_PL,FK,Future,1
+15-08-2026,Ritesh Bara,East,BurdwanHub_BDM_PL,FK,Present,472
+15-08-2026,Ritesh Bara,East,CABTBagulaODH_KNJ_PL,FK,Future,9
+15-08-2026,Ritesh Bara,East,CABTBagulaODH_KNJ_PL,FK,Past,2
+15-08-2026,Ritesh Bara,East,CABTBagulaODH_KNJ_PL,FK,Present,104
+15-08-2026,Ritesh Bara,East,CABTBarobishaODH_BAR_PL,FK,Future,151
+15-08-2026,Ritesh Bara,East,CABTBarobishaODH_BAR_PL,FK,Present,113
+15-08-2026,Ritesh Bara,East,CABTKalyaniSplitODH_KOL_PL,EXT,Present,12
+15-08-2026,Ritesh Bara,East,CABTKalyaniSplitODH_KOL_PL,FK,Past,1
+15-08-2026,Ritesh Bara,East,CABTKalyaniSplitODH_KOL_PL,FK,Present,8
+15-08-2026,Ritesh Bara,East,CABTTarakeshwarODH_TAK_PL,EXT,Past,1
+15-08-2026,Ritesh Bara,East,CABTTarakeshwarODH_TAK_PL,EXT,Present,5
+15-08-2026,Ritesh Bara,East,CHAKDAHAHUB_CDH_PL,EXT,Future,3
+15-08-2026,Ritesh Bara,East,CHAKDAHAHUB_CDH_PL,EXT,Present,4
+15-08-2026,Ritesh Bara,East,ChandannagarHub_CNR_PL,EXT,Future,873
+15-08-2026,Ritesh Bara,East,ChandannagarHub_CNR_PL,EXT,Past,3
+15-08-2026,Ritesh Bara,East,ChandannagarHub_CNR_PL,EXT,Present,2254
+15-08-2026,Ritesh Bara,East,ChandannagarHub_CNR_PL,FK,Future,88
+15-08-2026,Ritesh Bara,East,ChandannagarHub_CNR_PL,FK,Past,14
+15-08-2026,Ritesh Bara,East,ChandannagarHub_CNR_PL,FK,Present,1596
+15-08-2026,Ritesh Bara,East,ChandannagarHub_CNR_PL,MYE,Future,7
+15-08-2026,Ritesh Bara,East,ChandannagarHub_CNR_PL,MYE,Present,11
+15-08-2026,Ritesh Bara,East,ChandrakonaHub_CDR_PL,FK,Future,53
+15-08-2026,Ritesh Bara,East,ChandrakonaHub_CDR_PL,FK,Present,77
+15-08-2026,Ritesh Bara,East,ContaiHub_CNT_PL,FK,Present,92
+15-08-2026,Ritesh Bara,East,DALHOUSIEHUB_KOL_PL,EXT,Future,5
+15-08-2026,Ritesh Bara,East,DALHOUSIEHUB_KOL_PL,EXT,Past,2
+15-08-2026,Ritesh Bara,East,DALHOUSIEHUB_KOL_PL,EXT,Present,111
+15-08-2026,Ritesh Bara,East,DALHOUSIEHUB_KOL_PL,FK,Future,10
+15-08-2026,Ritesh Bara,East,DALHOUSIEHUB_KOL_PL,FK,Past,37
+15-08-2026,Ritesh Bara,East,DALHOUSIEHUB_KOL_PL,FK,Present,1125
+15-08-2026,Ritesh Bara,East,DALHOUSIEHUB_KOL_PL,MYE,Future,1
+15-08-2026,Ritesh Bara,East,DALHOUSIEHUB_KOL_PL,MYE,Present,1
+15-08-2026,Ritesh Bara,East,DewandighiHub_BDM_PL,EXT,Past,10
+15-08-2026,Ritesh Bara,East,DewandighiHub_BDM_PL,EXT,Present,4
+15-08-2026,Ritesh Bara,East,DewandighiHub_BDM_PL,FK,Future,135
+15-08-2026,Ritesh Bara,East,DewandighiHub_BDM_PL,FK,Past,2
+15-08-2026,Ritesh Bara,East,DewandighiHub_BDM_PL,FK,Present,703
+15-08-2026,Ritesh Bara,East,DewandighiHub_BDM_PL,MYE,Future,2
+15-08-2026,Ritesh Bara,East,DewandighiHub_BDM_PL,MYE,Past,1
+15-08-2026,Ritesh Bara,East,DewandighiHub_BDM_PL,MYE,Present,9
+15-08-2026,Ritesh Bara,East,DiamondHarbourHub_KOL_PL,FK,Past,2
+15-08-2026,Ritesh Bara,East,EgraHub_MDN_PL,FK,Present,10
+15-08-2026,Ritesh Bara,East,ElasticRunSiuriODH_SRI_PL,EXT,Present,2
+15-08-2026,Ritesh Bara,East,ElasticRunSiuriODH_SRI_PL,FK,Present,11
+15-08-2026,Ritesh Bara,East,EnglishBazarHub_LDA_PL,FK,Future,12
+15-08-2026,Ritesh Bara,East,EnglishBazarHub_LDA_PL,FK,Past,20
+15-08-2026,Ritesh Bara,East,EnglishBazarHub_LDA_PL,FK,Present,178
+15-08-2026,Ritesh Bara,East,FarrakaHub_NFK_PL,EXT,Future,5
+15-08-2026,Ritesh Bara,East,FarrakaHub_NFK_PL,EXT,Present,1
+15-08-2026,Ritesh Bara,East,FarrakaHub_NFK_PL,FK,Future,1
+15-08-2026,Ritesh Bara,East,FarrakaHub_NFK_PL,FK,Present,5
+15-08-2026,Ritesh Bara,East,GANGANIHUB_GNN_PL,EXT,Future,40
+15-08-2026,Ritesh Bara,East,GANGANIHUB_GNN_PL,EXT,Present,6
+15-08-2026,Ritesh Bara,East,GariaHub_KOL_PL,EXT,Future,1
+15-08-2026,Ritesh Bara,East,GariaHub_KOL_PL,EXT,Past,8
+15-08-2026,Ritesh Bara,East,GariaHub_KOL_PL,EXT,Present,43
+15-08-2026,Ritesh Bara,East,GariaHub_KOL_PL,FK,Future,441
+15-08-2026,Ritesh Bara,East,GariaHub_KOL_PL,FK,Past,89
+15-08-2026,Ritesh Bara,East,GariaHub_KOL_PL,FK,Present,5034
+15-08-2026,Ritesh Bara,East,GariaHub_KOL_PL,MYE,Future,22
+15-08-2026,Ritesh Bara,East,GariaHub_KOL_PL,MYE,Past,5
+15-08-2026,Ritesh Bara,East,GariaHub_KOL_PL,MYE,Present,54
+15-08-2026,Ritesh Bara,East,GURAPHUB_GRA_PL,EXT,Present,7
+15-08-2026,Ritesh Bara,East,GURAPHUB_GRA_PL,FK,Future,1
+15-08-2026,Ritesh Bara,East,GURAPHUB_GRA_PL,FK,Present,19
+15-08-2026,Ritesh Bara,East,HaldiaHub_HLD_PL,FK,Present,55
+15-08-2026,Ritesh Bara,East,HowrahHub_KOL_PL,EXT,Future,1230
+15-08-2026,Ritesh Bara,East,HowrahHub_KOL_PL,EXT,Past,260
+15-08-2026,Ritesh Bara,East,HowrahHub_KOL_PL,EXT,Present,2275
+15-08-2026,Ritesh Bara,East,HowrahHub_KOL_PL,FK,Future,492
+15-08-2026,Ritesh Bara,East,HowrahHub_KOL_PL,FK,Past,252
+15-08-2026,Ritesh Bara,East,HowrahHub_KOL_PL,FK,Present,10479
+15-08-2026,Ritesh Bara,East,HowrahHub_KOL_PL,MYE,Future,32
+15-08-2026,Ritesh Bara,East,HowrahHub_KOL_PL,MYE,Present,79
+15-08-2026,Ritesh Bara,East,HowrahHub_KOL_PL,MYS,Future,18
+15-08-2026,Ritesh Bara,East,HowrahHub_KOL_PL,MYS,Past,1
+15-08-2026,Ritesh Bara,East,HowrahHub_KOL_PL,MYS,Present,272
+15-08-2026,Ritesh Bara,East,JagatballavpurHub_BAC_PL,EXT,Present,2
+15-08-2026,Ritesh Bara,East,JagatballavpurHub_BAC_PL,FK,Future,20
+15-08-2026,Ritesh Bara,East,JagatballavpurHub_BAC_PL,FK,Present,375
+15-08-2026,Ritesh Bara,East,JagtaiHub_NIL_PL,FK,Present,14
+15-08-2026,Ritesh Bara,East,JalpaiguriHub_JPG_PL,EXT,Future,2
+15-08-2026,Ritesh Bara,East,JalpaiguriHub_JPG_PL,EXT,Present,4
+15-08-2026,Ritesh Bara,East,JalpaiguriHub_JPG_PL,MYE,Future,1
+15-08-2026,Ritesh Bara,East,KalyaniHub_KOL_PL,EXT,Future,9
+15-08-2026,Ritesh Bara,East,KalyaniHub_KOL_PL,EXT,Present,5
+15-08-2026,Ritesh Bara,East,KalyaniHub_KOL_PL,FK,Past,1
+15-08-2026,Ritesh Bara,East,KalyaniHub_KOL_PL,FK,Present,75
+15-08-2026,Ritesh Bara,East,KatwaHub_KWA_PL,EXT,Present,7
+15-08-2026,Ritesh Bara,East,KatwaHub_KWA_PL,FK,Future,5
+15-08-2026,Ritesh Bara,East,Kharagpurhub_KGP_PL,EXT,Present,1
+15-08-2026,Ritesh Bara,East,Kharagpurhub_KGP_PL,FK,Present,57
+15-08-2026,Ritesh Bara,East,KOTULPURHUB_KOP_PL,FK,Future,31
+15-08-2026,Ritesh Bara,East,KOTULPURHUB_KOP_PL,FK,Present,286
+15-08-2026,Ritesh Bara,East,KrishnanagarHub_KNJ_PL,EXT,Future,1
+15-08-2026,Ritesh Bara,East,KrishnanagarHub_KNJ_PL,EXT,Present,2
+15-08-2026,Ritesh Bara,East,KrishnanagarHub_KNJ_PL,FK,Present,8
+15-08-2026,Ritesh Bara,East,KrishnanagarHub_KNJ_PL,MYE,Past,1
+15-08-2026,Ritesh Bara,East,KrishnanagarHub_KNJ_PL,MYE,Present,1
+15-08-2026,Ritesh Bara,East,KusumgramHub_KSG_PL,EXT,Future,1
+15-08-2026,Ritesh Bara,East,KusumgramHub_KSG_PL,EXT,Present,3
+15-08-2026,Ritesh Bara,East,LakshmikantpurHub_LKP_PL,FK,Present,11
+15-08-2026,Ritesh Bara,East,LalgolaHub_LGL_PL,FK,Future,53
+15-08-2026,Ritesh Bara,East,LalgolaHub_LGL_PL,FK,Past,10
+15-08-2026,Ritesh Bara,East,LalgolaHub_LGL_PL,FK,Present,1259
+15-08-2026,Ritesh Bara,East,LoadshareAmtaODH_HWH_PL,EXT,Past,2
+15-08-2026,Ritesh Bara,East,LoadshareAmtaODH_HWH_PL,FK,Present,138
+15-08-2026,Ritesh Bara,East,LoadshareCitiCenterODH_DGP_PL,EXT,Future,1
+15-08-2026,Ritesh Bara,East,LoadshareCitiCenterODH_DGP_PL,EXT,Past,1
+15-08-2026,Ritesh Bara,East,LoadshareCitiCenterODH_DGP_PL,FK,Present,21
+15-08-2026,Ritesh Bara,East,LoadshareCitiCenterODH_DGP_PL,MYE,Past,15
+15-08-2026,Ritesh Bara,East,LoadshareCitiCenterODH_DGP_PL,MYE,Present,7
+15-08-2026,Ritesh Bara,East,LOADSHAREPREMBAZARODH_KGP_PL,FK,Future,2
+15-08-2026,Ritesh Bara,East,LOADSHAREPREMBAZARODH_KGP_PL,FK,Present,15
+15-08-2026,Ritesh Bara,East,MatigaraHub_IXB_PL,FK,Present,351
+15-08-2026,Ritesh Bara,East,MidnaporeHub_MDN_PL,EXT,Future,8
+15-08-2026,Ritesh Bara,East,MidnaporeHub_MDN_PL,FK,Present,4
+15-08-2026,Ritesh Bara,East,MidnaporeHub_MDN_PL,MYE,Past,9
+15-08-2026,Ritesh Bara,East,MidnaporeHub_MDN_PL,MYE,Present,5
+15-08-2026,Ritesh Bara,East,MurshidabadHub_MBB_PL,FK,Present,63
+15-08-2026,Ritesh Bara,East,NabadwipHub_NDA_PL,EXT,Past,1
+15-08-2026,Ritesh Bara,East,NabadwipHub_NDA_PL,EXT,Present,3
+15-08-2026,Ritesh Bara,East,NabadwipHub_NDA_PL,FK,Past,1
+15-08-2026,Ritesh Bara,East,NabadwipHub_NDA_PL,FK,Present,17
+15-08-2026,Ritesh Bara,East,Panchanandapurhub_PCD_PL,EXT,Present,1
+15-08-2026,Ritesh Bara,East,Panchanandapurhub_PCD_PL,FK,Present,9
+15-08-2026,Ritesh Bara,East,PARULIAODH_PAR_PL,EXT,Present,6
+15-08-2026,Ritesh Bara,East,PARULIAODH_PAR_PL,FK,Present,4
+15-08-2026,Ritesh Bara,East,PARULIAODH_PAR_PL,MYE,Present,1
+15-08-2026,Ritesh Bara,East,PhooltalaHub_KOL_PL,FK,Present,2
+15-08-2026,Ritesh Bara,East,RAIDIGHIHUB_RDG_PL,EXT,Present,8
+15-08-2026,Ritesh Bara,East,RAIDIGHIHUB_RDG_PL,FK,Present,156
+15-08-2026,Ritesh Bara,East,RaiganjHub_RGJ_PL,EXT,Present,5
+15-08-2026,Ritesh Bara,East,RaiganjHub_RGJ_PL,FK,Present,7
+15-08-2026,Ritesh Bara,East,RampurhatHub_RPH_PL,EXT,Past,7
+15-08-2026,Ritesh Bara,East,RampurhatHub_RPH_PL,EXT,Present,8
+15-08-2026,Ritesh Bara,East,RampurhatHub_RPH_PL,FK,Future,110
+15-08-2026,Ritesh Bara,East,RampurhatHub_RPH_PL,FK,Present,7
+15-08-2026,Ritesh Bara,East,RampurhatHub_RPH_PL,MYE,Present,1
+15-08-2026,Ritesh Bara,East,RanaghatHub_RHA_PL,EXT,Present,14
+15-08-2026,Ritesh Bara,East,RanaghatHub_RHA_PL,FK,Present,78
+15-08-2026,Ritesh Bara,East,RanaghatHub_RHA_PL,MYE,Future,4
+15-08-2026,Ritesh Bara,East,RanaghatHub_RHA_PL,MYE,Present,3
+15-08-2026,Ritesh Bara,East,RDCHRN_VPH_KOL_PL,EXT,Future,33
+15-08-2026,Ritesh Bara,East,RDCHRN_VPH_KOL_PL,EXT,Past,2
+15-08-2026,Ritesh Bara,East,RDCHRN_VPH_KOL_PL,EXT,Present,120
+15-08-2026,Ritesh Bara,East,RDCHRN_VPH_KOL_PL,MYE,Future,14
+15-08-2026,Ritesh Bara,East,RDCHRN_VPH_KOL_PL,MYE,Present,59
+15-08-2026,Ritesh Bara,East,SatighatHubSplit_BKR_PL,EXT,Present,3
+15-08-2026,Ritesh Bara,East,SectorVHub_KOL_PL,EXT,Future,2
+15-08-2026,Ritesh Bara,East,SectorVHub_KOL_PL,EXT,Past,46
+15-08-2026,Ritesh Bara,East,SectorVHub_KOL_PL,EXT,Present,46
+15-08-2026,Ritesh Bara,East,SectorVHub_KOL_PL,FK,Future,3
+15-08-2026,Ritesh Bara,East,SectorVHub_KOL_PL,FK,Past,199
+15-08-2026,Ritesh Bara,East,SectorVHub_KOL_PL,FK,Present,2079
+15-08-2026,Ritesh Bara,East,SectorVHub_KOL_PL,MYE,Future,16
+15-08-2026,Ritesh Bara,East,SectorVHub_KOL_PL,MYE,Past,4
+15-08-2026,Ritesh Bara,East,SectorVHub_KOL_PL,MYE,Present,52
+15-08-2026,Ritesh Bara,East,ShantipurHub_STP_PL,EXT,Past,1
+15-08-2026,Ritesh Bara,East,ShantipurHub_STP_PL,EXT,Present,97
+15-08-2026,Ritesh Bara,East,ShantipurHub_STP_PL,FK,Future,33
+15-08-2026,Ritesh Bara,East,ShantipurHub_STP_PL,FK,Past,8
+15-08-2026,Ritesh Bara,East,ShantipurHub_STP_PL,FK,Present,679
+15-08-2026,Ritesh Bara,East,SiliguriHub_IXB_PL,EXT,Past,3
+15-08-2026,Ritesh Bara,East,SiliguriHub_IXB_PL,EXT,Present,1
+15-08-2026,Ritesh Bara,East,SiliguriHub_IXB_PL,FK,Present,7
+15-08-2026,Ritesh Bara,East,SiliguriHub_IXB_PL,MYE,Future,2
+15-08-2026,Ritesh Bara,East,SiliguriHub_IXB_PL,MYE,Past,2
+15-08-2026,Ritesh Bara,East,SiliguriHub_IXB_PL,MYE,Present,6
+15-08-2026,Ritesh Bara,East,SingurHub_SIU_PL,FK,Present,46
+15-08-2026,Ritesh Bara,East,UshagramHUB_ASN_PL,FK,Present,20
+15-08-2026,Sankar Barman,East,CacharHub_IXS_PL,FK,Past,3
+15-08-2026,Sankar Barman,East,CacharHub_IXS_PL,MYE,Present,2
+15-08-2026,Sankar Barman,East,ETASHSaukuchiODH_GAU_PL,EXT,Future,62
+15-08-2026,Sankar Barman,East,ETASHSaukuchiODH_GAU_PL,EXT,Present,119
+15-08-2026,Sankar Barman,East,TezpurHub_TZR_PL,MYE,Future,1
+15-08-2026,Sankar Barman,East,TezpurHub_TZR_PL,MYE,Past,1
+15-08-2026,Sankar Barman,East,TezpurHub_TZR_PL,MYE,Present,1
+15-08-2026,Swapnil Borgaonkar (MH),West,AhmedNagarHub_AHN_PL,FK,Past,9
+15-08-2026,Swapnil Borgaonkar (MH),West,AhmedNagarHub_AHN_PL,FK,Present,48
+15-08-2026,Swapnil Borgaonkar (MH),West,AkolaHub_AKD_PL,EXT,Past,1
+15-08-2026,Swapnil Borgaonkar (MH),West,AkolaHub_AKD_PL,FK,Past,5
+15-08-2026,Swapnil Borgaonkar (MH),West,AmravatiHub_AMI_PL,FK,Present,21
+15-08-2026,Swapnil Borgaonkar (MH),West,AurangabadHub_IXU_PL,EXT,Future,1
+15-08-2026,Swapnil Borgaonkar (MH),West,AurangabadHub_IXU_PL,EXT,Past,4
+15-08-2026,Swapnil Borgaonkar (MH),West,AurangabadHub_IXU_PL,EXT,Present,3
+15-08-2026,Swapnil Borgaonkar (MH),West,AurangabadHub_IXU_PL,FK,Present,125
+15-08-2026,Swapnil Borgaonkar (MH),West,AurangabadHub_IXU_PL,MYE,Present,1
+15-08-2026,Swapnil Borgaonkar (MH),West,BaramatiHub_BRM_PL,EXT,Future,1
+15-08-2026,Swapnil Borgaonkar (MH),West,BaramatiHub_BRM_PL,EXT,Present,2
+15-08-2026,Swapnil Borgaonkar (MH),West,BaramatiHub_BRM_PL,FK,Future,2
+15-08-2026,Swapnil Borgaonkar (MH),West,BaramatiHub_BRM_PL,FK,Present,10
+15-08-2026,Swapnil Borgaonkar (MH),West,BaramatiHub_BRM_PL,MYE,Present,3
+15-08-2026,Swapnil Borgaonkar (MH),West,CollegeRoadHub_NSK_PL,EXT,Past,1
+15-08-2026,Swapnil Borgaonkar (MH),West,CollegeRoadHub_NSK_PL,EXT,Present,10
+15-08-2026,Swapnil Borgaonkar (MH),West,CollegeRoadHub_NSK_PL,MYE,Future,2
+15-08-2026,Swapnil Borgaonkar (MH),West,CollegeRoadHub_NSK_PL,MYE,Past,104
+15-08-2026,Swapnil Borgaonkar (MH),West,CollegeRoadHub_NSK_PL,MYE,Present,14
+15-08-2026,Swapnil Borgaonkar (MH),West,CornerRoadHub_IXU_PL,FK,Present,513
+15-08-2026,Swapnil Borgaonkar (MH),West,DhankawadiHub_PUNE_PL,EXT,Past,2305
+15-08-2026,Swapnil Borgaonkar (MH),West,DhankawadiHub_PUNE_PL,EXT,Present,437
+15-08-2026,Swapnil Borgaonkar (MH),West,DhankawadiHub_PUNE_PL,FK,Past,14
+15-08-2026,Swapnil Borgaonkar (MH),West,DhankawadiHub_PUNE_PL,FK,Present,221
+15-08-2026,Swapnil Borgaonkar (MH),West,DhuleHub_DHL_PL,EXT,Present,2
+15-08-2026,Swapnil Borgaonkar (MH),West,DhuleHub_DHL_PL,FK,Present,1
+15-08-2026,Swapnil Borgaonkar (MH),West,JalgaonHub_JGO_PL,EXT,Past,2
+15-08-2026,Swapnil Borgaonkar (MH),West,JalgaonHub_JGO_PL,EXT,Present,3
+15-08-2026,Swapnil Borgaonkar (MH),West,JalgaonHub_JGO_PL,FK,Future,3
+15-08-2026,Swapnil Borgaonkar (MH),West,JalgaonHub_JGO_PL,FK,Past,1
+15-08-2026,Swapnil Borgaonkar (MH),West,JalgaonHub_JGO_PL,FK,Present,90
+15-08-2026,Swapnil Borgaonkar (MH),West,KaradHub_KRD_PL,EXT,Present,3
+15-08-2026,Swapnil Borgaonkar (MH),West,KolhapurHub_KHL_PL,EXT,Future,7
+15-08-2026,Swapnil Borgaonkar (MH),West,KolhapurHub_KHL_PL,EXT,Present,11
+15-08-2026,Swapnil Borgaonkar (MH),West,KolhapurHub_KHL_PL,FK,Future,1
+15-08-2026,Swapnil Borgaonkar (MH),West,KolhapurHub_KHL_PL,FK,Past,2
+15-08-2026,Swapnil Borgaonkar (MH),West,KolhapurHub_KHL_PL,FK,Present,99
+15-08-2026,Swapnil Borgaonkar (MH),West,KolhapurHub_KHL_PL,MYE,Future,8
+15-08-2026,Swapnil Borgaonkar (MH),West,KolhapurHub_KHL_PL,MYE,Present,5
+15-08-2026,Swapnil Borgaonkar (MH),West,KopargaonHub_KPG_PL,EXT,Past,1
+15-08-2026,Swapnil Borgaonkar (MH),West,KopargaonHub_KPG_PL,EXT,Present,1
+15-08-2026,Swapnil Borgaonkar (MH),West,KopargaonHub_KPG_PL,FK,Present,145
+15-08-2026,Swapnil Borgaonkar (MH),West,MalegaonHub_MLG_PL,EXT,Past,2
+15-08-2026,Swapnil Borgaonkar (MH),West,MalegaonHub_MLG_PL,EXT,Present,8
+15-08-2026,Swapnil Borgaonkar (MH),West,MalegaonHub_MLG_PL,FK,Future,12
+15-08-2026,Swapnil Borgaonkar (MH),West,MalegaonHub_MLG_PL,FK,Past,4
+15-08-2026,Swapnil Borgaonkar (MH),West,MalegaonHub_MLG_PL,FK,Present,121
+15-08-2026,Swapnil Borgaonkar (MH),West,MhalungeHub_CHK_PL,EXT,Past,9
+15-08-2026,Swapnil Borgaonkar (MH),West,MhalungeHub_CHK_PL,EXT,Present,1694
+15-08-2026,Swapnil Borgaonkar (MH),West,NandedHub_NDC_PL,EXT,Past,1
+15-08-2026,Swapnil Borgaonkar (MH),West,NandedHub_NDC_PL,EXT,Present,1
+15-08-2026,Swapnil Borgaonkar (MH),West,NandedHub_NDC_PL,FK,Present,225
+15-08-2026,Swapnil Borgaonkar (MH),West,NandedHub_NDC_PL,MYE,Future,1
+15-08-2026,Swapnil Borgaonkar (MH),West,NandedHub_NDC_PL,MYE,Past,1
+15-08-2026,Swapnil Borgaonkar (MH),West,NandedHub_NDC_PL,MYE,Present,2
+15-08-2026,Swapnil Borgaonkar (MH),West,PanchavatiHub_NSK_PL,EXT,Past,1
+15-08-2026,Swapnil Borgaonkar (MH),West,PanchavatiHub_NSK_PL,FK,Present,21
+15-08-2026,Swapnil Borgaonkar (MH),West,Pimpri_PNQ_PL,EXT,Past,22
+15-08-2026,Swapnil Borgaonkar (MH),West,Pimpri_PNQ_PL,EXT,Present,19
+15-08-2026,Swapnil Borgaonkar (MH),West,Pimpri_PNQ_PL,FK,Past,55
+15-08-2026,Swapnil Borgaonkar (MH),West,Pimpri_PNQ_PL,FK,Present,580
+15-08-2026,Swapnil Borgaonkar (MH),West,Pimpri_PNQ_PL,MYE,Past,6
+15-08-2026,Swapnil Borgaonkar (MH),West,Pimpri_PNQ_PL,MYE,Present,10
+15-08-2026,Swapnil Borgaonkar (MH),West,SangliHub_SNG_PL,EXT,Present,3
+15-08-2026,Swapnil Borgaonkar (MH),West,SangliHub_SNG_PL,FK,Past,3
+15-08-2026,Swapnil Borgaonkar (MH),West,SangliHub_SNG_PL,FK,Present,292
+15-08-2026,Swapnil Borgaonkar (MH),West,SangliHub_SNG_PL,MYE,Present,1
+15-08-2026,Swapnil Borgaonkar (MH),West,SataraHub_STR_PL,EXT,Past,1
+15-08-2026,Swapnil Borgaonkar (MH),West,SataraHub_STR_PL,EXT,Present,4
+15-08-2026,Swapnil Borgaonkar (MH),West,ShukrawarpethHub_PL,EXT,Future,44
+15-08-2026,Swapnil Borgaonkar (MH),West,ShukrawarpethHub_PL,EXT,Past,1
+15-08-2026,Swapnil Borgaonkar (MH),West,ShukrawarpethHub_PL,EXT,Present,421
+15-08-2026,Swapnil Borgaonkar (MH),West,ShukrawarpethHub_PL,FK,Past,10
+15-08-2026,Swapnil Borgaonkar (MH),West,ShukrawarpethHub_PL,FK,Present,562
+15-08-2026,Swapnil Borgaonkar (MH),West,SolapurHub_SSE_PL,EXT,Present,3
+15-08-2026,Swapnil Borgaonkar (MH),West,SolapurHub_SSE_PL,FK,Future,23
+15-08-2026,Swapnil Borgaonkar (MH),West,SolapurHub_SSE_PL,FK,Present,343
+15-08-2026,Swapnil Borgaonkar (MH),West,SolapurHub_SSE_PL,MYE,Future,1
+15-08-2026,Swapnil Borgaonkar (MH),West,TrimurtiNagarHub_NAG_PL,FK,Present,26
+15-08-2026,Swapnil Borgaonkar (MH),West,TrimurtiNagarHub_NAG_PL,MYE,Future,4
+15-08-2026,Swapnil Borgaonkar (MH),West,TrimurtiNagarHub_NAG_PL,MYE,Present,3
+15-08-2026,Swapnil Borgaonkar (MH),West,WagholiHub_PNQ_PL,EXT,Past,1
+15-08-2026,Swapnil Borgaonkar (MH),West,WagholiHub_PNQ_PL,FK,Future,5
+15-08-2026,Swapnil Borgaonkar (MH),West,WardhamanNagar_NAG_PL,EXT,Past,2
+15-08-2026,Swapnil Borgaonkar (MH),West,WardhamanNagar_NAG_PL,EXT,Present,10
+15-08-2026,Swapnil Borgaonkar (MH),West,WardhamanNagar_NAG_PL,FK,Present,544
+15-08-2026,Swapnil Borgaonkar (MH),West,WardhamanNagar_NAG_PL,MYE,Present,158
+15-08-2026,Swapnil Borgaonkar (MP),West,AnnapurnaShajapurODH_SJP_PL,EXT,Past,1
+15-08-2026,Swapnil Borgaonkar (MP),West,AnnapurnaShajapurODH_SJP_PL,EXT,Present,1
+15-08-2026,Swapnil Borgaonkar (MP),West,BalaghatHub_BGT_PL,FK,Future,4
+15-08-2026,Swapnil Borgaonkar (MP),West,ChhindwaraHub_CHH_PL,FK,Present,16
+15-08-2026,Swapnil Borgaonkar (MP),West,DewasHub_DWS_PL,EXT,Future,5
+15-08-2026,Swapnil Borgaonkar (MP),West,DewasHub_DWS_PL,EXT,Past,4
+15-08-2026,Swapnil Borgaonkar (MP),West,DewasHub_DWS_PL,EXT,Present,18
+15-08-2026,Swapnil Borgaonkar (MP),West,DewasHub_DWS_PL,FK,Future,11
+15-08-2026,Swapnil Borgaonkar (MP),West,DewasHub_DWS_PL,FK,Past,4
+15-08-2026,Swapnil Borgaonkar (MP),West,DewasHub_DWS_PL,FK,Present,146
+15-08-2026,Swapnil Borgaonkar (MP),West,DewasHub_DWS_PL,MYE,Past,2
+15-08-2026,Swapnil Borgaonkar (MP),West,DewasHub_DWS_PL,MYE,Present,12
+15-08-2026,Swapnil Borgaonkar (MP),West,ELASTICRUNKHARGONEODH_KHG_PL,EXT,Past,4
+15-08-2026,Swapnil Borgaonkar (MP),West,ELASTICRUNKHARGONEODH_KHG_PL,FK,Present,75
+15-08-2026,Swapnil Borgaonkar (MP),West,GunaHub_GUN_PL,EXT,Future,6
+15-08-2026,Swapnil Borgaonkar (MP),West,GunaHub_GUN_PL,EXT,Past,2
+15-08-2026,Swapnil Borgaonkar (MP),West,GunaHub_GUN_PL,EXT,Present,4
+15-08-2026,Swapnil Borgaonkar (MP),West,GunaHub_GUN_PL,FK,Past,1
+15-08-2026,Swapnil Borgaonkar (MP),West,GunaHub_GUN_PL,FK,Present,2
+15-08-2026,Swapnil Borgaonkar (MP),West,GwaliorHub_GWL_PL,EXT,Future,3
+15-08-2026,Swapnil Borgaonkar (MP),West,GwaliorHub_GWL_PL,EXT,Past,13
+15-08-2026,Swapnil Borgaonkar (MP),West,GwaliorHub_GWL_PL,EXT,Present,124
+15-08-2026,Swapnil Borgaonkar (MP),West,GwaliorHub_GWL_PL,FK,Future,101
+15-08-2026,Swapnil Borgaonkar (MP),West,GwaliorHub_GWL_PL,FK,Past,132
+15-08-2026,Swapnil Borgaonkar (MP),West,GwaliorHub_GWL_PL,FK,Present,5089
+15-08-2026,Swapnil Borgaonkar (MP),West,GwaliorHub_GWL_PL,MYE,Future,1
+15-08-2026,Swapnil Borgaonkar (MP),West,GwaliorHub_GWL_PL,MYE,Past,1
+15-08-2026,Swapnil Borgaonkar (MP),West,GwaliorHub_GWL_PL,MYE,Present,7
+15-08-2026,Swapnil Borgaonkar (MP),West,IndoreSplitHub_IDR_PL,EXT,Future,76
+15-08-2026,Swapnil Borgaonkar (MP),West,IndoreSplitHub_IDR_PL,EXT,Past,20
+15-08-2026,Swapnil Borgaonkar (MP),West,IndoreSplitHub_IDR_PL,EXT,Present,258
+15-08-2026,Swapnil Borgaonkar (MP),West,IndoreSplitHub_IDR_PL,FK,Future,453
+15-08-2026,Swapnil Borgaonkar (MP),West,IndoreSplitHub_IDR_PL,FK,Past,156
+15-08-2026,Swapnil Borgaonkar (MP),West,IndoreSplitHub_IDR_PL,FK,Present,3671
+15-08-2026,Swapnil Borgaonkar (MP),West,IndoreSplitHub_IDR_PL,MYE,Future,8
+15-08-2026,Swapnil Borgaonkar (MP),West,IndoreSplitHub_IDR_PL,MYE,Past,2
+15-08-2026,Swapnil Borgaonkar (MP),West,IndoreSplitHub_IDR_PL,MYE,Present,35
+15-08-2026,Swapnil Borgaonkar (MP),West,JabalpurHub_JBL_PL,EXT,Future,1
+15-08-2026,Swapnil Borgaonkar (MP),West,JabalpurHub_JBL_PL,EXT,Past,4
+15-08-2026,Swapnil Borgaonkar (MP),West,JabalpurHub_JBL_PL,FK,Future,39
+15-08-2026,Swapnil Borgaonkar (MP),West,JabalpurHub_JBL_PL,FK,Past,11
+15-08-2026,Swapnil Borgaonkar (MP),West,JabalpurHub_JBL_PL,FK,Present,585
+15-08-2026,Swapnil Borgaonkar (MP),West,JabalpurHub_JBL_PL,MYE,Future,4
+15-08-2026,Swapnil Borgaonkar (MP),West,JabalpurHub_JBL_PL,MYE,Past,1
+15-08-2026,Swapnil Borgaonkar (MP),West,JabalpurHub_JBL_PL,MYE,Present,8
+15-08-2026,Swapnil Borgaonkar (MP),West,KatniHub_KTN_PL,FK,Present,957
+15-08-2026,Swapnil Borgaonkar (MP),West,MandsaurHub_MAN_PL,FK,Past,2
+15-08-2026,Swapnil Borgaonkar (MP),West,MandsaurHub_MAN_PL,FK,Present,4
+15-08-2026,Swapnil Borgaonkar (MP),West,RaisenOPH_RAI_PL,EXT,Past,90
+15-08-2026,Swapnil Borgaonkar (MP),West,RaisenOPH_RAI_PL,EXT,Present,16
+15-08-2026,Swapnil Borgaonkar (MP),West,RatlamHub_RTM_PL,EXT,Present,13
+15-08-2026,Swapnil Borgaonkar (MP),West,RatlamHub_RTM_PL,FK,Present,16
+15-08-2026,Swapnil Borgaonkar (MP),West,SagarHub_SGR_PL,EXT,Future,2
+15-08-2026,Swapnil Borgaonkar (MP),West,SagarHub_SGR_PL,EXT,Past,5
+15-08-2026,Swapnil Borgaonkar (MP),West,SagarHub_SGR_PL,EXT,Present,66
+15-08-2026,Swapnil Borgaonkar (MP),West,SagarHub_SGR_PL,FK,Future,1178
+15-08-2026,Swapnil Borgaonkar (MP),West,SagarHub_SGR_PL,FK,Past,44
+15-08-2026,Swapnil Borgaonkar (MP),West,SagarHub_SGR_PL,FK,Present,3883
+15-08-2026,Swapnil Borgaonkar (MP),West,SagarHub_SGR_PL,MYE,Future,4
+15-08-2026,Swapnil Borgaonkar (MP),West,SagarHub_SGR_PL,MYE,Present,73
+15-08-2026,Swapnil Borgaonkar (MP),West,SatnaHub_STA_PL,EXT,Future,1
+15-08-2026,Swapnil Borgaonkar (MP),West,SatnaHub_STA_PL,EXT,Present,2
+15-08-2026,Swapnil Borgaonkar (MP),West,SatnaHub_STA_PL,FK,Present,25
+15-08-2026,Swapnil Borgaonkar (MP),West,UjjainHub_UJN_PL,EXT,Future,1
+15-08-2026,Swapnil Borgaonkar (MP),West,UjjainHub_UJN_PL,EXT,Past,715
+15-08-2026,Swapnil Borgaonkar (MP),West,UjjainHub_UJN_PL,EXT,Present,32
+15-08-2026,Swapnil Borgaonkar (MP),West,UjjainHub_UJN_PL,FK,Past,3
+15-08-2026,Swapnil Borgaonkar (MP),West,UjjainHub_UJN_PL,FK,Present,12
+15-08-2026,Swapnil Borgaonkar (MP),West,UjjainHub_UJN_PL,MYE,Future,3
+15-08-2026,Swapnil Borgaonkar (MP),West,UjjainHub_UJN_PL,MYE,Present,1
+15-08-2026,Swapnil Borgaonkar (MP),West,VidyanagarHub_BHO_PL,EXT,Future,9
+15-08-2026,Swapnil Borgaonkar (MP),West,VidyanagarHub_BHO_PL,EXT,Past,3
+15-08-2026,Swapnil Borgaonkar (MP),West,VidyanagarHub_BHO_PL,EXT,Present,30
+15-08-2026,Swapnil Borgaonkar (MP),West,VidyanagarHub_BHO_PL,FK,Future,12
+15-08-2026,Swapnil Borgaonkar (MP),West,VidyanagarHub_BHO_PL,FK,Past,7
+15-08-2026,Swapnil Borgaonkar (MP),West,VidyanagarHub_BHO_PL,FK,Present,700
+15-08-2026,Swapnil Borgaonkar (MP),West,VidyanagarHub_BHO_PL,MYE,Future,3
+15-08-2026,Swapnil Borgaonkar (MP),West,VidyanagarHub_BHO_PL,MYE,Past,1
+15-08-2026,Swapnil Borgaonkar (MP),West,VidyanagarHub_BHO_PL,MYE,Present,2
+15-08-2026,Vineeth V,South,AmbalamukkuHub_TRV_PL,EXT,Future,1
+15-08-2026,Vineeth V,South,AmbalamukkuHub_TRV_PL,FK,Future,1
+15-08-2026,Vineeth V,South,AmbalamukkuHub_TRV_PL,MYE,Future,2
+15-08-2026,Vineeth V,South,AmbalamukkuHub_TRV_PL,MYE,Present,1
+15-08-2026,Vineeth V,South,Attingal_AAL_PL,FK,Present,38
+15-08-2026,Vineeth V,South,CalicutHub_CCJ_PL,EXT,Past,2
+15-08-2026,Vineeth V,South,CalicutHub_CCJ_PL,MYE,Past,9
+15-08-2026,Vineeth V,South,ChengannurHub_CNN_PL,EXT,Past,1
+15-08-2026,Vineeth V,South,ElamakkaraHub_COK_PL,EXT,Future,2
+15-08-2026,Vineeth V,South,ElamakkaraHub_COK_PL,EXT,Present,5
+15-08-2026,Vineeth V,South,ElamakkaraHub_COK_PL,MYE,Future,3
+15-08-2026,Vineeth V,South,ElamakkaraHub_COK_PL,MYE,Past,6
+15-08-2026,Vineeth V,South,ElamakkaraHub_COK_PL,MYE,Present,3
+15-08-2026,Vineeth V,South,KanjoorHub_ALU_PL,EXT,Future,402
+15-08-2026,Vineeth V,South,KanjoorHub_ALU_PL,EXT,Present,74
+15-08-2026,Vineeth V,South,KannurHub_KAN_PL,EXT,Future,4
+15-08-2026,Vineeth V,South,KannurHub_KAN_PL,EXT,Past,28
+15-08-2026,Vineeth V,South,KannurHub_KAN_PL,EXT,Present,30
+15-08-2026,Vineeth V,South,KannurHub_KAN_PL,MYE,Present,3
+15-08-2026,Vineeth V,South,KollamHub_QLN_PL,EXT,Future,5
+15-08-2026,Vineeth V,South,KollamHub_QLN_PL,EXT,Present,1
+15-08-2026,Vineeth V,South,KollamHub_QLN_PL,MYE,Future,2
+15-08-2026,Vineeth V,South,KollamHub_QLN_PL,MYE,Present,4
+15-08-2026,Vineeth V,South,KottayamHub_KTY_PL,EXT,Present,2
+15-08-2026,Vineeth V,South,KottayamHub_KTY_PL,MYE,Present,1
+15-08-2026,Vineeth V,South,MalaPuramHub_MLP_PL,EXT,Future,12
+15-08-2026,Vineeth V,South,MalaPuramHub_MLP_PL,EXT,Present,17
+15-08-2026,Vineeth V,South,MalaPuramHub_MLP_PL,FK,Past,9
+15-08-2026,Vineeth V,South,MekkaadHub_MKD_PL,EXT,Present,2
+15-08-2026,Vineeth V,South,OllurHub_TCR_PL,EXT,Future,1
+15-08-2026,Vineeth V,South,PalakkadHub_PKD_PL,FK,Present,30
+15-08-2026,Vineeth V,South,PanayikkulamHub_PNK_PL,EXT,Future,1
+15-08-2026,Vineeth V,South,PanayikkulamHub_PNK_PL,EXT,Past,1
+15-08-2026,Vineeth V,South,PattomHub_TRV_PL,EXT,Future,2
+15-08-2026,Vineeth V,South,PattomHub_TRV_PL,MYE,Future,1
+15-08-2026,Vineeth V,South,PattomHub_TRV_PL,MYE,Present,1
+15-08-2026,Vineeth V,South,Petta_PEA_PL,EXT,Future,9
+15-08-2026,Vineeth V,South,Petta_PEA_PL,EXT,Present,24
+15-08-2026,Vineeth V,South,Petta_PEA_PL,MYE,Future,7
+15-08-2026,Vineeth V,South,Petta_PEA_PL,MYE,Present,2
+15-08-2026,Vineeth V,South,ShornurHub_SHO_PL,FK,Past,8
+15-08-2026,Vineeth V,South,ThalasseryHub_THL_PL,EXT,Past,1
+15-08-2026,Vineeth V,South,ThalasseryHub_THL_PL,EXT,Present,46
+15-08-2026,Vineeth V,South,ThodupuzhaHub_THP_PL,EXT,Future,3
+15-08-2026,Vineeth V,South,ThodupuzhaHub_THP_PL,MYE,Present,3
+15-08-2026,Vineeth V,South,TrissurHub_TCR_PL,EXT,Past,4
+15-08-2026,Vineeth V,South,TrissurHub_TCR_PL,EXT,Present,4
+15-08-2026,Vineeth V,South,TrissurHub_TCR_PL,MYE,Present,1
+15-08-2026,Vineeth V,South,TrivandrumHub_TRV_PL,EXT,Present,4
+15-08-2026,Vineeth V,South,TrivandrumHub_TRV_PL,MYE,Present,5
+15-08-2026,Vivekananda Tallapudi,South,AmalapuramHub_AMP_PL,EXT,Future,1
+15-08-2026,Vivekananda Tallapudi,South,AmalapuramHub_AMP_PL,EXT,Present,4
+15-08-2026,Vivekananda Tallapudi,South,BenzCircleHub_VJA_PL,EXT,Future,1
+15-08-2026,Vivekananda Tallapudi,South,BenzCircleHub_VJA_PL,EXT,Past,6
+15-08-2026,Vivekananda Tallapudi,South,BenzCircleHub_VJA_PL,EXT,Present,26
+15-08-2026,Vivekananda Tallapudi,South,BenzCircleHub_VJA_PL,FK,Present,208
+15-08-2026,Vivekananda Tallapudi,South,BenzCircleHub_VJA_PL,MYE,Future,4
+15-08-2026,Vivekananda Tallapudi,South,BenzCircleHub_VJA_PL,MYE,Present,10
+15-08-2026,Vivekananda Tallapudi,South,DomalgudaHub_HYD_PL,EXT,Future,7
+15-08-2026,Vivekananda Tallapudi,South,DomalgudaHub_HYD_PL,EXT,Past,8
+15-08-2026,Vivekananda Tallapudi,South,DomalgudaHub_HYD_PL,EXT,Present,27
+15-08-2026,Vivekananda Tallapudi,South,DomalgudaHub_HYD_PL,FK,Future,34
+15-08-2026,Vivekananda Tallapudi,South,DomalgudaHub_HYD_PL,FK,Past,16
+15-08-2026,Vivekananda Tallapudi,South,DomalgudaHub_HYD_PL,FK,Present,5435
+15-08-2026,Vivekananda Tallapudi,South,DomalgudaHub_HYD_PL,MYE,Future,20
+15-08-2026,Vivekananda Tallapudi,South,DomalgudaHub_HYD_PL,MYE,Present,16
+15-08-2026,Vivekananda Tallapudi,South,KarimnagarHub_KMN_PL,EXT,Future,1
+15-08-2026,Vivekananda Tallapudi,South,KarimnagarHub_KMN_PL,EXT,Present,4
+15-08-2026,Vivekananda Tallapudi,South,KarimnagarHub_KMN_PL,MYE,Future,3
+15-08-2026,Vivekananda Tallapudi,South,KarimnagarHub_KMN_PL,MYE,Present,3
+15-08-2026,Vivekananda Tallapudi,South,KukatpallyHub_HYD_PL,EXT,Future,5
+15-08-2026,Vivekananda Tallapudi,South,KukatpallyHub_HYD_PL,EXT,Past,51
+15-08-2026,Vivekananda Tallapudi,South,KukatpallyHub_HYD_PL,EXT,Present,32
+15-08-2026,Vivekananda Tallapudi,South,KukatpallyHub_HYD_PL,FK,Future,8
+15-08-2026,Vivekananda Tallapudi,South,KukatpallyHub_HYD_PL,FK,Past,4
+15-08-2026,Vivekananda Tallapudi,South,KukatpallyHub_HYD_PL,FK,Present,1154
+15-08-2026,Vivekananda Tallapudi,South,KukatpallyHub_HYD_PL,MYE,Future,16
+15-08-2026,Vivekananda Tallapudi,South,KukatpallyHub_HYD_PL,MYE,Past,68
+15-08-2026,Vivekananda Tallapudi,South,KukatpallyHub_HYD_PL,MYE,Present,96
+15-08-2026,Vivekananda Tallapudi,South,KurnoolHub_KRN_PL,EXT,Present,10
+15-08-2026,Vivekananda Tallapudi,South,KurnoolHub_KRN_PL,MYE,Future,1
+15-08-2026,Vivekananda Tallapudi,South,KurnoolHub_KRN_PL,MYE,Present,2
+15-08-2026,Vivekananda Tallapudi,South,LBNagarHub_HYD_PL,EXT,Past,1
+15-08-2026,Vivekananda Tallapudi,South,LBNagarHub_HYD_PL,EXT,Present,28
+15-08-2026,Vivekananda Tallapudi,South,LBNagarHub_HYD_PL,FK,Future,122
+15-08-2026,Vivekananda Tallapudi,South,LBNagarHub_HYD_PL,FK,Past,143
+15-08-2026,Vivekananda Tallapudi,South,LBNagarHub_HYD_PL,FK,Present,11608
+15-08-2026,Vivekananda Tallapudi,South,LBNagarHub_HYD_PL,MYE,Future,2
+15-08-2026,Vivekananda Tallapudi,South,LBNagarHub_HYD_PL,MYE,Past,1
+15-08-2026,Vivekananda Tallapudi,South,LBNagarHub_HYD_PL,MYE,Present,332
+15-08-2026,Vivekananda Tallapudi,South,MasabTankHub_HYD_PL,EXT,Future,208
+15-08-2026,Vivekananda Tallapudi,South,MasabTankHub_HYD_PL,EXT,Past,7
+15-08-2026,Vivekananda Tallapudi,South,MasabTankHub_HYD_PL,EXT,Present,850
+15-08-2026,Vivekananda Tallapudi,South,MasabTankHub_HYD_PL,FK,Future,767
+15-08-2026,Vivekananda Tallapudi,South,MasabTankHub_HYD_PL,FK,Past,70
+15-08-2026,Vivekananda Tallapudi,South,MasabTankHub_HYD_PL,FK,Present,8543
+15-08-2026,Vivekananda Tallapudi,South,MasabTankHub_HYD_PL,MYE,Future,18
+15-08-2026,Vivekananda Tallapudi,South,MasabTankHub_HYD_PL,MYE,Past,2
+15-08-2026,Vivekananda Tallapudi,South,MasabTankHub_HYD_PL,MYE,Present,55
+15-08-2026,Vivekananda Tallapudi,South,MedchalHub_HYD_PL,EXT,Future,47
+15-08-2026,Vivekananda Tallapudi,South,MedchalHub_HYD_PL,EXT,Present,339
+15-08-2026,Vivekananda Tallapudi,South,MedchalHub_HYD_PL,FK,Present,19
+15-08-2026,Vivekananda Tallapudi,South,RajahmundryHub_RJY_PL,EXT,Present,5
+15-08-2026,Vivekananda Tallapudi,South,RajahmundryHub_RJY_PL,MYE,Future,2
+15-08-2026,Vivekananda Tallapudi,South,RajahmundryHub_RJY_PL,MYE,Past,3
+15-08-2026,Vivekananda Tallapudi,South,RajahmundryHub_RJY_PL,MYE,Present,2
+15-08-2026,Vivekananda Tallapudi,South,SapthagiriHub_TPT_PL,EXT,Present,5
+15-08-2026,Vivekananda Tallapudi,South,SapthagiriHub_TPT_PL,MYE,Future,6
+15-08-2026,Vivekananda Tallapudi,South,SapthagiriHub_TPT_PL,MYE,Past,28
+15-08-2026,Vivekananda Tallapudi,South,SapthagiriHub_TPT_PL,MYE,Present,44
+15-08-2026,Vivekananda Tallapudi,South,TrimulgherryHub_HYD_PL,EXT,Future,4
+15-08-2026,Vivekananda Tallapudi,South,TrimulgherryHub_HYD_PL,EXT,Past,63
+15-08-2026,Vivekananda Tallapudi,South,TrimulgherryHub_HYD_PL,EXT,Present,259
+15-08-2026,Vivekananda Tallapudi,South,TrimulgherryHub_HYD_PL,FK,Future,1
+15-08-2026,Vivekananda Tallapudi,South,TrimulgherryHub_HYD_PL,FK,Past,14
+15-08-2026,Vivekananda Tallapudi,South,TrimulgherryHub_HYD_PL,FK,Present,1458
+15-08-2026,Vivekananda Tallapudi,South,TrimulgherryHub_HYD_PL,MYE,Future,14
+15-08-2026,Vivekananda Tallapudi,South,TrimulgherryHub_HYD_PL,MYE,Present,30
+15-08-2026,Vivekananda Tallapudi,South,VisakhapatnamHub_VTZ_PL,EXT,Future,2
+15-08-2026,Vivekananda Tallapudi,South,VisakhapatnamHub_VTZ_PL,EXT,Past,3
+15-08-2026,Vivekananda Tallapudi,South,VisakhapatnamHub_VTZ_PL,EXT,Present,7
+15-08-2026,Vivekananda Tallapudi,South,VisakhapatnamHub_VTZ_PL,MYE,Future,9
+15-08-2026,Vivekananda Tallapudi,South,VisakhapatnamHub_VTZ_PL,MYE,Past,6
+15-08-2026,Vivekananda Tallapudi,South,VisakhapatnamHub_VTZ_PL,MYE,Present,19
+15-08-2026,Yatin Verma,North,BhiwandiSH_BWD_PL,MYS,Future,401
+15-08-2026,Yatin Verma,North,BhiwandiSH_BWD_PL,MYS,Past,207
+15-08-2026,Yatin Verma,North,BhiwandiSH_BWD_PL,MYS,Present,7609
