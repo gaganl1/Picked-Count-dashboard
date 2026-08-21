@@ -49,7 +49,6 @@
       -webkit-font-smoothing: antialiased;
     }
 
-    /* HEADER */
     .header {
       background: #0f172a;
       border-bottom: 1px solid #1e293b;
@@ -76,29 +75,17 @@
     .header-meta { font-size: 11px; color: #94a3b8; margin-top: 2px; font-family: var(--font-mono); }
     .header-actions { display: flex; gap: 10px; }
 
-    /* TAB NAVIGATION */
-    .nav-tabs {
-      display: flex;
-      gap: 2px;
-    }
+    .nav-tabs { display: flex; gap: 2px; }
     .nav-tab {
-      padding: 10px 20px;
-      font-size: 13px;
-      font-weight: 600;
-      color: #94a3b8;
-      background: transparent;
-      border: none;
-      border-bottom: 3px solid transparent;
-      cursor: pointer;
-      transition: all 0.2s;
+      padding: 10px 20px; font-size: 13px; font-weight: 600;
+      color: #94a3b8; background: transparent; border: none;
+      border-bottom: 3px solid transparent; cursor: pointer; transition: all 0.2s;
     }
     .nav-tab:hover { color: #f8fafc; }
     .nav-tab.active {
-      color: #ffffff;
-      border-bottom-color: var(--primary);
+      color: #ffffff; border-bottom-color: var(--primary);
       background: rgba(255, 255, 255, 0.05);
-      border-top-left-radius: 6px;
-      border-top-right-radius: 6px;
+      border-top-left-radius: 6px; border-top-right-radius: 6px;
     }
 
     .btn {
@@ -111,23 +98,17 @@
     .btn.primary { background: var(--primary); border-color: var(--primary); color: #fff; }
     .btn.primary:hover { background: var(--primary-dark); }
 
-    /* MAIN LAYOUT */
     .main { padding: 24px 32px 60px; max-width: 1600px; margin: 0 auto; }
     .tab-content { display: none; }
     .tab-content.active { display: block; }
 
-    /* FILTERS CARD */
     .filters-card {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: var(--radius-lg);
-      padding: 20px; margin-bottom: 24px;
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: var(--radius-lg); padding: 20px; margin-bottom: 24px;
       box-shadow: var(--shadow-sm);
     }
     .filters-grid {
-      display: grid;
-      grid-template-columns: repeat(6, 1fr);
-      gap: 14px; align-items: end;
+      display: grid; grid-template-columns: repeat(6, 1fr); gap: 14px; align-items: end;
     }
     @media (max-width: 1200px) { .filters-grid { grid-template-columns: repeat(3,1fr); } }
     @media (max-width: 680px)  { .filters-grid { grid-template-columns: repeat(2,1fr); } }
@@ -147,8 +128,7 @@
 
     .filters-footer {
       display: flex; justify-content: flex-end; align-items: center;
-      gap: 10px; margin-top: 16px; padding-top: 14px;
-      border-top: 1px solid var(--border);
+      gap: 10px; margin-top: 16px; padding-top: 14px; border-top: 1px solid var(--border);
     }
     .hint { margin-right: auto; color: var(--accent); font-size: 12px; font-weight: 600; }
 
@@ -165,7 +145,6 @@
     }
     .btn-outline:hover { background: var(--surface-sub); color: var(--text-main); }
 
-    /* Custom Multi-select */
     .ms { position: relative; }
     .ms-btn {
       width: 100%; text-align: left; padding: 8px 12px;
@@ -203,7 +182,6 @@
     }
     .ms-actions a { font-size: 11px; color: var(--primary); cursor: pointer; font-weight: 600; }
 
-    /* KPIS */
     .kpis { display: grid; grid-template-columns: repeat(4,1fr); gap: 16px; margin-bottom: 24px; }
     @media (max-width: 800px) { .kpis { grid-template-columns: repeat(2,1fr); } }
 
@@ -228,7 +206,6 @@
     .kpi.total .kpi-value { color: var(--primary); }
     .kpi-sub { font-size: 11.5px; color: var(--text-muted); margin-top: 4px; }
 
-    /* CARDS & CHARTS */
     .card {
       background: var(--surface); border: 1px solid var(--border);
       border-radius: var(--radius-lg); padding: 20px;
@@ -246,7 +223,6 @@
     .chart-wrap { height: 280px; }
     .chart-wrap.tall { height: 340px; }
 
-    /* TABLES */
     .table-toolbar { display: flex; align-items: center; justify-content: space-between; margin-bottom: 14px; }
     .search-input {
       padding: 7px 12px; background: var(--surface-sub); border: 1px solid var(--border);
@@ -262,37 +238,23 @@
       background: #e2e8f0; padding: 10px 14px;
       text-align: left; font-size: 11px; font-weight: 700;
       color: #334155; border-bottom: 1px solid var(--border-dark); white-space: nowrap;
+      cursor: pointer; user-select: none;
     }
+    th:hover { background: #cbd5e1; }
+    th.sorted::after { content: ' ▲'; font-size: 9px; }
+    th.sorted.desc::after { content: ' ▼'; font-size: 9px; }
+
     td { padding: 8px 14px; border-bottom: 1px solid var(--border); white-space: nowrap; }
     tr:last-child td { border-bottom: none; }
     tr:hover td { background: var(--surface-sub); }
     td.num, th.num { text-align: right; font-family: var(--font-mono); }
     .pct { color: var(--text-muted); font-size: 11px; margin-left: 4px; }
 
-    /* Pivot Excel Style for MH Landing */
-    .excel-table th {
-      background: #c7e2f5;
-      color: #0f172a;
-      border: 1px solid #94a3b8;
-      font-weight: 700;
-    }
-    .excel-table td {
-      border: 1px solid #e2e8f0;
-      font-size: 12px;
-    }
-    .pivot-parent td {
-      font-weight: 800;
-      background: #f1f5f9;
-      color: #0f172a;
-      cursor: pointer;
-    }
-    .pivot-child td {
-      background: #ffffff;
-      color: #334155;
-    }
-    .pivot-child td:first-child {
-      padding-left: 36px;
-    }
+    .excel-table th { background: #c7e2f5; color: #0f172a; border: 1px solid #94a3b8; font-weight: 700; }
+    .excel-table td { border: 1px solid #e2e8f0; font-size: 12px; }
+    .pivot-parent td { font-weight: 800; background: #f1f5f9; color: #0f172a; cursor: pointer; }
+    .pivot-child td { background: #ffffff; color: #334155; }
+    .pivot-child td:first-child { padding-left: 36px; }
     .tree-btn {
       display: inline-flex; align-items: center; justify-content: center;
       width: 14px; height: 14px; border: 1px solid #475569; border-radius: 2px;
@@ -301,12 +263,10 @@
     }
 
     tr.grand-total td {
-      background: var(--surface-sub);
-      border-top: 2px solid var(--border-dark);
+      background: var(--surface-sub); border-top: 2px solid var(--border-dark);
       font-weight: 700; position: sticky; bottom: 0; z-index: 5;
     }
 
-    /* STATUS BAR */
     .status-bar {
       display: flex; align-items: center; gap: 16px; padding: 10px 16px;
       border-radius: var(--radius-md); background: var(--surface); border: 1px solid var(--border);
@@ -316,7 +276,6 @@
     @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:.4} }
     .status-bar span { font-family: var(--font-mono); }
 
-    /* OVERLAY & TOAST */
     #overlay {
       position: fixed; inset: 0; background: rgba(255,255,255,0.85);
       display: none; align-items: center; justify-content: center;
@@ -341,7 +300,6 @@
 </div>
 <div id="toast"></div>
 
-<!-- HEADER WITH TAB NAV -->
 <header class="header">
   <div class="header-top">
     <div class="header-left">
@@ -363,7 +321,6 @@
   </div>
 </header>
 
-<!-- MAIN CONTENT -->
 <div class="main">
 
   <div class="status-bar">
@@ -375,7 +332,6 @@
     <span id="statusLastUpdate">—</span>
   </div>
 
-  <!-- GLOBAL FILTERS -->
   <div class="filters-card">
     <div class="filters-grid">
       <div class="field"><label>From Date</label><input type="date" id="dateFrom"></div>
@@ -392,7 +348,6 @@
     </div>
   </div>
 
-  <!-- GLOBAL KPIS -->
   <div class="kpis">
     <div class="kpi past">
       <div class="kpi-label">Past</div>
@@ -448,7 +403,7 @@
               <th data-table="zone" data-key="Past" class="num">Past</th>
               <th data-table="zone" data-key="Present" class="num">Present</th>
               <th data-table="zone" data-key="Future" class="num">Future</th>
-              <th data-table="zone" data-key="total" class="num sorted">Total</th>
+              <th data-table="zone" data-key="total" class="num sorted desc">Total</th>
               <th data-table="zone" data-key="grandTotal" class="num">Grand Total</th>
             </tr>
           </thead>
@@ -471,7 +426,7 @@
               <th data-table="gm" data-key="Past" class="num">Past</th>
               <th data-table="gm" data-key="Present" class="num">Present</th>
               <th data-table="gm" data-key="Future" class="num">Future</th>
-              <th data-table="gm" data-key="total" class="num sorted">Total</th>
+              <th data-table="gm" data-key="total" class="num sorted desc">Total</th>
               <th data-table="gm" data-key="grandTotal" class="num">Grand Total</th>
             </tr>
           </thead>
@@ -480,10 +435,10 @@
       </div>
     </div>
 
-    <!-- FULL BREAKDOWN TABLE -->
+    <!-- FULL BREAKDOWN TABLE (NAME LEVEL) -->
     <div class="card">
       <div class="table-toolbar">
-        <div class="card-title" style="margin:0"><span class="dot"></span>Full Breakdown</div>
+        <div class="card-title" style="margin:0"><span class="dot"></span>Full Breakdown (PH Name Level)</div>
         <input type="text" class="search-input" id="tableSearch" placeholder="Search rows...">
       </div>
       <div class="table-wrap">
@@ -492,12 +447,12 @@
             <tr>
               <th data-table="breakdown" data-key="gm">GM</th>
               <th data-table="breakdown" data-key="zone">Zone</th>
-              <th data-table="breakdown" data-key="mh">Motherhub Name</th>
+              <th data-table="breakdown" data-key="name">PH Name</th>
               <th data-table="breakdown" data-key="stack">Stack</th>
               <th data-table="breakdown" data-key="Past" class="num">Past</th>
               <th data-table="breakdown" data-key="Present" class="num">Present</th>
               <th data-table="breakdown" data-key="Future" class="num">Future</th>
-              <th data-table="breakdown" data-key="total" class="num sorted">Total</th>
+              <th data-table="breakdown" data-key="total" class="num sorted desc">Total</th>
             </tr>
           </thead>
           <tbody id="tableBody"></tbody>
@@ -522,11 +477,11 @@
         <table class="excel-table" id="mhTable">
           <thead>
             <tr>
-              <th style="width:40%;">Row Labels</th>
-              <th class="num" style="width:15%;">Future</th>
-              <th class="num" style="width:15%;">Past</th>
-              <th class="num" style="width:15%;">Present</th>
-              <th class="num" style="width:15%;">Grand Total</th>
+              <th data-table="mh" data-key="name" style="width:40%;">Row Labels</th>
+              <th data-table="mh" data-key="Future" class="num" style="width:15%;">Future</th>
+              <th data-table="mh" data-key="Past" class="num" style="width:15%;">Past</th>
+              <th data-table="mh" data-key="Present" class="num" style="width:15%;">Present</th>
+              <th data-table="mh" data-key="total" class="num sorted desc" style="width:15%;">Grand Total</th>
             </tr>
           </thead>
           <tbody id="mhBody"></tbody>
@@ -557,7 +512,8 @@ var state = {
   sort: {
     breakdown: { key:'total', dir:-1 },
     zone:      { key:'total', dir:-1 },
-    gm:        { key:'total', dir:-1 }
+    gm:        { key:'total', dir:-1 },
+    mh:        { key:'total', dir:-1 }
   },
   search: { breakdown:'', zone:'', gm:'', mh:'' },
   dirty: false,
@@ -577,10 +533,6 @@ function isInvalidValue(val) {
   return s === '' || s === 'na' || s === 'n/a' || s === 'null' || s === 'undefined' || s === 'none' || s === '#n/a';
 }
 
-function isValidMHName(name) {
-  return !isInvalidValue(name);
-}
-
 function toDateStr(v) {
   if (!v) return '';
   if (v instanceof Date) return v.toISOString().slice(0,10);
@@ -592,7 +544,6 @@ function toDateStr(v) {
   return s.slice(0,10);
 }
 
-// Utility to find column case-insensitively from a row object
 function getColValue(row, possibleNames) {
   var keys = Object.keys(row);
   for (var i = 0; i < possibleNames.length; i++) {
@@ -619,7 +570,6 @@ function toast(msg, type) {
 function markDirty() { state.dirty = true; document.getElementById('dirtyHint').textContent = 'Filters changed — click Apply'; }
 function markClean() { state.dirty = false; document.getElementById('dirtyHint').textContent = ''; }
 
-// TAB SWITCHING
 document.querySelectorAll('.nav-tab').forEach(tabBtn => {
   tabBtn.addEventListener('click', () => {
     document.querySelectorAll('.nav-tab').forEach(b => b.classList.remove('active'));
@@ -670,7 +620,7 @@ async function loadAllData() {
             var fl = String(getColValue(r, ['flag']) || '').trim();
             var ct = Number(getColValue(r, ['picked_count', 'count']) || 0);
 
-            // Prioritize 'name' for Processing Hub while keeping fallbacks
+            // PH Name prioritized via 'name'
             var ph = String(getColValue(r, ['name', 'ph_name', 'ph', 'ph_hub', 'origin']) || '').trim();
 
             return [dt, gm, zn, mh, st, fl, ct, ph];
@@ -702,14 +652,14 @@ function buildFilterOptions() {
   var minDate = '', maxDate = '';
 
   state.allRows.forEach(r => {
-    // REQUIRE VALID MOTHERHUB TO DEFINE DATE BOUNDS & MH OPTIONS
-    if (isValidMHName(r[3])) {
-      names.add(r[3]);
-      var d = r[0];
-      if (d) {
-        if (!minDate || d < minDate) minDate = d;
-        if (!maxDate || d > maxDate) maxDate = d;
-      }
+    var ph = r[7];
+    if (!isInvalidValue(ph)) {
+      names.add(ph); // Collect PH Name for the filter
+    }
+    var d = r[0];
+    if (d) {
+      if (!minDate || d < minDate) minDate = d;
+      if (!maxDate || d > maxDate) maxDate = d;
     }
     if (!isInvalidValue(r[1])) gms.add(r[1]);
     if (!isInvalidValue(r[2])) zones.add(r[2]);
@@ -729,7 +679,7 @@ function buildFilterOptions() {
 
   buildMultiSelect('f-gm', 'GM', state.filterOptions.gms, 'gms');
   buildMultiSelect('f-zone', 'Zone', state.filterOptions.zones, 'zones');
-  buildMultiSelect('f-name', 'MH Name', state.filterOptions.names, 'names');
+  buildMultiSelect('f-name', 'PH Name', state.filterOptions.names, 'names');
   buildMultiSelect('f-stack', 'Stack', state.filterOptions.stacks, 'stacks');
 }
 
@@ -813,7 +763,7 @@ function applyFiltersAndRender() {
     if (dateTo   && date > dateTo)   return;
     if (gmSet    && !gmSet.has(gm))    return;
     if (zoneSet  && !zoneSet.has(zone))return;
-    if (nameSet  && !nameSet.has(mh))  return;
+    if (nameSet  && !nameSet.has(ph))  return; // Filter by PH Name
     if (stackSet && !stackSet.has(stack)) return;
 
     // Overview Tab Calculations
@@ -823,8 +773,10 @@ function applyFiltersAndRender() {
     if (!trendMap[date]) trendMap[date] = {Past:0,Present:0,Future:0};
     trendMap[date][flag] = (trendMap[date][flag]||0) + count;
 
-    var bk = gm+'||'+zone+'||'+mh+'||'+stack;
-    if (!breakdownMap[bk]) breakdownMap[bk] = {gm,zone,mh,stack,Past:0,Present:0,Future:0};
+    // Overview Breakdown mapped strictly to 'ph' (Name)
+    var phName = isInvalidValue(ph) ? 'Direct / Unknown PH' : ph;
+    var bk = gm+'||'+zone+'||'+phName+'||'+stack;
+    if (!breakdownMap[bk]) breakdownMap[bk] = {gm,zone,name:phName,stack,Past:0,Present:0,Future:0};
     breakdownMap[bk][flag] = (breakdownMap[bk][flag]||0) + count;
 
     if (!zoneMap[zone]) zoneMap[zone] = {zone,Past:0,Present:0,Future:0};
@@ -835,17 +787,16 @@ function applyFiltersAndRender() {
 
     stackTotals[stack] = (stackTotals[stack]||0) + count;
 
-    // MH Landing Tab: STRICT EXCLUSION OF INVALID MOTHERHUBS
-    if (isValidMHName(mh)) {
+    // MH Landing Tab: Motherhub level mapping
+    if (!isInvalidValue(mh)) {
       mhTotals.Matched++;
       if (mhTotals[flag] !== undefined) mhTotals[flag] += count;
 
       if (!mhMap[mh]) mhMap[mh] = { Past:0, Present:0, Future:0, phs:{} };
       mhMap[mh][flag] = (mhMap[mh][flag]||0) + count;
       
-      var displayPH = isInvalidValue(ph) ? 'Direct / Unknown PH' : ph;
-      if (!mhMap[mh].phs[displayPH]) mhMap[mh].phs[displayPH] = { Past:0, Present:0, Future:0 };
-      mhMap[mh].phs[displayPH][flag] = (mhMap[mh].phs[displayPH][flag]||0) + count;
+      if (!mhMap[mh].phs[phName]) mhMap[mh].phs[phName] = { Past:0, Present:0, Future:0 };
+      mhMap[mh].phs[phName][flag] = (mhMap[mh].phs[phName][flag]||0) + count;
     }
   });
 
@@ -861,15 +812,15 @@ function applyFiltersAndRender() {
 
   var breakdown = Object.values(breakdownMap).map(b => {
     b.total = b.Past + b.Present + b.Future; return b;
-  }).sort((a,b) => b.total - a.total);
+  });
 
   var zoneBreakdown = Object.values(zoneMap).map(b => {
     b.total = b.Past + b.Present + b.Future; return b;
-  }).sort((a,b) => b.total - a.total);
+  });
 
   var gmBreakdown = Object.values(gmMap).map(b => {
     b.total = b.Past + b.Present + b.Future; return b;
-  }).sort((a,b) => b.total - a.total);
+  });
 
   var stackBreakdown = Object.keys(stackTotals).sort().map(s => ({ stack:s, count:stackTotals[s] }));
 
@@ -1014,13 +965,20 @@ function renderGMTable() {
   renderSummaryTable('gmBody', rows, 'gm', state.search.gm.toLowerCase());
 }
 
-/* ── MOTHERHUB PIVOT TABLE ── */
 function renderMHTable() {
   var tbody = document.getElementById('mhBody');
   var mhData = state.filteredMH || {};
   var q = (state.search.mh || '').toLowerCase();
+  var sk = state.sort.mh.key, sd = state.sort.mh.dir;
   
-  var mhNames = Object.keys(mhData).sort((a, b) => a.localeCompare(b));
+  var mhNames = Object.keys(mhData);
+
+  mhNames.sort((a, b) => {
+    var da = mhData[a], db = mhData[b];
+    var va = sk === 'name' ? a : (sk === 'total' ? (da.Past+da.Present+da.Future) : da[sk]);
+    var vb = sk === 'name' ? b : (sk === 'total' ? (db.Past+db.Present+db.Future) : db[sk]);
+    return typeof va === 'string' ? sd * va.localeCompare(vb) : sd * (va - vb);
+  });
 
   if (!mhNames.length) {
     tbody.innerHTML = '<tr><td colspan="5"><div class="empty-state">No valid Motherhub data found.</div></td></tr>';
@@ -1057,7 +1015,12 @@ function renderMHTable() {
       '</tr>';
 
     if (isExpanded) {
-      phKeys.sort((a, b) => a.localeCompare(b)).forEach(ph => {
+      phKeys.sort((a, b) => {
+        var da = data.phs[a], db = data.phs[b];
+        var va = sk === 'name' ? a : (sk === 'total' ? (da.Past+da.Present+da.Future) : da[sk]);
+        var vb = sk === 'name' ? b : (sk === 'total' ? (db.Past+db.Present+db.Future) : db[sk]);
+        return typeof va === 'string' ? sd * va.localeCompare(vb) : sd * (va - vb);
+      }).forEach(ph => {
         var phData = data.phs[ph];
         var phTotal = phData.Past + phData.Present + phData.Future;
         if (q && !ph.toLowerCase().includes(q) && !matchMH) return;
@@ -1103,14 +1066,13 @@ function expandAllMH(expand) {
   renderMHTable();
 }
 
-// FULL BREAKDOWN TABLE
 function renderTable() {
   var tbody = document.getElementById('tableBody');
   if (!state.filteredBreakdown) { tbody.innerHTML = ''; return; }
 
   var rows = state.filteredBreakdown.slice();
   var q = state.search.breakdown.toLowerCase();
-  if (q) rows = rows.filter(r => (r.gm+' '+r.zone+' '+r.mh+' '+r.stack).toLowerCase().includes(q));
+  if (q) rows = rows.filter(r => (r.gm+' '+r.zone+' '+r.name+' '+r.stack).toLowerCase().includes(q));
 
   var sk = state.sort.breakdown.key, sd = state.sort.breakdown.dir;
   rows.sort((a,b) => {
@@ -1126,7 +1088,7 @@ function renderTable() {
   var html = '';
   rows.forEach(r => {
     html += '<tr>' +
-      '<td>'+esc(r.gm)+'</td><td>'+esc(r.zone)+'</td><td>'+esc(r.mh)+'</td><td>'+esc(r.stack)+'</td>'+
+      '<td>'+esc(r.gm)+'</td><td>'+esc(r.zone)+'</td><td>'+esc(r.name)+'</td><td>'+esc(r.stack)+'</td>'+
       '<td class="num">'+fmt(r.Past)+'<span class="pct">('+pct(r.Past, r.total)+')</span></td>'+
       '<td class="num">'+fmt(r.Present)+'<span class="pct">('+pct(r.Present, r.total)+')</span></td>'+
       '<td class="num">'+fmt(r.Future)+'<span class="pct">('+pct(r.Future, r.total)+')</span></td>'+
@@ -1150,10 +1112,10 @@ function renderTable() {
 
 function exportCsv() {
   if (!state.filteredBreakdown || !state.filteredBreakdown.length) { toast('Nothing to export','error'); return; }
-  var hdr = ['GM','Zone','Motherhub Name','Stack','Past','Past%','Present','Present%','Future','Future%','Total'];
+  var hdr = ['GM','Zone','PH Name','Stack','Past','Past%','Present','Present%','Future','Future%','Total'];
   var lines = [hdr.join(',')];
   state.filteredBreakdown.forEach(r => {
-    lines.push([r.gm,r.zone,r.mh,r.stack,
+    lines.push([r.gm,r.zone,r.name,r.stack,
       r.Past, pct(r.Past,r.total),
       r.Present, pct(r.Present,r.total),
       r.Future, pct(r.Future,r.total), r.total
@@ -1166,17 +1128,27 @@ function exportCsv() {
   toast('CSV exported successfully','ok');
 }
 
-// LISTENERS
+// UNIVERSAL SORT CLICK LISTENERS
 document.querySelectorAll('th[data-table]').forEach(th => {
   th.addEventListener('click', () => {
     var tbl = th.getAttribute('data-table');
     var k   = th.getAttribute('data-key');
-    if (state.sort[tbl].key === k) state.sort[tbl].dir *= -1;
-    else { state.sort[tbl].key = k; state.sort[tbl].dir = -1; }
-    th.closest('table').querySelectorAll('th').forEach(t => t.classList.remove('sorted'));
+    if (state.sort[tbl].key === k) {
+      state.sort[tbl].dir *= -1;
+    } else {
+      state.sort[tbl].key = k;
+      state.sort[tbl].dir = -1;
+    }
+    
+    th.closest('table').querySelectorAll('th').forEach(t => {
+      t.classList.remove('sorted', 'desc');
+    });
     th.classList.add('sorted');
+    if (state.sort[tbl].dir === -1) th.classList.add('desc');
+
     if (tbl === 'zone') renderZoneTable();
     else if (tbl === 'gm') renderGMTable();
+    else if (tbl === 'mh') renderMHTable();
     else renderTable();
   });
 });
