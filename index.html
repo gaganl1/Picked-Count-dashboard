@@ -258,8 +258,8 @@
     .tree-row { cursor: pointer; user-select: none; }
     .tree-toggle {
       display: inline-flex; align-items: center; justify-content: center;
-      width: 16px; height: 16px; border-radius: 4px; background: var(--surface-sub);
-      border: 1px solid var(--border); font-size: 10px; margin-right: 8px; font-weight: bold;
+      width: 18px; height: 18px; border-radius: 4px; background: var(--surface-sub);
+      border: 1px solid var(--border); font-size: 11px; margin-right: 8px; font-weight: bold;
     }
     .child-row { background: #fdfefe; }
     .child-row td:first-child { padding-left: 36px; color: var(--text-muted); }
@@ -556,16 +556,22 @@ async function loadAllData() {
         .then(r => r.text())
         .then(csv => {
           var parsed = Papa.parse(csv, { header:true, dynamicTyping:true, skipEmptyLines:true });
-          return parsed.data.map(r => [
-            toDateStr(r.date),
-            String(r.gm || r.GM || '').trim(),
-            String(r.zone || r.Zone || '').trim(),
-            String(r.name || r.Name || '').trim(),
-            String(r.stack || r.Stack || '').trim(),
-            String(r.flag || r.Flag || '').trim(),
-            Number(r.picked_count || r.Picked_count || 0),
-            String(r.ph_name || r.PH_Name || r.ph || '').trim()
-          ]);
+          return parsed.data.map(r => {
+            // Flexible column mapping fallback for MH and PH Origin
+            var mhVal = r.mh_name || r.mh || r.MH || r.Name || r.name || r.Hub || '';
+            var phVal = r.ph_name || r.ph || r.PH || r.PH_Name || r.Origin || r.hub_origin || '';
+
+            return [
+              toDateStr(r.date || r.Date),
+              String(r.gm || r.GM || '').trim(),
+              String(r.zone || r.Zone || '').trim(),
+              String(mhVal).trim(),
+              String(r.stack || r.Stack || '').trim(),
+              String(r.flag || r.Flag || '').trim(),
+              Number(r.picked_count || r.Picked_count || r.count || 0),
+              String(phVal).trim()
+            ];
+          });
         }).catch(() => []);
     });
     var csvResults = await Promise.all(csvFetches);
@@ -592,11 +598,10 @@ function buildFilterOptions() {
   var gms = new Set(), zones = new Set(), names = new Set(), stacks = new Set();
   var minDate = '', maxDate = '';
   state.allRows.forEach(r => {
-    // Blank GM and Zone values filtered out from dataset options
     if (r[1] && r[1] !== 'null' && r[1] !== 'undefined') gms.add(r[1]);
     if (r[2] && r[2] !== 'null' && r[2] !== 'undefined') zones.add(r[2]);
-    if (r[3]) names.add(r[3]);
-    if (r[4]) stacks.add(r[4]);
+    if (r[3] && r[3] !== 'null' && r[3] !== 'undefined') names.add(r[3]);
+    if (r[4] && r[4] !== 'null' && r[4] !== 'undefined') stacks.add(r[4]);
     var d = r[0];
     if (d) {
       if (!minDate || d < minDate) minDate = d;
@@ -692,7 +697,7 @@ function applyFiltersAndRender() {
   state.allRows.forEach(r => {
     var date=r[0], gm=r[1], zone=r[2], name=r[3], stack=r[4], flag=r[5], count=r[6], ph=r[7];
 
-    // Filter out blank GM or Zone entries if present
+    // Filter out blank/invalid GM or Zone entries
     if (!gm || gm === '' || gm === 'null' || gm === 'undefined') return;
     if (!zone || zone === '' || zone === 'null' || zone === 'undefined') return;
 
@@ -717,11 +722,13 @@ function applyFiltersAndRender() {
     if (!gmMap[gm]) gmMap[gm] = {gm,Past:0,Present:0,Future:0};
     gmMap[gm][flag] = (gmMap[gm][flag]||0) + count;
 
-    // MH -> PH Mapping
-    var mhName = name || 'Unknown MH';
-    var phName = ph || 'Unknown Origin PH';
+    // Direct MH -> PH Tree Aggregation Logic Fix
+    var mhName = (name && name !== 'null' && name !== 'undefined') ? name : 'Unassigned MH';
+    var phName = (ph && ph !== 'null' && ph !== 'undefined') ? ph : 'Direct / Direct-to-MH';
+
     if (!mhMap[mhName]) mhMap[mhName] = { Past:0, Present:0, Future:0, phs:{} };
     mhMap[mhName][flag] = (mhMap[mhName][flag]||0) + count;
+    
     if (!mhMap[mhName].phs[phName]) mhMap[mhName].phs[phName] = { Past:0, Present:0, Future:0 };
     mhMap[mhName].phs[phName][flag] = (mhMap[mhName].phs[phName][flag]||0) + count;
 
@@ -853,7 +860,6 @@ function renderStackDonut(stackBreakdown) {
   charts.stack = new Chart(ctx, cfg);
 }
 
-// ── GM & ZONE TABLES WITH GRAND TOTAL COLUMN ──
 function renderSummaryTable(tbodyId, rows, nameKey, q) {
   var tbody = document.getElementById(tbodyId);
   if (!rows) { tbody.innerHTML = ''; return; }
@@ -903,12 +909,18 @@ function renderGMTable() {
   renderSummaryTable('gmBody', rows, 'gm', state.search.gm.toLowerCase());
 }
 
-// ── MH LANDING PAGE DRILLDOWN TABLE ──
+// ── FIXED MH LANDING PAGE DRILLDOWN TABLE ──
 function renderMHTable() {
   var tbody = document.getElementById('mhBody');
   var mhData = state.filteredMH || {};
   var q = (state.search.mh || '').toLowerCase();
-  var mhNames = Object.keys(mhData).sort();
+  
+  // Sort MH names descending by overall volume
+  var mhNames = Object.keys(mhData).sort((a, b) => {
+    var totA = mhData[a].Past + mhData[a].Present + mhData[a].Future;
+    var totB = mhData[b].Past + mhData[b].Present + mhData[b].Future;
+    return totB - totA;
+  });
 
   if (!mhNames.length) {
     tbody.innerHTML = '<tr><td colspan="5"><div class="empty-state">No MH data available.</div></td></tr>';
@@ -921,19 +933,22 @@ function renderMHTable() {
   mhNames.forEach(mh => {
     var data = mhData[mh];
     var mhTotal = data.Past + data.Present + data.Future;
-    grandTotals.Past += data.Past; grandTotals.Present += data.Present;
-    grandTotals.Future += data.Future; grandTotals.total += mhTotal;
 
     var matchMH = mh.toLowerCase().includes(q);
-    var phKeys = Object.keys(data.phs);
+    var phKeys = Object.keys(data.phs || {});
     var matchPH = phKeys.some(ph => ph.toLowerCase().includes(q));
 
     if (q && !matchMH && !matchPH) return;
 
+    grandTotals.Past += data.Past; 
+    grandTotals.Present += data.Present;
+    grandTotals.Future += data.Future; 
+    grandTotals.total += mhTotal;
+
     var isExpanded = state.expandedMH.has(mh) || (q && matchPH);
     var icon = isExpanded ? '−' : '+';
 
-    html += '<tr class="tree-row" onclick="toggleMH(\'' + esc(mh) + '\')">' +
+    html += '<tr class="tree-row" onclick="toggleMH(event, \'' + esc(mh).replace(/'/g, "\\'") + '\')">' +
       '<td><span class="tree-toggle">' + icon + '</span><strong>' + esc(mh) + '</strong></td>' +
       '<td class="num">' + fmt(data.Past) + '</td>' +
       '<td class="num">' + fmt(data.Present) + '</td>' +
@@ -942,7 +957,11 @@ function renderMHTable() {
       '</tr>';
 
     if (isExpanded) {
-      phKeys.sort().forEach(ph => {
+      phKeys.sort((a, b) => {
+        var totA = data.phs[a].Past + data.phs[a].Present + data.phs[a].Future;
+        var totB = data.phs[b].Past + data.phs[b].Present + data.phs[b].Future;
+        return totB - totA;
+      }).forEach(ph => {
         var phData = data.phs[ph];
         var phTotal = phData.Past + phData.Present + phData.Future;
         if (q && !ph.toLowerCase().includes(q) && !matchMH) return;
@@ -969,9 +988,13 @@ function renderMHTable() {
   tbody.innerHTML = html;
 }
 
-function toggleMH(mh) {
-  if (state.expandedMH.has(mh)) state.expandedMH.delete(mh);
-  else state.expandedMH.add(mh);
+function toggleMH(e, mh) {
+  if (e) e.stopPropagation();
+  if (state.expandedMH.has(mh)) {
+    state.expandedMH.delete(mh);
+  } else {
+    state.expandedMH.add(mh);
+  }
   renderMHTable();
 }
 
