@@ -392,7 +392,7 @@
     </div>
   </div>
 
-  <!-- GLOBAL KPIS (UPDATED STRICTLY BASED ON ACTIVE TAB DATA) -->
+  <!-- GLOBAL KPIS -->
   <div class="kpis">
     <div class="kpi past">
       <div class="kpi-label">Past</div>
@@ -418,7 +418,6 @@
 
   <!-- TAB 1: OVERVIEW -->
   <div id="tab-overview" class="tab-content active">
-    <!-- CHARTS -->
     <div class="card">
       <div class="card-title"><span class="dot"></span>Picked Count Trend</div>
       <div class="chart-wrap tall"><canvas id="trendChart"></canvas></div>
@@ -493,7 +492,7 @@
             <tr>
               <th data-table="breakdown" data-key="gm">GM</th>
               <th data-table="breakdown" data-key="zone">Zone</th>
-              <th data-table="breakdown" data-key="name">Name</th>
+              <th data-table="breakdown" data-key="mh">Motherhub Name</th>
               <th data-table="breakdown" data-key="stack">Stack</th>
               <th data-table="breakdown" data-key="Past" class="num">Past</th>
               <th data-table="breakdown" data-key="Present" class="num">Present</th>
@@ -507,7 +506,7 @@
     </div>
   </div>
 
-  <!-- TAB 2: MH LANDING (STRICT MOTHERHUB DATA ONLY) -->
+  <!-- TAB 2: MH LANDING -->
   <div id="tab-mh" class="tab-content">
     <div class="card">
       <div class="table-toolbar">
@@ -593,6 +592,20 @@ function toDateStr(v) {
   return s.slice(0,10);
 }
 
+// Utility to find column case-insensitively from a row object
+function getColValue(row, possibleNames) {
+  var keys = Object.keys(row);
+  for (var i = 0; i < possibleNames.length; i++) {
+    var target = possibleNames[i].toLowerCase();
+    for (var j = 0; j < keys.length; j++) {
+      if (keys[j].toLowerCase().trim() === target) {
+        return row[keys[j]];
+      }
+    }
+  }
+  return '';
+}
+
 function showOverlay(v, msg) {
   document.getElementById('overlay').style.display = v ? 'flex' : 'none';
   if (msg) document.getElementById('overlayMsg').textContent = msg;
@@ -606,7 +619,7 @@ function toast(msg, type) {
 function markDirty() { state.dirty = true; document.getElementById('dirtyHint').textContent = 'Filters changed — click Apply'; }
 function markClean() { state.dirty = false; document.getElementById('dirtyHint').textContent = ''; }
 
-// TAB SWITCHING & KPI UPDATE
+// TAB SWITCHING
 document.querySelectorAll('.nav-tab').forEach(tabBtn => {
   tabBtn.addEventListener('click', () => {
     document.querySelectorAll('.nav-tab').forEach(b => b.classList.remove('active'));
@@ -649,20 +662,18 @@ async function loadAllData() {
         .then(csv => {
           var parsed = Papa.parse(csv, { header:true, dynamicTyping:true, skipEmptyLines:true });
           return parsed.data.map(r => {
-            // STRICT MH & PH FIELD PARSING WITHOUT FALLBACK OVERWRITES
-            var mhVal = r.mh_name !== undefined ? r.mh_name : (r.mh !== undefined ? r.mh : (r.MH !== undefined ? r.MH : ''));
-            var phVal = r.ph_name !== undefined ? r.ph_name : (r.ph !== undefined ? r.ph : (r.PH !== undefined ? r.PH : (r.PH_Name !== undefined ? r.PH_Name : (r.Origin !== undefined ? r.Origin : ''))));
+            var dt = toDateStr(getColValue(r, ['date']));
+            var gm = String(getColValue(r, ['gm']) || '').trim();
+            var zn = String(getColValue(r, ['zone']) || '').trim();
+            var mh = String(getColValue(r, ['mh_name', 'mh_hub', 'mh']) || '').trim();
+            var st = String(getColValue(r, ['stack']) || '').trim();
+            var fl = String(getColValue(r, ['flag']) || '').trim();
+            var ct = Number(getColValue(r, ['picked_count', 'count']) || 0);
 
-            return [
-              toDateStr(r.date || r.Date),
-              String(r.gm || r.GM || '').trim(),
-              String(r.zone || r.Zone || '').trim(),
-              String(mhVal || '').trim(),
-              String(r.stack || r.Stack || '').trim(),
-              String(r.flag || r.Flag || '').trim(),
-              Number(r.picked_count || r.Picked_count || r.count || 0),
-              String(phVal || '').trim()
-            ];
+            // Prioritize 'name' for Processing Hub while keeping fallbacks
+            var ph = String(getColValue(r, ['name', 'ph_name', 'ph', 'ph_hub', 'origin']) || '').trim();
+
+            return [dt, gm, zn, mh, st, fl, ct, ph];
           });
         }).catch(() => []);
     });
@@ -689,17 +700,22 @@ async function loadAllData() {
 function buildFilterOptions() {
   var gms = new Set(), zones = new Set(), names = new Set(), stacks = new Set();
   var minDate = '', maxDate = '';
+
   state.allRows.forEach(r => {
+    // REQUIRE VALID MOTHERHUB TO DEFINE DATE BOUNDS & MH OPTIONS
+    if (isValidMHName(r[3])) {
+      names.add(r[3]);
+      var d = r[0];
+      if (d) {
+        if (!minDate || d < minDate) minDate = d;
+        if (!maxDate || d > maxDate) maxDate = d;
+      }
+    }
     if (!isInvalidValue(r[1])) gms.add(r[1]);
     if (!isInvalidValue(r[2])) zones.add(r[2]);
-    if (isValidMHName(r[3]))   names.add(r[3]);
     if (!isInvalidValue(r[4])) stacks.add(r[4]);
-    var d = r[0];
-    if (d) {
-      if (!minDate || d < minDate) minDate = d;
-      if (!maxDate || d > maxDate) maxDate = d;
-    }
   });
+
   state.filterOptions = {
     gms: Array.from(gms).sort(),
     zones: Array.from(zones).sort(),
@@ -707,8 +723,10 @@ function buildFilterOptions() {
     stacks: Array.from(stacks).sort(),
     minDate: minDate, maxDate: maxDate
   };
+
   document.getElementById('dateFrom').value = minDate;
   document.getElementById('dateTo').value = maxDate;
+
   buildMultiSelect('f-gm', 'GM', state.filterOptions.gms, 'gms');
   buildMultiSelect('f-zone', 'Zone', state.filterOptions.zones, 'zones');
   buildMultiSelect('f-name', 'MH Name', state.filterOptions.names, 'names');
@@ -787,7 +805,7 @@ function applyFiltersAndRender() {
   var mhTotals       = { Past:0, Present:0, Future:0, Total:0, Matched:0 };
 
   state.allRows.forEach(r => {
-    var date=r[0], gm=r[1], zone=r[2], name=r[3], stack=r[4], flag=r[5], count=r[6], ph=r[7];
+    var date=r[0], gm=r[1], zone=r[2], mh=r[3], stack=r[4], flag=r[5], count=r[6], ph=r[7];
 
     if (isInvalidValue(gm) || isInvalidValue(zone)) return;
 
@@ -795,7 +813,7 @@ function applyFiltersAndRender() {
     if (dateTo   && date > dateTo)   return;
     if (gmSet    && !gmSet.has(gm))    return;
     if (zoneSet  && !zoneSet.has(zone))return;
-    if (nameSet  && !nameSet.has(name))return;
+    if (nameSet  && !nameSet.has(mh))  return;
     if (stackSet && !stackSet.has(stack)) return;
 
     // Overview Tab Calculations
@@ -805,8 +823,8 @@ function applyFiltersAndRender() {
     if (!trendMap[date]) trendMap[date] = {Past:0,Present:0,Future:0};
     trendMap[date][flag] = (trendMap[date][flag]||0) + count;
 
-    var bk = gm+'||'+zone+'||'+name+'||'+stack;
-    if (!breakdownMap[bk]) breakdownMap[bk] = {gm,zone,name,stack,Past:0,Present:0,Future:0};
+    var bk = gm+'||'+zone+'||'+mh+'||'+stack;
+    if (!breakdownMap[bk]) breakdownMap[bk] = {gm,zone,mh,stack,Past:0,Present:0,Future:0};
     breakdownMap[bk][flag] = (breakdownMap[bk][flag]||0) + count;
 
     if (!zoneMap[zone]) zoneMap[zone] = {zone,Past:0,Present:0,Future:0};
@@ -817,17 +835,17 @@ function applyFiltersAndRender() {
 
     stackTotals[stack] = (stackTotals[stack]||0) + count;
 
-    // MH Landing Tab: STRICT EXCLUSION OF NA MOTHERHUBS
-    if (isValidMHName(name)) {
+    // MH Landing Tab: STRICT EXCLUSION OF INVALID MOTHERHUBS
+    if (isValidMHName(mh)) {
       mhTotals.Matched++;
       if (mhTotals[flag] !== undefined) mhTotals[flag] += count;
 
-      if (!mhMap[name]) mhMap[name] = { Past:0, Present:0, Future:0, phs:{} };
-      mhMap[name][flag] = (mhMap[name][flag]||0) + count;
+      if (!mhMap[mh]) mhMap[mh] = { Past:0, Present:0, Future:0, phs:{} };
+      mhMap[mh][flag] = (mhMap[mh][flag]||0) + count;
       
       var displayPH = isInvalidValue(ph) ? 'Direct / Unknown PH' : ph;
-      if (!mhMap[name].phs[displayPH]) mhMap[name].phs[displayPH] = { Past:0, Present:0, Future:0 };
-      mhMap[name].phs[displayPH][flag] = (mhMap[name].phs[displayPH][flag]||0) + count;
+      if (!mhMap[mh].phs[displayPH]) mhMap[mh].phs[displayPH] = { Past:0, Present:0, Future:0 };
+      mhMap[mh].phs[displayPH][flag] = (mhMap[mh].phs[displayPH][flag]||0) + count;
     }
   });
 
@@ -996,7 +1014,7 @@ function renderGMTable() {
   renderSummaryTable('gmBody', rows, 'gm', state.search.gm.toLowerCase());
 }
 
-/* ── STRICT MOTHERHUB PIVOT TABLE ── */
+/* ── MOTHERHUB PIVOT TABLE ── */
 function renderMHTable() {
   var tbody = document.getElementById('mhBody');
   var mhData = state.filteredMH || {};
@@ -1030,7 +1048,6 @@ function renderMHTable() {
     var isExpanded = state.expandedMH.has(mh) || (q && matchPH);
     var icon = isExpanded ? '−' : '+';
 
-    // Parent Row (MotherHub Name)
     html += '<tr class="pivot-parent" onclick="toggleMH(event, \'' + esc(mh).replace(/'/g, "\\'") + '\')">' +
       '<td><span class="tree-btn">' + icon + '</span>' + esc(mh) + '</td>' +
       '<td class="num">' + fmt(data.Future) + '</td>' +
@@ -1039,7 +1056,6 @@ function renderMHTable() {
       '<td class="num">' + fmt(mhTotal) + '</td>' +
       '</tr>';
 
-    // Child Rows (PH Names)
     if (isExpanded) {
       phKeys.sort((a, b) => a.localeCompare(b)).forEach(ph => {
         var phData = data.phs[ph];
@@ -1057,7 +1073,6 @@ function renderMHTable() {
     }
   });
 
-  // Grand Total Row
   html += '<tr class="grand-total" style="background:#e2e8f0; font-weight:800;">' +
     '<td>Grand Total</td>' +
     '<td class="num">' + fmt(grandTotals.Future) + '</td>' +
@@ -1095,7 +1110,7 @@ function renderTable() {
 
   var rows = state.filteredBreakdown.slice();
   var q = state.search.breakdown.toLowerCase();
-  if (q) rows = rows.filter(r => (r.gm+' '+r.zone+' '+r.name+' '+r.stack).toLowerCase().includes(q));
+  if (q) rows = rows.filter(r => (r.gm+' '+r.zone+' '+r.mh+' '+r.stack).toLowerCase().includes(q));
 
   var sk = state.sort.breakdown.key, sd = state.sort.breakdown.dir;
   rows.sort((a,b) => {
@@ -1111,7 +1126,7 @@ function renderTable() {
   var html = '';
   rows.forEach(r => {
     html += '<tr>' +
-      '<td>'+esc(r.gm)+'</td><td>'+esc(r.zone)+'</td><td>'+esc(r.name)+'</td><td>'+esc(r.stack)+'</td>'+
+      '<td>'+esc(r.gm)+'</td><td>'+esc(r.zone)+'</td><td>'+esc(r.mh)+'</td><td>'+esc(r.stack)+'</td>'+
       '<td class="num">'+fmt(r.Past)+'<span class="pct">('+pct(r.Past, r.total)+')</span></td>'+
       '<td class="num">'+fmt(r.Present)+'<span class="pct">('+pct(r.Present, r.total)+')</span></td>'+
       '<td class="num">'+fmt(r.Future)+'<span class="pct">('+pct(r.Future, r.total)+')</span></td>'+
@@ -1135,10 +1150,10 @@ function renderTable() {
 
 function exportCsv() {
   if (!state.filteredBreakdown || !state.filteredBreakdown.length) { toast('Nothing to export','error'); return; }
-  var hdr = ['GM','Zone','Name','Stack','Past','Past%','Present','Present%','Future','Future%','Total'];
+  var hdr = ['GM','Zone','Motherhub Name','Stack','Past','Past%','Present','Present%','Future','Future%','Total'];
   var lines = [hdr.join(',')];
   state.filteredBreakdown.forEach(r => {
-    lines.push([r.gm,r.zone,r.name,r.stack,
+    lines.push([r.gm,r.zone,r.mh,r.stack,
       r.Past, pct(r.Past,r.total),
       r.Present, pct(r.Present,r.total),
       r.Future, pct(r.Future,r.total), r.total
