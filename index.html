@@ -284,6 +284,7 @@
       font-weight: 800;
       background: #f1f5f9;
       color: #0f172a;
+      cursor: pointer;
     }
     .pivot-child td {
       background: #ffffff;
@@ -391,32 +392,32 @@
     </div>
   </div>
 
+  <!-- GLOBAL KPIS (UPDATED STRICTLY BASED ON ACTIVE TAB DATA) -->
+  <div class="kpis">
+    <div class="kpi past">
+      <div class="kpi-label">Past</div>
+      <div class="kpi-value" id="kpiPast">—</div>
+      <div class="kpi-sub" id="kpiPastPct">—</div>
+    </div>
+    <div class="kpi present">
+      <div class="kpi-label">Present</div>
+      <div class="kpi-value" id="kpiPresent">—</div>
+      <div class="kpi-sub" id="kpiPresentPct">—</div>
+    </div>
+    <div class="kpi future">
+      <div class="kpi-label">Future</div>
+      <div class="kpi-value" id="kpiFuture">—</div>
+      <div class="kpi-sub" id="kpiFuturePct">—</div>
+    </div>
+    <div class="kpi total">
+      <div class="kpi-label">Total Picked</div>
+      <div class="kpi-value" id="kpiTotal">—</div>
+      <div class="kpi-sub" id="kpiMatchedRows">—</div>
+    </div>
+  </div>
+
   <!-- TAB 1: OVERVIEW -->
   <div id="tab-overview" class="tab-content active">
-    <!-- KPIS -->
-    <div class="kpis">
-      <div class="kpi past">
-        <div class="kpi-label">Past</div>
-        <div class="kpi-value" id="kpiPast">—</div>
-        <div class="kpi-sub" id="kpiPastPct">—</div>
-      </div>
-      <div class="kpi present">
-        <div class="kpi-label">Present</div>
-        <div class="kpi-value" id="kpiPresent">—</div>
-        <div class="kpi-sub" id="kpiPresentPct">—</div>
-      </div>
-      <div class="kpi future">
-        <div class="kpi-label">Future</div>
-        <div class="kpi-value" id="kpiFuture">—</div>
-        <div class="kpi-sub" id="kpiFuturePct">—</div>
-      </div>
-      <div class="kpi total">
-        <div class="kpi-label">Total Picked</div>
-        <div class="kpi-value" id="kpiTotal">—</div>
-        <div class="kpi-sub" id="kpiMatchedRows">—</div>
-      </div>
-    </div>
-
     <!-- CHARTS -->
     <div class="card">
       <div class="card-title"><span class="dot"></span>Picked Count Trend</div>
@@ -506,15 +507,15 @@
     </div>
   </div>
 
-  <!-- TAB 2: MH LANDING (PIVOT FORMAT) -->
+  <!-- TAB 2: MH LANDING (STRICT MOTHERHUB DATA ONLY) -->
   <div id="tab-mh" class="tab-content">
     <div class="card">
       <div class="table-toolbar">
-        <div class="card-title" style="margin:0"><span class="dot"></span>Motherhub &amp; PH Origin Pivot Table</div>
+        <div class="card-title" style="margin:0"><span class="dot"></span>Motherhub &amp; Connected PH Picked Count</div>
         <div style="display:flex; gap:10px;">
           <button class="btn-outline" onclick="expandAllMH(true)">Expand All</button>
           <button class="btn-outline" onclick="expandAllMH(false)">Collapse All</button>
-          <input type="text" class="search-input" id="mhSearch" placeholder="Search MH / PH...">
+          <input type="text" class="search-input" id="mhSearch" placeholder="Search Motherhub / PH...">
         </div>
       </div>
 
@@ -546,6 +547,7 @@ if (typeof Chart !== 'undefined' && typeof ChartDataLabels !== 'undefined') {
 
 var state = {
   allRows: [],
+  activeTab: 'tab-overview',
   filteredBreakdown: [],
   filteredZone: [],
   filteredGM: [],
@@ -561,13 +563,24 @@ var state = {
   search: { breakdown:'', zone:'', gm:'', mh:'' },
   dirty: false,
   sources: [],
-  grandTotalOverall: 0
+  overviewTotals: { Past:0, Present:0, Future:0, Total:0, Matched:0 },
+  mhTotals: { Past:0, Present:0, Future:0, Total:0, Matched:0 }
 };
 var charts = {};
 
-function fmt(n) { return n ? Math.round(n).toLocaleString('en-IN') : ''; }
+function fmt(n) { return n ? Math.round(n).toLocaleString('en-IN') : '0'; }
 function pct(v, d) { return d ? (v/d*100).toFixed(1)+'%' : '0%'; }
 function esc(s) { return String(s||'').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
+
+function isInvalidValue(val) {
+  if (!val) return true;
+  var s = String(val).trim().toLowerCase();
+  return s === '' || s === 'na' || s === 'n/a' || s === 'null' || s === 'undefined' || s === 'none' || s === '#n/a';
+}
+
+function isValidMHName(name) {
+  return !isInvalidValue(name);
+}
 
 function toDateStr(v) {
   if (!v) return '';
@@ -593,15 +606,29 @@ function toast(msg, type) {
 function markDirty() { state.dirty = true; document.getElementById('dirtyHint').textContent = 'Filters changed — click Apply'; }
 function markClean() { state.dirty = false; document.getElementById('dirtyHint').textContent = ''; }
 
-// TAB SWITCHING
+// TAB SWITCHING & KPI UPDATE
 document.querySelectorAll('.nav-tab').forEach(tabBtn => {
   tabBtn.addEventListener('click', () => {
     document.querySelectorAll('.nav-tab').forEach(b => b.classList.remove('active'));
     document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
     tabBtn.classList.add('active');
-    document.getElementById(tabBtn.getAttribute('data-tab')).classList.add('active');
+    state.activeTab = tabBtn.getAttribute('data-tab');
+    document.getElementById(state.activeTab).classList.add('active');
+    updateKpiCards();
   });
 });
+
+function updateKpiCards() {
+  var t = (state.activeTab === 'tab-mh') ? state.mhTotals : state.overviewTotals;
+  document.getElementById('kpiPast').textContent    = fmt(t.Past);
+  document.getElementById('kpiPresent').textContent = fmt(t.Present);
+  document.getElementById('kpiFuture').textContent  = fmt(t.Future);
+  document.getElementById('kpiTotal').textContent   = fmt(t.Total);
+  document.getElementById('kpiPastPct').textContent    = pct(t.Past,    t.Total) + ' of total';
+  document.getElementById('kpiPresentPct').textContent = pct(t.Present, t.Total) + ' of total';
+  document.getElementById('kpiFuturePct').textContent  = pct(t.Future,  t.Total) + ' of total';
+  document.getElementById('kpiMatchedRows').textContent = (t.Matched).toLocaleString() + ' records matched';
+}
 
 async function loadAllData() {
   showOverlay(true, 'Loading historical data...');
@@ -662,10 +689,10 @@ function buildFilterOptions() {
   var gms = new Set(), zones = new Set(), names = new Set(), stacks = new Set();
   var minDate = '', maxDate = '';
   state.allRows.forEach(r => {
-    if (r[1] && r[1] !== 'null' && r[1] !== 'undefined') gms.add(r[1]);
-    if (r[2] && r[2] !== 'null' && r[2] !== 'undefined') zones.add(r[2]);
-    if (r[3] && r[3] !== 'null' && r[3] !== 'undefined') names.add(r[3]);
-    if (r[4] && r[4] !== 'null' && r[4] !== 'undefined') stacks.add(r[4]);
+    if (!isInvalidValue(r[1])) gms.add(r[1]);
+    if (!isInvalidValue(r[2])) zones.add(r[2]);
+    if (isValidMHName(r[3]))   names.add(r[3]);
+    if (!isInvalidValue(r[4])) stacks.add(r[4]);
     var d = r[0];
     if (d) {
       if (!minDate || d < minDate) minDate = d;
@@ -683,7 +710,7 @@ function buildFilterOptions() {
   document.getElementById('dateTo').value = maxDate;
   buildMultiSelect('f-gm', 'GM', state.filterOptions.gms, 'gms');
   buildMultiSelect('f-zone', 'Zone', state.filterOptions.zones, 'zones');
-  buildMultiSelect('f-name', 'Name', state.filterOptions.names, 'names');
+  buildMultiSelect('f-name', 'MH Name', state.filterOptions.names, 'names');
   buildMultiSelect('f-stack', 'Stack', state.filterOptions.stacks, 'stacks');
 }
 
@@ -755,14 +782,13 @@ function applyFiltersAndRender() {
   var stackSet = state.selections.stacks.length ? new Set(state.selections.stacks) : null;
 
   var trendMap = {}, breakdownMap = {}, stackTotals = {}, zoneMap = {}, gmMap = {}, mhMap = {};
-  var totals = { Past:0, Present:0, Future:0 };
-  var matched = 0;
+  var overviewTotals = { Past:0, Present:0, Future:0, Total:0, Matched:0 };
+  var mhTotals       = { Past:0, Present:0, Future:0, Total:0, Matched:0 };
 
   state.allRows.forEach(r => {
     var date=r[0], gm=r[1], zone=r[2], name=r[3], stack=r[4], flag=r[5], count=r[6], ph=r[7];
 
-    if (!gm || gm === '' || gm === 'null' || gm === 'undefined') return;
-    if (!zone || zone === '' || zone === 'null' || zone === 'undefined') return;
+    if (isInvalidValue(gm) || isInvalidValue(zone)) return;
 
     if (dateFrom && date < dateFrom) return;
     if (dateTo   && date > dateTo)   return;
@@ -770,7 +796,10 @@ function applyFiltersAndRender() {
     if (zoneSet  && !zoneSet.has(zone))return;
     if (nameSet  && !nameSet.has(name))return;
     if (stackSet && !stackSet.has(stack)) return;
-    matched++;
+
+    // Overview Tab Calculations
+    overviewTotals.Matched++;
+    if (overviewTotals[flag] !== undefined) overviewTotals[flag] += count;
 
     if (!trendMap[date]) trendMap[date] = {Past:0,Present:0,Future:0};
     trendMap[date][flag] = (trendMap[date][flag]||0) + count;
@@ -785,22 +814,27 @@ function applyFiltersAndRender() {
     if (!gmMap[gm]) gmMap[gm] = {gm,Past:0,Present:0,Future:0};
     gmMap[gm][flag] = (gmMap[gm][flag]||0) + count;
 
-    // MH & PH Mapping
-    var mhName = (name && name !== 'null' && name !== 'undefined') ? name : 'Unassigned MH';
-    var phName = (ph && ph !== 'null' && ph !== 'undefined') ? ph : 'Direct / Unknown PH';
-
-    if (!mhMap[mhName]) mhMap[mhName] = { Past:0, Present:0, Future:0, phs:{} };
-    mhMap[mhName][flag] = (mhMap[mhName][flag]||0) + count;
-    
-    if (!mhMap[mhName].phs[phName]) mhMap[mhName].phs[phName] = { Past:0, Present:0, Future:0 };
-    mhMap[mhName].phs[phName][flag] = (mhMap[mhName].phs[phName][flag]||0) + count;
-
     stackTotals[stack] = (stackTotals[stack]||0) + count;
-    if (totals[flag] !== undefined) totals[flag] += count;
+
+    // MH Landing Tab: Strictly Non-NA MH Names
+    if (isValidMHName(name)) {
+      mhTotals.Matched++;
+      if (mhTotals[flag] !== undefined) mhTotals[flag] += count;
+
+      if (!mhMap[name]) mhMap[name] = { Past:0, Present:0, Future:0, phs:{} };
+      mhMap[name][flag] = (mhMap[name][flag]||0) + count;
+      
+      var displayPH = isInvalidValue(ph) ? 'Direct / Unknown PH' : ph;
+      if (!mhMap[name].phs[displayPH]) mhMap[name].phs[displayPH] = { Past:0, Present:0, Future:0 };
+      mhMap[name].phs[displayPH][flag] = (mhMap[name].phs[displayPH][flag]||0) + count;
+    }
   });
 
-  var total = totals.Past + totals.Present + totals.Future;
-  state.grandTotalOverall = total;
+  overviewTotals.Total = overviewTotals.Past + overviewTotals.Present + overviewTotals.Future;
+  mhTotals.Total       = mhTotals.Past + mhTotals.Present + mhTotals.Future;
+
+  state.overviewTotals = overviewTotals;
+  state.mhTotals       = mhTotals;
 
   var trend = Object.keys(trendMap).sort().map(d => ({
     date:d, Past:trendMap[d].Past, Present:trendMap[d].Present, Future:trendMap[d].Future
@@ -820,9 +854,9 @@ function applyFiltersAndRender() {
 
   var stackBreakdown = Object.keys(stackTotals).sort().map(s => ({ stack:s, count:stackTotals[s] }));
 
-  renderKpis(totals, total, matched);
+  updateKpiCards();
   renderTrend(trend);
-  renderFlagDonut(totals);
+  renderFlagDonut(overviewTotals);
   renderStackDonut(stackBreakdown);
 
   state.filteredBreakdown = breakdown;
@@ -835,17 +869,6 @@ function applyFiltersAndRender() {
   renderMHTable();
   renderTable();
   markClean();
-}
-
-function renderKpis(totals, total, matched) {
-  document.getElementById('kpiPast').textContent    = fmt(totals.Past) || 0;
-  document.getElementById('kpiPresent').textContent = fmt(totals.Present) || 0;
-  document.getElementById('kpiFuture').textContent  = fmt(totals.Future) || 0;
-  document.getElementById('kpiTotal').textContent   = fmt(total) || 0;
-  document.getElementById('kpiPastPct').textContent    = pct(totals.Past,    total) + ' of total';
-  document.getElementById('kpiPresentPct').textContent = pct(totals.Present, total) + ' of total';
-  document.getElementById('kpiFuturePct').textContent  = pct(totals.Future,  total) + ' of total';
-  document.getElementById('kpiMatchedRows').textContent = (matched).toLocaleString() + ' records matched';
 }
 
 var COLORS = { Past:'#ef4444', Present:'#10b981', Future:'#8b5cf6' };
@@ -940,7 +963,7 @@ function renderSummaryTable(tbodyId, rows, nameKey, q) {
       '<td class="num">' + fmt(r.Present) + '<span class="pct">(' + pct(r.Present, r.total) + ')</span></td>' +
       '<td class="num">' + fmt(r.Future)  + '<span class="pct">(' + pct(r.Future, r.total) + ')</span></td>' +
       '<td class="num"><strong>' + fmt(r.total) + '</strong></td>' +
-      '<td class="num" style="background:var(--surface-sub);"><strong>' + fmt(state.grandTotalOverall) + '</strong></td>' +
+      '<td class="num" style="background:var(--surface-sub);"><strong>' + fmt(state.overviewTotals.Total) + '</strong></td>' +
       '</tr>';
   });
 
@@ -953,7 +976,7 @@ function renderSummaryTable(tbodyId, rows, nameKey, q) {
     '<td class="num">' + fmt(gt.Present) + '</td>' +
     '<td class="num">' + fmt(gt.Future)  + '</td>' +
     '<td class="num"><strong>' + fmt(gt.total) + '</strong></td>' +
-    '<td class="num"><strong>' + fmt(state.grandTotalOverall) + '</strong></td>' +
+    '<td class="num"><strong>' + fmt(state.overviewTotals.Total) + '</strong></td>' +
     '</tr>';
   tbody.innerHTML = html;
 }
@@ -972,7 +995,7 @@ function renderGMTable() {
   renderSummaryTable('gmBody', rows, 'gm', state.search.gm.toLowerCase());
 }
 
-/* ── EXACT EXCEL PIVOT MH LANDING TAB ── */
+/* ── STRICT MOTHERHUB PIVOT TABLE ── */
 function renderMHTable() {
   var tbody = document.getElementById('mhBody');
   var mhData = state.filteredMH || {};
@@ -981,7 +1004,7 @@ function renderMHTable() {
   var mhNames = Object.keys(mhData).sort((a, b) => a.localeCompare(b));
 
   if (!mhNames.length) {
-    tbody.innerHTML = '<tr><td colspan="5"><div class="empty-state">No MH data available.</div></td></tr>';
+    tbody.innerHTML = '<tr><td colspan="5"><div class="empty-state">No valid Motherhub data found.</div></td></tr>';
     return;
   }
 
@@ -1015,7 +1038,7 @@ function renderMHTable() {
       '<td class="num">' + fmt(mhTotal) + '</td>' +
       '</tr>';
 
-    // Child Rows (PH Origin)
+    // Child Rows (PH Names)
     if (isExpanded) {
       phKeys.sort((a, b) => a.localeCompare(b)).forEach(ph => {
         var phData = data.phs[ph];
