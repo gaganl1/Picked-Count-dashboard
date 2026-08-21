@@ -573,7 +573,7 @@ function pct(v, d) { return d ? (v/d*100).toFixed(1)+'%' : '0%'; }
 function esc(s) { return String(s||'').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
 
 function isInvalidValue(val) {
-  if (!val) return true;
+  if (val === undefined || val === null) return true;
   var s = String(val).trim().toLowerCase();
   return s === '' || s === 'na' || s === 'n/a' || s === 'null' || s === 'undefined' || s === 'none' || s === '#n/a';
 }
@@ -649,18 +649,19 @@ async function loadAllData() {
         .then(csv => {
           var parsed = Papa.parse(csv, { header:true, dynamicTyping:true, skipEmptyLines:true });
           return parsed.data.map(r => {
-            var mhVal = r.mh_name || r.mh || r.MH || r.Name || r.name || r.Hub || '';
-            var phVal = r.ph_name || r.ph || r.PH || r.PH_Name || r.Origin || r.hub_origin || '';
+            // STRICT MH & PH FIELD PARSING WITHOUT FALLBACK OVERWRITES
+            var mhVal = r.mh_name !== undefined ? r.mh_name : (r.mh !== undefined ? r.mh : (r.MH !== undefined ? r.MH : ''));
+            var phVal = r.ph_name !== undefined ? r.ph_name : (r.ph !== undefined ? r.ph : (r.PH !== undefined ? r.PH : (r.PH_Name !== undefined ? r.PH_Name : (r.Origin !== undefined ? r.Origin : ''))));
 
             return [
               toDateStr(r.date || r.Date),
               String(r.gm || r.GM || '').trim(),
               String(r.zone || r.Zone || '').trim(),
-              String(mhVal).trim(),
+              String(mhVal || '').trim(),
               String(r.stack || r.Stack || '').trim(),
               String(r.flag || r.Flag || '').trim(),
               Number(r.picked_count || r.Picked_count || r.count || 0),
-              String(phVal).trim()
+              String(phVal || '').trim()
             ];
           });
         }).catch(() => []);
@@ -816,7 +817,7 @@ function applyFiltersAndRender() {
 
     stackTotals[stack] = (stackTotals[stack]||0) + count;
 
-    // MH Landing Tab: Strictly Non-NA MH Names
+    // MH Landing Tab: STRICT EXCLUSION OF NA MOTHERHUBS
     if (isValidMHName(name)) {
       mhTotals.Matched++;
       if (mhTotals[flag] !== undefined) mhTotals[flag] += count;
