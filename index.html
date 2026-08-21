@@ -11,7 +11,6 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
 
   <style>
-    /* ── REFINED COLOR SYSTEM ── */
     :root {
       --bg:          #f8fafc;
       --surface:     #ffffff;
@@ -26,11 +25,8 @@
       --primary-bg:  #eff6ff;
 
       --past:        #ef4444;
-      --past-bg:     #fef2f2;
       --present:     #10b981;
-      --present-bg:  #ecfdf5;
       --future:      #8b5cf6;
-      --future-bg:   #f5f3ff;
       --accent:      #f59e0b;
 
       --radius-lg:   14px;
@@ -53,17 +49,20 @@
       -webkit-font-smoothing: antialiased;
     }
 
-    /* ── HEADER ── */
+    /* HEADER */
     .header {
       background: #0f172a;
       border-bottom: 1px solid #1e293b;
-      padding: 16px 32px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
+      padding: 16px 32px 0 32px;
       position: sticky;
       top: 0;
       z-index: 100;
+    }
+    .header-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 16px;
     }
     .header-left { display: flex; align-items: center; gap: 12px; }
     .header-icon {
@@ -77,6 +76,31 @@
     .header-meta { font-size: 11px; color: #94a3b8; margin-top: 2px; font-family: var(--font-mono); }
     .header-actions { display: flex; gap: 10px; }
 
+    /* TAB NAVIGATION */
+    .nav-tabs {
+      display: flex;
+      gap: 2px;
+    }
+    .nav-tab {
+      padding: 10px 20px;
+      font-size: 13px;
+      font-weight: 600;
+      color: #94a3b8;
+      background: transparent;
+      border: none;
+      border-bottom: 3px solid transparent;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .nav-tab:hover { color: #f8fafc; }
+    .nav-tab.active {
+      color: #ffffff;
+      border-bottom-color: var(--primary);
+      background: rgba(255, 255, 255, 0.05);
+      border-top-left-radius: 6px;
+      border-top-right-radius: 6px;
+    }
+
     .btn {
       padding: 8px 14px; border-radius: var(--radius-sm);
       font-size: 12px; font-weight: 600; cursor: pointer;
@@ -87,10 +111,12 @@
     .btn.primary { background: var(--primary); border-color: var(--primary); color: #fff; }
     .btn.primary:hover { background: var(--primary-dark); }
 
-    /* ── MAIN LAYOUT ── */
+    /* MAIN LAYOUT */
     .main { padding: 24px 32px 60px; max-width: 1600px; margin: 0 auto; }
+    .tab-content { display: none; }
+    .tab-content.active { display: block; }
 
-    /* ── FILTERS CARD ── */
+    /* FILTERS CARD */
     .filters-card {
       background: var(--surface);
       border: 1px solid var(--border);
@@ -177,7 +203,7 @@
     }
     .ms-actions a { font-size: 11px; color: var(--primary); cursor: pointer; font-weight: 600; }
 
-    /* ── KPIS ── */
+    /* KPIS */
     .kpis { display: grid; grid-template-columns: repeat(4,1fr); gap: 16px; margin-bottom: 24px; }
     @media (max-width: 800px) { .kpis { grid-template-columns: repeat(2,1fr); } }
 
@@ -202,7 +228,7 @@
     .kpi.total .kpi-value { color: var(--primary); }
     .kpi-sub { font-size: 11.5px; color: var(--text-muted); margin-top: 4px; }
 
-    /* ── CARDS & CHARTS ── */
+    /* CARDS & CHARTS */
     .card {
       background: var(--surface); border: 1px solid var(--border);
       border-radius: var(--radius-lg); padding: 20px;
@@ -220,7 +246,7 @@
     .chart-wrap { height: 280px; }
     .chart-wrap.tall { height: 340px; }
 
-    /* ── TABLES ── */
+    /* TABLES */
     .table-toolbar { display: flex; align-items: center; justify-content: space-between; margin-bottom: 14px; }
     .search-input {
       padding: 7px 12px; background: var(--surface-sub); border: 1px solid var(--border);
@@ -228,43 +254,58 @@
     }
     .search-input:focus { outline: none; border-color: var(--primary); }
 
-    .table-wrap { max-height: 440px; overflow: auto; border-radius: var(--radius-md); border: 1px solid var(--border); }
+    .table-wrap { max-height: 520px; overflow: auto; border-radius: var(--radius-md); border: 1px solid var(--border); }
     .table-wrap.short { max-height: 320px; }
     table { width: 100%; border-collapse: collapse; font-size: 12.5px; }
     th {
       position: sticky; top: 0; z-index: 10;
-      background: var(--surface-sub); padding: 10px 14px;
+      background: #e2e8f0; padding: 10px 14px;
       text-align: left; font-size: 11px; font-weight: 700;
-      text-transform: uppercase; letter-spacing: .04em; color: var(--text-muted);
-      cursor: pointer; border-bottom: 1px solid var(--border); white-space: nowrap;
+      color: #334155; border-bottom: 1px solid var(--border-dark); white-space: nowrap;
     }
-    th:hover { color: var(--primary); }
-    th.sorted::after { content: ' ▾'; }
-    td { padding: 10px 14px; border-bottom: 1px solid var(--border); white-space: nowrap; }
+    td { padding: 8px 14px; border-bottom: 1px solid var(--border); white-space: nowrap; }
     tr:last-child td { border-bottom: none; }
     tr:hover td { background: var(--surface-sub); }
     td.num, th.num { text-align: right; font-family: var(--font-mono); }
     .pct { color: var(--text-muted); font-size: 11px; margin-left: 4px; }
 
-    /* Grand Total Styling */
+    /* Pivot Excel Style for MH Landing */
+    .excel-table th {
+      background: #c7e2f5;
+      color: #0f172a;
+      border: 1px solid #94a3b8;
+      font-weight: 700;
+    }
+    .excel-table td {
+      border: 1px solid #e2e8f0;
+      font-size: 12px;
+    }
+    .pivot-parent td {
+      font-weight: 800;
+      background: #f1f5f9;
+      color: #0f172a;
+    }
+    .pivot-child td {
+      background: #ffffff;
+      color: #334155;
+    }
+    .pivot-child td:first-child {
+      padding-left: 36px;
+    }
+    .tree-btn {
+      display: inline-flex; align-items: center; justify-content: center;
+      width: 14px; height: 14px; border: 1px solid #475569; border-radius: 2px;
+      font-size: 10px; font-weight: bold; margin-right: 6px; cursor: pointer;
+      background: #fff; line-height: 1; user-select: none;
+    }
+
     tr.grand-total td {
       background: var(--surface-sub);
       border-top: 2px solid var(--border-dark);
       font-weight: 700; position: sticky; bottom: 0; z-index: 5;
     }
-    tr.grand-total td .total-label { font-size: 11px; text-transform: uppercase; letter-spacing: .05em; color: var(--text-muted); }
 
-    /* Tree Expand/Collapse Table Specifics */
-    .tree-row { cursor: pointer; user-select: none; }
-    .tree-toggle {
-      display: inline-flex; align-items: center; justify-content: center;
-      width: 18px; height: 18px; border-radius: 4px; background: var(--surface-sub);
-      border: 1px solid var(--border); font-size: 11px; margin-right: 8px; font-weight: bold;
-    }
-    .child-row { background: #fdfefe; }
-    .child-row td:first-child { padding-left: 36px; color: var(--text-muted); }
-
-    /* ── STATUS BAR ── */
+    /* STATUS BAR */
     .status-bar {
       display: flex; align-items: center; gap: 16px; padding: 10px 16px;
       border-radius: var(--radius-md); background: var(--surface); border: 1px solid var(--border);
@@ -274,7 +315,7 @@
     @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:.4} }
     .status-bar span { font-family: var(--font-mono); }
 
-    /* ── OVERLAY & TOAST ── */
+    /* OVERLAY & TOAST */
     #overlay {
       position: fixed; inset: 0; background: rgba(255,255,255,0.85);
       display: none; align-items: center; justify-content: center;
@@ -288,8 +329,6 @@
       padding: 10px 16px; border-radius: var(--radius-md); font-size: 12px;
       display: none; z-index: 400; box-shadow: var(--shadow-md);
     }
-    #toast.error { background: var(--past); }
-    #toast.ok { background: var(--present); }
     .empty-state { padding: 40px; text-align: center; color: var(--text-muted); font-size: 13px; }
   </style>
 </head>
@@ -301,18 +340,25 @@
 </div>
 <div id="toast"></div>
 
-<!-- HEADER -->
+<!-- HEADER WITH TAB NAV -->
 <header class="header">
-  <div class="header-left">
-    <div class="header-icon">📊</div>
-    <div>
-      <h1>Picked Count Dashboard</h1>
-      <div class="header-meta" id="metaLine">Initializing...</div>
+  <div class="header-top">
+    <div class="header-left">
+      <div class="header-icon">📊</div>
+      <div>
+        <h1>Picked Count Dashboard</h1>
+        <div class="header-meta" id="metaLine">Initializing...</div>
+      </div>
+    </div>
+    <div class="header-actions">
+      <button class="btn" id="resetBtn">Reset Filters</button>
+      <button class="btn primary" id="exportBtn">Export CSV</button>
     </div>
   </div>
-  <div class="header-actions">
-    <button class="btn" id="resetBtn">Reset Filters</button>
-    <button class="btn primary" id="exportBtn">Export CSV</button>
+
+  <div class="nav-tabs">
+    <button class="nav-tab active" data-tab="tab-overview">Overview / Summary</button>
+    <button class="nav-tab" data-tab="tab-mh">MH Landing</button>
   </div>
 </header>
 
@@ -328,7 +374,7 @@
     <span id="statusLastUpdate">—</span>
   </div>
 
-  <!-- FILTERS -->
+  <!-- GLOBAL FILTERS -->
   <div class="filters-card">
     <div class="filters-grid">
       <div class="field"><label>From Date</label><input type="date" id="dateFrom"></div>
@@ -345,138 +391,147 @@
     </div>
   </div>
 
-  <!-- KPIS -->
-  <div class="kpis">
-    <div class="kpi past">
-      <div class="kpi-label">Past</div>
-      <div class="kpi-value" id="kpiPast">—</div>
-      <div class="kpi-sub" id="kpiPastPct">—</div>
+  <!-- TAB 1: OVERVIEW -->
+  <div id="tab-overview" class="tab-content active">
+    <!-- KPIS -->
+    <div class="kpis">
+      <div class="kpi past">
+        <div class="kpi-label">Past</div>
+        <div class="kpi-value" id="kpiPast">—</div>
+        <div class="kpi-sub" id="kpiPastPct">—</div>
+      </div>
+      <div class="kpi present">
+        <div class="kpi-label">Present</div>
+        <div class="kpi-value" id="kpiPresent">—</div>
+        <div class="kpi-sub" id="kpiPresentPct">—</div>
+      </div>
+      <div class="kpi future">
+        <div class="kpi-label">Future</div>
+        <div class="kpi-value" id="kpiFuture">—</div>
+        <div class="kpi-sub" id="kpiFuturePct">—</div>
+      </div>
+      <div class="kpi total">
+        <div class="kpi-label">Total Picked</div>
+        <div class="kpi-value" id="kpiTotal">—</div>
+        <div class="kpi-sub" id="kpiMatchedRows">—</div>
+      </div>
     </div>
-    <div class="kpi present">
-      <div class="kpi-label">Present</div>
-      <div class="kpi-value" id="kpiPresent">—</div>
-      <div class="kpi-sub" id="kpiPresentPct">—</div>
-    </div>
-    <div class="kpi future">
-      <div class="kpi-label">Future</div>
-      <div class="kpi-value" id="kpiFuture">—</div>
-      <div class="kpi-sub" id="kpiFuturePct">—</div>
-    </div>
-    <div class="kpi total">
-      <div class="kpi-label">Total Picked</div>
-      <div class="kpi-value" id="kpiTotal">—</div>
-      <div class="kpi-sub" id="kpiMatchedRows">—</div>
-    </div>
-  </div>
 
-  <!-- TREND CHART -->
-  <div class="card">
-    <div class="card-title"><span class="dot"></span>Picked Count Trend</div>
-    <div class="chart-wrap tall"><canvas id="trendChart"></canvas></div>
-  </div>
-
-  <!-- CHARTS ROW -->
-  <div class="charts-row">
+    <!-- CHARTS -->
     <div class="card">
-      <div class="card-title"><span class="dot"></span>Split by Flag</div>
-      <div class="chart-wrap"><canvas id="flagChart"></canvas></div>
+      <div class="card-title"><span class="dot"></span>Picked Count Trend</div>
+      <div class="chart-wrap tall"><canvas id="trendChart"></canvas></div>
     </div>
+
+    <div class="charts-row">
+      <div class="card">
+        <div class="card-title"><span class="dot"></span>Split by Flag</div>
+        <div class="chart-wrap"><canvas id="flagChart"></canvas></div>
+      </div>
+      <div class="card">
+        <div class="card-title"><span class="dot"></span>Split by Stack</div>
+        <div class="chart-wrap"><canvas id="stackChart"></canvas></div>
+      </div>
+    </div>
+
+    <!-- SUMMARY BY ZONE TABLE -->
     <div class="card">
-      <div class="card-title"><span class="dot"></span>Split by Stack</div>
-      <div class="chart-wrap"><canvas id="stackChart"></canvas></div>
+      <div class="table-toolbar">
+        <div class="card-title" style="margin:0"><span class="dot"></span>Summary by Zone</div>
+        <input type="text" class="search-input" id="zoneSearch" placeholder="Search zones...">
+      </div>
+      <div class="table-wrap short">
+        <table id="zoneTable">
+          <thead>
+            <tr>
+              <th data-table="zone" data-key="zone">Zone</th>
+              <th data-table="zone" data-key="Past" class="num">Past</th>
+              <th data-table="zone" data-key="Present" class="num">Present</th>
+              <th data-table="zone" data-key="Future" class="num">Future</th>
+              <th data-table="zone" data-key="total" class="num sorted">Total</th>
+              <th data-table="zone" data-key="grandTotal" class="num">Grand Total</th>
+            </tr>
+          </thead>
+          <tbody id="zoneBody"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- SUMMARY BY GM TABLE -->
+    <div class="card">
+      <div class="table-toolbar">
+        <div class="card-title" style="margin:0"><span class="dot"></span>Summary by GM</div>
+        <input type="text" class="search-input" id="gmSearch" placeholder="Search GMs...">
+      </div>
+      <div class="table-wrap short">
+        <table id="gmTable">
+          <thead>
+            <tr>
+              <th data-table="gm" data-key="gm">GM</th>
+              <th data-table="gm" data-key="Past" class="num">Past</th>
+              <th data-table="gm" data-key="Present" class="num">Present</th>
+              <th data-table="gm" data-key="Future" class="num">Future</th>
+              <th data-table="gm" data-key="total" class="num sorted">Total</th>
+              <th data-table="gm" data-key="grandTotal" class="num">Grand Total</th>
+            </tr>
+          </thead>
+          <tbody id="gmBody"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- FULL BREAKDOWN TABLE -->
+    <div class="card">
+      <div class="table-toolbar">
+        <div class="card-title" style="margin:0"><span class="dot"></span>Full Breakdown</div>
+        <input type="text" class="search-input" id="tableSearch" placeholder="Search rows...">
+      </div>
+      <div class="table-wrap">
+        <table id="dataTable">
+          <thead>
+            <tr>
+              <th data-table="breakdown" data-key="gm">GM</th>
+              <th data-table="breakdown" data-key="zone">Zone</th>
+              <th data-table="breakdown" data-key="name">Name</th>
+              <th data-table="breakdown" data-key="stack">Stack</th>
+              <th data-table="breakdown" data-key="Past" class="num">Past</th>
+              <th data-table="breakdown" data-key="Present" class="num">Present</th>
+              <th data-table="breakdown" data-key="Future" class="num">Future</th>
+              <th data-table="breakdown" data-key="total" class="num sorted">Total</th>
+            </tr>
+          </thead>
+          <tbody id="tableBody"></tbody>
+        </table>
+      </div>
     </div>
   </div>
 
-  <!-- SUMMARY BY ZONE TABLE -->
-  <div class="card">
-    <div class="table-toolbar">
-      <div class="card-title" style="margin:0"><span class="dot"></span>Summary by Zone</div>
-      <input type="text" class="search-input" id="zoneSearch" placeholder="Search zones...">
-    </div>
-    <div class="table-wrap short">
-      <table id="zoneTable">
-        <thead>
-          <tr>
-            <th data-table="zone" data-key="zone">Zone</th>
-            <th data-table="zone" data-key="Past" class="num">Past</th>
-            <th data-table="zone" data-key="Present" class="num">Present</th>
-            <th data-table="zone" data-key="Future" class="num">Future</th>
-            <th data-table="zone" data-key="total" class="num sorted">Total</th>
-            <th data-table="zone" data-key="grandTotal" class="num">Grand Total</th>
-          </tr>
-        </thead>
-        <tbody id="zoneBody"></tbody>
-      </table>
-    </div>
-  </div>
+  <!-- TAB 2: MH LANDING (PIVOT FORMAT) -->
+  <div id="tab-mh" class="tab-content">
+    <div class="card">
+      <div class="table-toolbar">
+        <div class="card-title" style="margin:0"><span class="dot"></span>Motherhub &amp; PH Origin Pivot Table</div>
+        <div style="display:flex; gap:10px;">
+          <button class="btn-outline" onclick="expandAllMH(true)">Expand All</button>
+          <button class="btn-outline" onclick="expandAllMH(false)">Collapse All</button>
+          <input type="text" class="search-input" id="mhSearch" placeholder="Search MH / PH...">
+        </div>
+      </div>
 
-  <!-- SUMMARY BY GM TABLE -->
-  <div class="card">
-    <div class="table-toolbar">
-      <div class="card-title" style="margin:0"><span class="dot"></span>Summary by GM</div>
-      <input type="text" class="search-input" id="gmSearch" placeholder="Search GMs...">
-    </div>
-    <div class="table-wrap short">
-      <table id="gmTable">
-        <thead>
-          <tr>
-            <th data-table="gm" data-key="gm">GM</th>
-            <th data-table="gm" data-key="Past" class="num">Past</th>
-            <th data-table="gm" data-key="Present" class="num">Present</th>
-            <th data-table="gm" data-key="Future" class="num">Future</th>
-            <th data-table="gm" data-key="total" class="num sorted">Total</th>
-            <th data-table="gm" data-key="grandTotal" class="num">Grand Total</th>
-          </tr>
-        </thead>
-        <tbody id="gmBody"></tbody>
-      </table>
-    </div>
-  </div>
-
-  <!-- MH DRILLDOWN TABLE -->
-  <div class="card">
-    <div class="table-toolbar">
-      <div class="card-title" style="margin:0"><span class="dot"></span>MH Landing Page (Click row to expand PH origin details)</div>
-      <input type="text" class="search-input" id="mhSearch" placeholder="Search MH / PH...">
-    </div>
-    <div class="table-wrap">
-      <table id="mhTable">
-        <thead>
-          <tr>
-            <th>MH Name / PH Origin</th>
-            <th class="num">Past</th>
-            <th class="num">Present</th>
-            <th class="num">Future</th>
-            <th class="num">Total</th>
-          </tr>
-        </thead>
-        <tbody id="mhBody"></tbody>
-      </table>
-    </div>
-  </div>
-
-  <!-- FULL BREAKDOWN TABLE -->
-  <div class="card">
-    <div class="table-toolbar">
-      <div class="card-title" style="margin:0"><span class="dot"></span>Full Breakdown</div>
-      <input type="text" class="search-input" id="tableSearch" placeholder="Search rows...">
-    </div>
-    <div class="table-wrap">
-      <table id="dataTable">
-        <thead>
-          <tr>
-            <th data-table="breakdown" data-key="gm">GM</th>
-            <th data-table="breakdown" data-key="zone">Zone</th>
-            <th data-table="breakdown" data-key="name">Name</th>
-            <th data-table="breakdown" data-key="stack">Stack</th>
-            <th data-table="breakdown" data-key="Past" class="num">Past</th>
-            <th data-table="breakdown" data-key="Present" class="num">Present</th>
-            <th data-table="breakdown" data-key="Future" class="num">Future</th>
-            <th data-table="breakdown" data-key="total" class="num sorted">Total</th>
-          </tr>
-        </thead>
-        <tbody id="tableBody"></tbody>
-      </table>
+      <div class="table-wrap" style="max-height: 680px;">
+        <table class="excel-table" id="mhTable">
+          <thead>
+            <tr>
+              <th style="width:40%;">Row Labels</th>
+              <th class="num" style="width:15%;">Future</th>
+              <th class="num" style="width:15%;">Past</th>
+              <th class="num" style="width:15%;">Present</th>
+              <th class="num" style="width:15%;">Grand Total</th>
+            </tr>
+          </thead>
+          <tbody id="mhBody"></tbody>
+        </table>
+      </div>
     </div>
   </div>
 
@@ -510,7 +565,7 @@ var state = {
 };
 var charts = {};
 
-function fmt(n) { return Math.round(n || 0).toLocaleString('en-IN'); }
+function fmt(n) { return n ? Math.round(n).toLocaleString('en-IN') : ''; }
 function pct(v, d) { return d ? (v/d*100).toFixed(1)+'%' : '0%'; }
 function esc(s) { return String(s||'').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
 
@@ -538,6 +593,16 @@ function toast(msg, type) {
 function markDirty() { state.dirty = true; document.getElementById('dirtyHint').textContent = 'Filters changed — click Apply'; }
 function markClean() { state.dirty = false; document.getElementById('dirtyHint').textContent = ''; }
 
+// TAB SWITCHING
+document.querySelectorAll('.nav-tab').forEach(tabBtn => {
+  tabBtn.addEventListener('click', () => {
+    document.querySelectorAll('.nav-tab').forEach(b => b.classList.remove('active'));
+    document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+    tabBtn.classList.add('active');
+    document.getElementById(tabBtn.getAttribute('data-tab')).classList.add('active');
+  });
+});
+
 async function loadAllData() {
   showOverlay(true, 'Loading historical data...');
   state.sources = [];
@@ -557,7 +622,6 @@ async function loadAllData() {
         .then(csv => {
           var parsed = Papa.parse(csv, { header:true, dynamicTyping:true, skipEmptyLines:true });
           return parsed.data.map(r => {
-            // Flexible column mapping fallback for MH and PH Origin
             var mhVal = r.mh_name || r.mh || r.MH || r.Name || r.name || r.Hub || '';
             var phVal = r.ph_name || r.ph || r.PH || r.PH_Name || r.Origin || r.hub_origin || '';
 
@@ -585,7 +649,7 @@ async function loadAllData() {
   buildFilterOptions();
   applyFiltersAndRender();
 
-  document.getElementById('statusRows').textContent = fmt(allRows.length) + ' total rows';
+  document.getElementById('statusRows').textContent = (allRows.length).toLocaleString() + ' total rows';
   document.getElementById('statusSources').textContent = state.sources.length + ' source(s) loaded';
   document.getElementById('statusLastUpdate').textContent = 'Updated ' + new Date().toLocaleTimeString();
   document.getElementById('metaLine').textContent = 'Historical: ' + (manifest.historical || []).join(', ');
@@ -697,7 +761,6 @@ function applyFiltersAndRender() {
   state.allRows.forEach(r => {
     var date=r[0], gm=r[1], zone=r[2], name=r[3], stack=r[4], flag=r[5], count=r[6], ph=r[7];
 
-    // Filter out blank/invalid GM or Zone entries
     if (!gm || gm === '' || gm === 'null' || gm === 'undefined') return;
     if (!zone || zone === '' || zone === 'null' || zone === 'undefined') return;
 
@@ -722,9 +785,9 @@ function applyFiltersAndRender() {
     if (!gmMap[gm]) gmMap[gm] = {gm,Past:0,Present:0,Future:0};
     gmMap[gm][flag] = (gmMap[gm][flag]||0) + count;
 
-    // Direct MH -> PH Tree Aggregation Logic Fix
+    // MH & PH Mapping
     var mhName = (name && name !== 'null' && name !== 'undefined') ? name : 'Unassigned MH';
-    var phName = (ph && ph !== 'null' && ph !== 'undefined') ? ph : 'Direct / Direct-to-MH';
+    var phName = (ph && ph !== 'null' && ph !== 'undefined') ? ph : 'Direct / Unknown PH';
 
     if (!mhMap[mhName]) mhMap[mhName] = { Past:0, Present:0, Future:0, phs:{} };
     mhMap[mhName][flag] = (mhMap[mhName][flag]||0) + count;
@@ -775,14 +838,14 @@ function applyFiltersAndRender() {
 }
 
 function renderKpis(totals, total, matched) {
-  document.getElementById('kpiPast').textContent    = fmt(totals.Past);
-  document.getElementById('kpiPresent').textContent = fmt(totals.Present);
-  document.getElementById('kpiFuture').textContent  = fmt(totals.Future);
-  document.getElementById('kpiTotal').textContent   = fmt(total);
+  document.getElementById('kpiPast').textContent    = fmt(totals.Past) || 0;
+  document.getElementById('kpiPresent').textContent = fmt(totals.Present) || 0;
+  document.getElementById('kpiFuture').textContent  = fmt(totals.Future) || 0;
+  document.getElementById('kpiTotal').textContent   = fmt(total) || 0;
   document.getElementById('kpiPastPct').textContent    = pct(totals.Past,    total) + ' of total';
   document.getElementById('kpiPresentPct').textContent = pct(totals.Present, total) + ' of total';
   document.getElementById('kpiFuturePct').textContent  = pct(totals.Future,  total) + ' of total';
-  document.getElementById('kpiMatchedRows').textContent = fmt(matched) + ' records matched';
+  document.getElementById('kpiMatchedRows').textContent = (matched).toLocaleString() + ' records matched';
 }
 
 var COLORS = { Past:'#ef4444', Present:'#10b981', Future:'#8b5cf6' };
@@ -909,18 +972,13 @@ function renderGMTable() {
   renderSummaryTable('gmBody', rows, 'gm', state.search.gm.toLowerCase());
 }
 
-// ── FIXED MH LANDING PAGE DRILLDOWN TABLE ──
+/* ── EXACT EXCEL PIVOT MH LANDING TAB ── */
 function renderMHTable() {
   var tbody = document.getElementById('mhBody');
   var mhData = state.filteredMH || {};
   var q = (state.search.mh || '').toLowerCase();
   
-  // Sort MH names descending by overall volume
-  var mhNames = Object.keys(mhData).sort((a, b) => {
-    var totA = mhData[a].Past + mhData[a].Present + mhData[a].Future;
-    var totB = mhData[b].Past + mhData[b].Present + mhData[b].Future;
-    return totB - totA;
-  });
+  var mhNames = Object.keys(mhData).sort((a, b) => a.localeCompare(b));
 
   if (!mhNames.length) {
     tbody.innerHTML = '<tr><td colspan="5"><div class="empty-state">No MH data available.</div></td></tr>';
@@ -928,7 +986,7 @@ function renderMHTable() {
   }
 
   var html = '';
-  var grandTotals = { Past:0, Present:0, Future:0, total:0 };
+  var grandTotals = { Future:0, Past:0, Present:0, total:0 };
 
   mhNames.forEach(mh => {
     var data = mhData[mh];
@@ -940,49 +998,48 @@ function renderMHTable() {
 
     if (q && !matchMH && !matchPH) return;
 
+    grandTotals.Future += data.Future; 
     grandTotals.Past += data.Past; 
     grandTotals.Present += data.Present;
-    grandTotals.Future += data.Future; 
     grandTotals.total += mhTotal;
 
     var isExpanded = state.expandedMH.has(mh) || (q && matchPH);
     var icon = isExpanded ? '−' : '+';
 
-    html += '<tr class="tree-row" onclick="toggleMH(event, \'' + esc(mh).replace(/'/g, "\\'") + '\')">' +
-      '<td><span class="tree-toggle">' + icon + '</span><strong>' + esc(mh) + '</strong></td>' +
+    // Parent Row (MotherHub Name)
+    html += '<tr class="pivot-parent" onclick="toggleMH(event, \'' + esc(mh).replace(/'/g, "\\'") + '\')">' +
+      '<td><span class="tree-btn">' + icon + '</span>' + esc(mh) + '</td>' +
+      '<td class="num">' + fmt(data.Future) + '</td>' +
       '<td class="num">' + fmt(data.Past) + '</td>' +
       '<td class="num">' + fmt(data.Present) + '</td>' +
-      '<td class="num">' + fmt(data.Future) + '</td>' +
-      '<td class="num"><strong>' + fmt(mhTotal) + '</strong></td>' +
+      '<td class="num">' + fmt(mhTotal) + '</td>' +
       '</tr>';
 
+    // Child Rows (PH Origin)
     if (isExpanded) {
-      phKeys.sort((a, b) => {
-        var totA = data.phs[a].Past + data.phs[a].Present + data.phs[a].Future;
-        var totB = data.phs[b].Past + data.phs[b].Present + data.phs[b].Future;
-        return totB - totA;
-      }).forEach(ph => {
+      phKeys.sort((a, b) => a.localeCompare(b)).forEach(ph => {
         var phData = data.phs[ph];
         var phTotal = phData.Past + phData.Present + phData.Future;
         if (q && !ph.toLowerCase().includes(q) && !matchMH) return;
 
-        html += '<tr class="child-row">' +
-          '<td>↳ ' + esc(ph) + '</td>' +
+        html += '<tr class="pivot-child">' +
+          '<td>' + esc(ph) + '</td>' +
+          '<td class="num">' + fmt(phData.Future) + '</td>' +
           '<td class="num">' + fmt(phData.Past) + '</td>' +
           '<td class="num">' + fmt(phData.Present) + '</td>' +
-          '<td class="num">' + fmt(phData.Future) + '</td>' +
           '<td class="num">' + fmt(phTotal) + '</td>' +
           '</tr>';
       });
     }
   });
 
-  html += '<tr class="grand-total">' +
-    '<td><span class="total-label">Grand Total</span></td>' +
+  // Grand Total Row
+  html += '<tr class="grand-total" style="background:#e2e8f0; font-weight:800;">' +
+    '<td>Grand Total</td>' +
+    '<td class="num">' + fmt(grandTotals.Future) + '</td>' +
     '<td class="num">' + fmt(grandTotals.Past) + '</td>' +
     '<td class="num">' + fmt(grandTotals.Present) + '</td>' +
-    '<td class="num">' + fmt(grandTotals.Future) + '</td>' +
-    '<td class="num"><strong>' + fmt(grandTotals.total) + '</strong></td>' +
+    '<td class="num">' + fmt(grandTotals.total) + '</td>' +
     '</tr>';
 
   tbody.innerHTML = html;
@@ -998,7 +1055,16 @@ function toggleMH(e, mh) {
   renderMHTable();
 }
 
-// ── FULL BREAKDOWN TABLE ──
+function expandAllMH(expand) {
+  if (expand) {
+    Object.keys(state.filteredMH || {}).forEach(k => state.expandedMH.add(k));
+  } else {
+    state.expandedMH.clear();
+  }
+  renderMHTable();
+}
+
+// FULL BREAKDOWN TABLE
 function renderTable() {
   var tbody = document.getElementById('tableBody');
   if (!state.filteredBreakdown) { tbody.innerHTML = ''; return; }
@@ -1061,7 +1127,7 @@ function exportCsv() {
   toast('CSV exported successfully','ok');
 }
 
-// ── EVENT LISTENERS ──
+// LISTENERS
 document.querySelectorAll('th[data-table]').forEach(th => {
   th.addEventListener('click', () => {
     var tbl = th.getAttribute('data-table');
