@@ -339,6 +339,7 @@
       <div class="field" id="f-gm"></div>
       <div class="field" id="f-zone"></div>
       <div class="field" id="f-name"></div>
+      <div class="field" id="f-mhub" style="display:none;"></div>
       <div class="field" id="f-stack"></div>
     </div>
     <div class="filters-footer">
@@ -507,8 +508,8 @@ var state = {
   filteredGM: [],
   filteredMH: {},
   expandedMH: new Set(),
-  filterOptions: { gms:[], zones:[], names:[], stacks:[], minDate:'', maxDate:'' },
-  selections: { gms:[], zones:[], names:[], stacks:[] },
+  filterOptions: { gms:[], zones:[], names:[], mubs:[], stacks:[], minDate:'', maxDate:'' },
+  selections: { gms:[], zones:[], names:[], mubs:[], stacks:[] },
   sort: {
     breakdown: { key:'total', dir:-1 },
     zone:      { key:'total', dir:-1 },
@@ -577,6 +578,16 @@ document.querySelectorAll('.nav-tab').forEach(tabBtn => {
     tabBtn.classList.add('active');
     state.activeTab = tabBtn.getAttribute('data-tab');
     document.getElementById(state.activeTab).classList.add('active');
+
+    // Toggle filter fields dynamically based on active tab
+    if (state.activeTab === 'tab-mh') {
+      document.getElementById('f-name').style.display = 'none';
+      document.getElementById('f-mhub').style.display = 'block';
+    } else {
+      document.getElementById('f-name').style.display = 'block';
+      document.getElementById('f-mhub').style.display = 'none';
+    }
+
     updateKpiCards();
   });
 });
@@ -619,8 +630,6 @@ async function loadAllData() {
             var st = String(getColValue(r, ['stack']) || '').trim();
             var fl = String(getColValue(r, ['flag']) || '').trim();
             var ct = Number(getColValue(r, ['picked_count', 'count']) || 0);
-
-            // PH Name prioritized via 'name'
             var ph = String(getColValue(r, ['name', 'ph_name', 'ph', 'ph_hub', 'origin']) || '').trim();
 
             return [dt, gm, zn, mh, st, fl, ct, ph];
@@ -648,14 +657,15 @@ async function loadAllData() {
 }
 
 function buildFilterOptions() {
-  var gms = new Set(), zones = new Set(), names = new Set(), stacks = new Set();
+  var gms = new Set(), zones = new Set(), names = new Set(), mubs = new Set(), stacks = new Set();
   var minDate = '', maxDate = '';
 
   state.allRows.forEach(r => {
     var ph = r[7];
-    if (!isInvalidValue(ph)) {
-      names.add(ph); // Collect PH Name for the filter
-    }
+    var mh = r[3];
+    if (!isInvalidValue(ph)) names.add(ph);
+    if (!isInvalidValue(mh)) mubs.add(mh);
+
     var d = r[0];
     if (d) {
       if (!minDate || d < minDate) minDate = d;
@@ -670,6 +680,7 @@ function buildFilterOptions() {
     gms: Array.from(gms).sort(),
     zones: Array.from(zones).sort(),
     names: Array.from(names).sort(),
+    mubs: Array.from(mubs).sort(),
     stacks: Array.from(stacks).sort(),
     minDate: minDate, maxDate: maxDate
   };
@@ -680,6 +691,7 @@ function buildFilterOptions() {
   buildMultiSelect('f-gm', 'GM', state.filterOptions.gms, 'gms');
   buildMultiSelect('f-zone', 'Zone', state.filterOptions.zones, 'zones');
   buildMultiSelect('f-name', 'PH Name', state.filterOptions.names, 'names');
+  buildMultiSelect('f-mhub', 'MH Name', state.filterOptions.mubs, 'mubs');
   buildMultiSelect('f-stack', 'Stack', state.filterOptions.stacks, 'stacks');
 }
 
@@ -748,6 +760,7 @@ function applyFiltersAndRender() {
   var gmSet    = state.selections.gms.length    ? new Set(state.selections.gms)    : null;
   var zoneSet  = state.selections.zones.length  ? new Set(state.selections.zones)  : null;
   var nameSet  = state.selections.names.length  ? new Set(state.selections.names)  : null;
+  var mhubSet  = state.selections.mubs.length   ? new Set(state.selections.mubs)   : null;
   var stackSet = state.selections.stacks.length ? new Set(state.selections.stacks) : null;
 
   var trendMap = {}, breakdownMap = {}, stackTotals = {}, zoneMap = {}, gmMap = {}, mhMap = {};
@@ -763,34 +776,36 @@ function applyFiltersAndRender() {
     if (dateTo   && date > dateTo)   return;
     if (gmSet    && !gmSet.has(gm))    return;
     if (zoneSet  && !zoneSet.has(zone))return;
-    if (nameSet  && !nameSet.has(ph))  return; // Filter by PH Name
     if (stackSet && !stackSet.has(stack)) return;
 
     // Overview Tab Calculations
-    overviewTotals.Matched++;
-    if (overviewTotals[flag] !== undefined) overviewTotals[flag] += count;
+    if (!nameSet || nameSet.has(ph)) {
+      overviewTotals.Matched++;
+      if (overviewTotals[flag] !== undefined) overviewTotals[flag] += count;
 
-    if (!trendMap[date]) trendMap[date] = {Past:0,Present:0,Future:0};
-    trendMap[date][flag] = (trendMap[date][flag]||0) + count;
+      if (!trendMap[date]) trendMap[date] = {Past:0,Present:0,Future:0};
+      trendMap[date][flag] = (trendMap[date][flag]||0) + count;
 
-    // Overview Breakdown mapped strictly to 'ph' (Name)
-    var phName = isInvalidValue(ph) ? 'Direct / Unknown PH' : ph;
-    var bk = gm+'||'+zone+'||'+phName+'||'+stack;
-    if (!breakdownMap[bk]) breakdownMap[bk] = {gm,zone,name:phName,stack,Past:0,Present:0,Future:0};
-    breakdownMap[bk][flag] = (breakdownMap[bk][flag]||0) + count;
+      var phName = isInvalidValue(ph) ? 'Direct / Unknown PH' : ph;
+      var bk = gm+'||'+zone+'||'+phName+'||'+stack;
+      if (!breakdownMap[bk]) breakdownMap[bk] = {gm,zone,name:phName,stack,Past:0,Present:0,Future:0};
+      breakdownMap[bk][flag] = (breakdownMap[bk][flag]||0) + count;
 
-    if (!zoneMap[zone]) zoneMap[zone] = {zone,Past:0,Present:0,Future:0};
-    zoneMap[zone][flag] = (zoneMap[zone][flag]||0) + count;
+      if (!zoneMap[zone]) zoneMap[zone] = {zone,Past:0,Present:0,Future:0};
+      zoneMap[zone][flag] = (zoneMap[zone][flag]||0) + count;
 
-    if (!gmMap[gm]) gmMap[gm] = {gm,Past:0,Present:0,Future:0};
-    gmMap[gm][flag] = (gmMap[gm][flag]||0) + count;
+      if (!gmMap[gm]) gmMap[gm] = {gm,Past:0,Present:0,Future:0};
+      gmMap[gm][flag] = (gmMap[gm][flag]||0) + count;
 
-    stackTotals[stack] = (stackTotals[stack]||0) + count;
+      stackTotals[stack] = (stackTotals[stack]||0) + count;
+    }
 
-    // MH Landing Tab: Motherhub level mapping
-    if (!isInvalidValue(mh)) {
+    // MH Landing Tab Calculations
+    if (!isInvalidValue(mh) && (!mhubSet || mhubSet.has(mh))) {
       mhTotals.Matched++;
       if (mhTotals[flag] !== undefined) mhTotals[flag] += count;
+
+      var phName = isInvalidValue(ph) ? 'Direct / Unknown PH' : ph;
 
       if (!mhMap[mh]) mhMap[mh] = { Past:0, Present:0, Future:0, phs:{} };
       mhMap[mh][flag] = (mhMap[mh][flag]||0) + count;
@@ -1157,11 +1172,11 @@ document.getElementById('dateFrom').addEventListener('change', markDirty);
 document.getElementById('dateTo').addEventListener('change', markDirty);
 document.getElementById('applyBtn').addEventListener('click', applyFiltersAndRender);
 document.getElementById('resetBtn').addEventListener('click', () => {
-  state.selections = { gms:[], zones:[], names:[], stacks:[] };
+  state.selections = { gms:[], zones:[], names:[], mubs:[], stacks:[] };
   buildFilterOptions(); applyFiltersAndRender();
 });
 document.getElementById('resetFiltersBtn').addEventListener('click', () => {
-  state.selections = { gms:[], zones:[], names:[], stacks:[] };
+  state.selections = { gms:[], zones:[], names:[], mubs:[], stacks:[] };
   buildFilterOptions(); applyFiltersAndRender();
 });
 document.getElementById('exportBtn').addEventListener('click', exportCsv);
